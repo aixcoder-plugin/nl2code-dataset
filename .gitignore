@@ -6,3 +6,4 @@
 /src/main/com/aixcode/resource/tempFile/*.tmp
 /**/.DS_Store
 /*.zip
+/*.iml
