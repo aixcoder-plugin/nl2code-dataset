@@ -1,0 +1,538 @@
+{
+  "line_num": 116,
+  "needModifyNL": "false",
+  "raw_nl": "Writes certain bytes from the specified byte array starting from an offset to this output stream.",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public void write(byte[] b, int off, int len, OutputStream outputStream)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 265,
+  "needModifyNL": "false",
+  "raw_nl": "随机生成[origin, bound)范围之内的一个int值",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static int randomInt(int origin, int bound)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 376,
+  "needModifyNL": "false",
+  "raw_nl": "上传一个文件至指定路径pathname下",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static void uploadFile(String pathname, String filename)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 385,
+  "needModifyNL": "false",
+  "raw_nl": "Debug helper function that returns the diff of two property maps, only displaying the key that is different and in which map it exists compared to the other map,example:map:key1,key2 map2:key1,key2,key3",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static String diff(java.util.Map<String, String> map1, java.util.Map<String, String> map2) ",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 395,
+  "needModifyNL": "false",
+  "raw_nl": "Returns a new, immutable collection containing the names of all entities within the directory denoted by the current path",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static List<String> getFiles(String dir)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 399,
+  "needModifyNL": "false",
+  "raw_nl": "Rotate this a two-dimensional point around Y axis with the given angle in radians.",
+  "correctness": 2,
+  "quality": 2,
+  "maintainability": 2,
+  "signature": "public static Point rotateY(double angle, Point point)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 400,
+  "needModifyNL": "false",
+  "raw_nl": "If the string passed in is not blank or null and did not end with the trailing value, then appended the trailing value to it and return the result ",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static String appendTrailing(String str, String trailing)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 126,
+  "needModifyNL": "false",
+  "raw_nl": "Returns true if the collection contains an element for the key.",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 2,
+  "signature": "public static boolean containsKey(Collection<String> collection, String key)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 106,
+  "needModifyNL": "false",
+  "raw_nl": "Returns true if the given object is an instance of the class or interface specified.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public boolean isInstanceOf(Object object, Class<?> type)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 23,
+  "needModifyNL": "false",
+  "raw_nl": "将16进制字符串转10进制",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "Cyclomatic":3,
+  "signature": "public int hexStringToInt(String hexString)"
+}
+{
+  "line_num": 22,
+  "needModifyNL": "false",
+  "raw_nl": "Add two integers, checking for overflow.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "Cyclomatic":-1,
+  "signature": "public boolean checkOverflow(int x, int y)"
+}
+{
+  "line_num": 323,
+  "needModifyNL": "false",
+  "raw_nl": "Add the value to the HashSet given by map.get(key), creating a new HashSet if the HashSet is null",
+  "correctness": 2,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "public void addToSet(Map<String, HashSet<Integer>> map, String key, Integer value)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 336,
+  "needModifyNL": "false",
+  "raw_nl": "Calculate and return the average of the two values rounded DOWN.",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static int average(int a, int b)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 273,
+  "needModifyNL": "false",
+  "raw_nl": "Check if #MIN_VALUE <= value <= #MAX_VALUE and if not an IllegalArgumentException is thrown.",
+  "correctness": 2,
+  "quality": 2,
+  "maintainability": 2,
+  "signature": "public static void checkRange(int value, int min, int max)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 256,
+  "needModifyNL": "false",
+  "raw_nl": "Check if the given qualified name is legal with respect to the version of XML to which this document must conform.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static final boolean isXML11ValidQName(String prefix, String local, boolean xml11Version)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 26,
+  "needModifyNL": "false",
+  "raw_nl": "Check whether the String is a valid Java number",
+  "correctness": 2,
+  "quality": 2,
+  "maintainability": 2,
+  "signature": "public static boolean isNumber(String str)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 241,
+  "needModifyNL": "false",
+  "raw_nl": "Choose a pseudo-random element from the specified array.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static int random(int[] array)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 258,
+  "needModifyNL": "false",
+  "raw_nl": "Compare two java objects for equality.",
+  "correctness": 0,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static boolean equals(Object o1, Object o2)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 304,
+  "needModifyNL": "false",
+  "raw_nl": "Compute the product of this matrix and the given column vector.",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public double[] product(double[] columnVector,double[][] matrix)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 77,
+  "needModifyNL": "false",
+  "raw_nl": "Concatenate two arrays of T type",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static <T> T[] concat(T[] a, T[] b)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 62,
+  "needModifyNL": "false",
+  "raw_nl": "Construct a new IOException with specified nested Throwable root cause.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static IOException createIOException(final Throwable rootCause)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 346,
+  "needModifyNL": "false",
+  "raw_nl": "Convert a JSONObject into a well-formed, element-normal XML string.",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "public static String toXml(JSONObject jsonObject)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 289,
+  "needModifyNL": "false",
+  "raw_nl": "Convert the text '&' mnemonic string to text string. The '&' symbol is treated as the mnemonic pointer. The double \"&&\" symbols are treated as the single '&'. For example the string \"&Look && Feel\" is converted to \"Look & Feel\".",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static String convertMnemonicString(String text)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 268,
+  "needModifyNL": "false",
+  "raw_nl": "Convert a boolean value into a string.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static String boolToString(boolean b)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 298,
+  "needModifyNL": "false",
+  "raw_nl": "Convert an arbitrary text encoding to its canonical name.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static String canonicalEncodingName(String encoding)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 60,
+  "needModifyNL": "false",
+  "raw_nl": "Create a copy of the Integer array.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "Cyclomatic":-1,
+  "signature": "public int[] copy(int[] arr)"
+}
+{
+  "line_num": 403,
+  "needModifyNL": "false",
+  "raw_nl": "Turns the iterable into a list.",
+  "Cyclomatic":-1,
+  "signature": "public static <T> List<T> toList(Iterable<T> iterable)"
+}
+{
+  "line_num": 404,
+  "needModifyNL": "false",
+  "raw_nl": "Returns the current number of entries in the map.",
+  "Cyclomatic":-1,
+  "signature": "public static int size(Map<String, String> map)"
+}
+{
+  "line_num": 405,
+  "needModifyNL": "false",
+  "raw_nl": "Returns true if two doubles are considered equal. Tests if the absolute difference between the two doubles has a difference less then a given double (epsilon)    Returns true if two doubles are considered equal. Tests if the absolute difference between the two doubles has a difference less then a given double (epsilon)",
+  "Cyclomatic":-1,
+  "signature": "public static boolean equals(double a, double b, double epsilon)"
+}
+
+
+
+{
+  "task_id": 154,
+  "line_num": 8804,
+  "raw_nl": "获取资源文件的url",
+  "raw_code": "public static URL getUrlFile(String fileName) {\n    URL url = null;\n    if (fileName != null) {\n        if (fileName.startsWith(Constants.FILE_SEPARATOR)) {\n            url = ResourceUtil.class.getResource(fileName);\n        } else {\n            url = ClassLoader.getSystemClassLoader().getResource(fileName);\n        }\n    }\n    return url;\n}",
+  "signature": "public URL getUrlFile(String fileName)"
+}
+{
+  "task_id": 155,
+  "line_num": 8821,
+  "raw_nl": "Check if the given value type is a date-time type (TIME, DATE, TIMESTAMP, TIMESTAMP_TZ).",
+  "raw_code": "public static boolean isDateTimeType(int type) {\n    switch(type) {\n        case Value.TIME:\n        case Value.DATE:\n        case Value.TIMESTAMP:\n        case Value.TIMESTAMP_TZ:\n            return true;\n        default:\n            return false;\n    }\n}",
+  "signature": "public boolean isDateTimeType(int type)"
+}
+{
+  "task_id": 156,
+  "line_num": 8859,
+  "raw_nl": "Adds a given vector (array) to another one. * Every element of the second array (missing element is treated to be zero) is added to the corresponding element (if not missing) of the first array.",
+  "raw_code": "public static final void addTo(float[] arrayA, float[] arrayB) throws NullPointerException {\n    int offset = arrayA.length, len;\n    if (arrayA != arrayB) {\n        if ((len = arrayB.length) <= offset)\n            offset = len;\n        while (offset-- > 0) arrayA[offset] += arrayB[offset];\n    }\n    while (offset-- > 0) arrayA[offset] *= 2;\n}",
+  "signature": "public void addTo(float[] arrayA, float[] arrayB)"
+}
+{
+  "task_id": 157,
+  "line_num": 8860,
+  "raw_nl": "Searches backward for value in a given array",
+  "raw_code": "public static final int lastIndexOf(float value, int index, float[] array) throws NullPointerException {\n    if (index < 0)\n        index = -1;\n    int bits;\n    if ((bits = array.length) <= index)\n        index = bits - 1;\n    index++;\n    if (value == 0.0F) {\n        bits = Float.floatToIntBits(value);\n        while (index-- > 0 && ((value = array[index]) != 0.0F || Float.floatToIntBits(value) != bits)) ;\n    } else if (value != value) {\n        bits = Float.floatToIntBits(value);\n        do {\n            if (--index < 0)\n                break;\n            value = array[index];\n        } while (value == value || Float.floatToIntBits(value) != bits);\n    } else\n        while (index-- > 0 && array[index] != value) ;\n    return index;\n}",
+  "signature": "public int lastIndexOf(float value, float[] array)"
+}
+{
+  "task_id": 158,
+  "line_num": 8861,
+  "raw_nl": "得到一个普通的线程池",
+  "raw_code": "public static ThreadPoolProxy getNormalPool() {\n    if (mNormalPool == null) {\n        synchronized (ThreadPoolFactory.class) {\n            if (mNormalPool == null) {\n                mNormalPool = new ThreadPoolProxy(5, 5, 3000);\n            }\n        }\n    }\n    return mNormalPool;\n}",
+  "signature": "public ThreadPoolExecutor getNormalPool()"
+}
+{
+  "task_id": 159,
+  "line_num": 8943,
+  "raw_nl": "将对象装换为map",
+  "raw_code": "public static <T> Map<String, Object> beanToMap(T bean) {\n    Map<String, Object> map = Maps.newHashMap();\n    if (bean != null) {\n        BeanMap beanMap = BeanMap.create(bean);\n        for (Object key : beanMap.keySet()) {\n            map.put(key + \"\", beanMap.get(key));\n        }\n    }\n    return map;\n}",
+  "signature": "public <T> Map<String, Object> beanToMap(T bean)"
+}
+{
+  "task_id": 160,
+  "line_num": 9018,
+  "raw_nl": "随机抽取指定数量的用户，作为中奖用户",
+  "raw_code": "public List<BetUser> doDrawRandom(List<BetUser> list, int count) {\n    // 集合数量很小直接返回\n    if (list.size() <= count)\n        return list;\n    // 乱序集合\n    Collections.shuffle(list);\n    // 取出指定数量的中奖用户\n    List<BetUser> prizeList = new ArrayList<>(count);\n    for (int i = 0; i < count; i++) {\n        prizeList.add(list.get(i));\n    }\n    return prizeList;\n}",
+  "signature": "public List<String> doDrawRandom(List<String> users, int count)"
+}
+{
+  "task_id": 161,
+  "line_num": 9171,
+  "raw_nl": "Returns the geometric center of this sequence of points",
+  "raw_code": "default GamaPoint getCenter() {\n    final GamaPoint p = new GamaPoint();\n    addCenterTo(p);\n    return p;\n}",
+  "signature": "public Point getCenter(List<Point> points)"
+}
+{
+  "task_id": 162,
+  "line_num": 9353,
+  "raw_nl": "括号匹配检测.",
+  "raw_code": "public static boolean checkbracket(String str) {\n    Stack<Character> stackCheck = new Stack<Character>();\n    boolean booFlag = true;\n    for (int i = 0; i < str.length(); i++) {\n        char ch = str.charAt(i);\n        switch(ch) {\n            case '(':\n                stackCheck.push(ch);\n                break;\n            case ')':\n                if (!stackCheck.isEmpty()) {\n                    char chx = stackCheck.pop();\n                    if (ch == ')' && chx != '(') {\n                        booFlag = false;\n                    }\n                } else {\n                    booFlag = false;\n                }\n                break;\n            default:\n                break;\n        }\n    }\n    if (!stackCheck.isEmpty()) {\n        booFlag = false;\n    }\n    return booFlag;\n}",
+  "signature": "public boolean checkbracket(String str)"
+}
+{
+  "task_id": 163,
+  "line_num": 9373,
+  "raw_nl": "Move a file or directory from source to destination, recursively copying subdirectories.",
+  "raw_code": "public static void move(FileSystem fs, Path file, Path src, Path dest) throws IOException {\n    Path destFilePath = pathInDestination(file, src, dest);\n    if (fs.isFile(file)) {\n        if (fs.exists(destFilePath)) {\n            if (!fs.delete(destFilePath, true)) {\n                throw new IllegalArgumentException(\"Could not remove existing file \" + destFilePath);\n            }\n        }\n        if (!fs.rename(file, destFilePath)) {\n            throw new IllegalArgumentException(\"Could not move \" + file + \" to \" + destFilePath);\n        }\n    } else if (fs.getFileStatus(file).isDir()) {\n        FileStatus[] statuses = fs.listStatus(file);\n        fs.mkdirs(destFilePath);\n        if (statuses != null) {\n            for (FileStatus status : statuses) {\n                move(fs, status.getPath(), src, dest);\n            }\n        }\n    }\n}",
+  "signature": "public void move(Path src, Path dest)"
+}
+{
+  "task_id": 164,
+  "line_num": 9415,
+  "raw_nl": "Reverse a Map into a ValueSetMap, where each original value is mapped to the set of all its original keys.",
+  "raw_code": "public static <K, V> ValueSetMap<V, K> reverseMapIntoValueSetMap(Map<K, V> map) {\n    ValueSetMap<V, K> reversedMap = new SimpleValueSetMap<V, K>();\n    for (K origKey : map.keySet()) {\n        V origValue = map.get(origKey);\n        reversedMap.put(origValue, origKey);\n    }\n    return reversedMap;\n}",
+  "signature": "public <K, V> Map<V, Set<K> > reverseMapIntoValueSetMap(Map<K, V> map)"
+}
+{
+  "task_id": 165,
+  "line_num": 9506,
+  "raw_nl": "Decode base64 string to bytes",
+  "raw_code": "public static byte[] base64decode(String base64string) {\n    byte[] rv = null;\n    rv = Base64.getDecoder().decode(base64string);\n    return rv;\n}",
+  "signature": "public byte[] base64decode(String base64string)"
+}
+{
+  "task_id": 166,
+  "line_num": 9590,
+  "raw_nl": "通过反射为对象的对应字段注入值",
+  "raw_code": "private static <T> T initByReflect(String name, String value, T t) {\n    if (t == null)\n        throw new RuntimeException(\"null object\");\n    if (name == null || \"\".equals(name))\n        throw new RuntimeException(\"empty name\");\n    Class<?> clazz = t.getClass();\n    Method setter, getter;\n    try {\n        String methodStr = name.substring(0, 1).toUpperCase() + name.substring(1);\n        // 如果名称是cancel，则调用isCancel()方法，主要是为了语义上的直观\n        getter = clazz.getMethod((\"cancel\".equals(name) ? \"is\" : \"get\") + methodStr, new Class<?>[] {});\n        setter = clazz.getMethod(\"set\" + methodStr, getter.getReturnType());\n        if (\"action\".equals(name))\n            // 根据StepAction类中的map来获取名称对应的StepAction（枚举）实例\n            setter.invoke(t, StepAction.action(value));\n        else if (\"cancel\".equals(name))\n            setter.invoke(t, \"true\".equals(value) ? true : false);\n        else if (\"details\".equals(name))\n            setter.invoke(t, parseDetail(value));\n        else\n            setter.invoke(t, value);\n    } catch (Exception e) {\n    }\n    return t;\n}",
+  "signature": "public <T> T initByReflect(String name, String value, T t)"
+}
+{
+  "task_id": 167,
+  "line_num": 9607,
+  "raw_nl": "将数组转为 List",
+  "raw_code": "public static <T> List<T> array2List(T[] array) {\n    ArrayList<T> list = new ArrayList<T>(array.length);\n    for (int i = 0; i < array.length; i++) {\n        list.add(array[i]);\n    }\n    return list;\n}",
+  "signature": "public <T> List<T> array2List(T[] array)"
+}
+{
+  "task_id": 168,
+  "line_num": 9630,
+  "raw_nl": "获取过去7天的时期(包括今天)，格式为yymmdd",
+  "raw_code": "public static List<String> getWeekDate() {\n    List<String> dates = new ArrayList<>();\n    SimpleDateFormat simpleDateFormat = new SimpleDateFormat(\"yyyyMMdd\", Locale.getDefault());\n    for (int i = 0; i < 7; i++) {\n        Calendar calendar = Calendar.getInstance();\n        calendar.add(Calendar.DAY_OF_YEAR, 1 - i);\n        dates.add(simpleDateFormat.format(calendar.getTime()));\n    }\n    return dates;\n}",
+  "signature": "public List<String> getWeekDate()"
+}
+{
+  "task_id": 169,
+  "line_num": 9662,
+  "raw_nl": "Returns the total number of bytes remaining in the buffer array.",
+  "raw_code": "static long remaining(ByteBuffer[] buffers) {\n    long size = 0;\n    for (ByteBuffer buffer : buffers) {\n        size += buffer.remaining();\n    }\n    return size;\n}",
+  "signature": "public long remaining(ByteBuffer[] buffers)"
+}
+{
+  "task_id": 170,
+  "line_num": 9752,
+  "raw_nl": "返回y年m月d日对应的农历.返回格式为某年某月某日 ?",
+  "raw_code": "/**\n */\npublic String getLunarDate(int year_log, int month_log, int day_log, boolean isday) {\n    // @SuppressWarnings(\"unused\")\n    int yearCyl, monCyl, dayCyl;\n    // int leapMonth = 0;\n    String nowadays;\n    Date baseDate = null;\n    Date nowaday = null;\n    try {\n        baseDate = chineseDateFormat.parse(\"1900年1月31日\");\n    } catch (ParseException e) {\n        // To change body of catch statement use\n        e.printStackTrace();\n        // Options | File Templates.\n    }\n    nowadays = year_log + \"年\" + month_log + \"月\" + day_log + \"日\";\n    try {\n        nowaday = chineseDateFormat.parse(nowadays);\n    } catch (ParseException e) {\n        // To change body of catch statement use\n        e.printStackTrace();\n        // Options | File Templates.\n    }\n    // 求出和1900年1月31日相差的天数\n    int offset = (int) ((nowaday.getTime() - baseDate.getTime()) / 86400000L);\n    dayCyl = offset + 40;\n    monCyl = 14;\n    // 用offset减去每农历年的天数\n    // 计算当天是农历第几天\n    // i最终结果是农历的年份\n    // offset是当年的第几天\n    int iYear, daysOfYear = 0;\n    for (iYear = 1900; iYear < 10000 && offset > 0; iYear++) {\n        daysOfYear = yearDays(iYear);\n        offset -= daysOfYear;\n        monCyl += 12;\n    }\n    if (offset < 0) {\n        offset += daysOfYear;\n        iYear--;\n        monCyl -= 12;\n    }\n    // 农历年份\n    year = iYear;\n    // 设置公历对应的农历年份\n    setYear(year);\n    yearCyl = iYear - 1864;\n    leapMonth = leapMonth(iYear);\n    leap = false;\n    // 用当年的天数offset,逐个减去每月（农历）的天数，求出当天是本月的第几天\n    int iMonth, daysOfMonth = 0;\n    for (iMonth = 1; iMonth < 13 && offset > 0; iMonth++) {\n        // 闰月\n        if (leapMonth > 0 && iMonth == (leapMonth + 1) && !leap) {\n            --iMonth;\n            leap = true;\n            daysOfMonth = leapDays(year);\n        } else\n            daysOfMonth = monthDays(year, iMonth);\n        offset -= daysOfMonth;\n        // 解除闰月\n        if (leap && iMonth == (leapMonth + 1))\n            leap = false;\n        if (!leap)\n            monCyl++;\n    }\n    // offset为0时，并且刚才计算的月份是闰月，要校正\n    if (offset == 0 && leapMonth > 0 && iMonth == leapMonth + 1) {\n        if (leap) {\n            leap = false;\n        } else {\n            leap = true;\n            --iMonth;\n            --monCyl;\n        }\n    }\n    // offset小于0时，也要校正\n    if (offset < 0) {\n        offset += daysOfMonth;\n        --iMonth;\n        --monCyl;\n    }\n    month = iMonth;\n    // 设置对应的阴历月份\n    setLunarMonth(chineseNumber[month - 1] + \"月\");\n    day = offset + 1;\n    if (!isday) {\n        for (int i = 0; i < solarHoliday.length; i++) {\n            // 返回公历节假日名称\n            // 节假日的日期\n            String sd = solarHoliday[i].split(\" \")[0];\n            // 节假日的名称\n            String sdv = solarHoliday[i].split(\" \")[1];\n            String smonth_v = month_log + \"\";\n            String sday_v = day_log + \"\";\n            String smd = \"\";\n            if (month_log < 10) {\n                smonth_v = \"0\" + month_log;\n            }\n            if (day_log < 10) {\n                sday_v = \"0\" + day_log;\n            }\n            smd = smonth_v + sday_v;\n            if (sd.trim().equals(smd.trim())) {\n                return sdv;\n            }\n        }\n        for (int i = 0; i < lunarHoliday.length; i++) {\n            // 返回农历节假日名称\n            // 节假日的日期\n            String ld = lunarHoliday[i].split(\" \")[0];\n            // 节假日的名称\n            String ldv = lunarHoliday[i].split(\" \")[1];\n            String lmonth_v = month + \"\";\n            String lday_v = day + \"\";\n            String lmd = \"\";\n            if (month < 10) {\n                lmonth_v = \"0\" + month;\n            }\n            if (day < 10) {\n                lday_v = \"0\" + day;\n            }\n            lmd = lmonth_v + lday_v;\n            if (ld.trim().equals(lmd.trim())) {\n                return ldv;\n            }\n        }\n    }\n    if (day == 1)\n        return chineseNumber[month - 1] + \"月\";\n    else\n        return getChinaDayString(day);\n}",
+  "signature": "public String getLunarDate(int year_log, int month_log, int day_log)"
+}
+{
+  "task_id": 171,
+  "line_num": 9799,
+  "raw_nl": "去掉浮点数多余的0",
+  "raw_code": "public static String rvZeroAndDot(String s) {\n    if (s.isEmpty()) {\n        return null;\n    }\n    if (s.indexOf(\".\") > 0) {\n        s = s.replaceAll(\"0+?$\", \"\");\n        // 如最后一位是.则去掉\n        s = s.replaceAll(\"[.]$\", \"\");\n    }\n    return s;\n}",
+  "signature": "public String rvZeroAndDot(String s)"
+}
+{
+  "task_id": 172,
+  "line_num": 9800,
+  "raw_nl": "十进制整型数值减法，字符串表示每一个数",
+  "raw_code": "public static String bigDecimalSubtract(String str, String str1, int scale) {\n    BigDecimal bd = new BigDecimal(str);\n    BigDecimal bd1 = new BigDecimal(str1);\n    return rvZeroAndDot(bd.subtract(bd1).setScale(scale, BigDecimal.ROUND_DOWN).toPlainString());\n}",
+  "signature": "public String bigDecimalSubtract(String str, String str1)"
+}
+{
+  "task_id": 173,
+  "line_num": 9854,
+  "raw_nl": "Get the extension of a file. Return a null string if there is no extension.",
+  "raw_code": "public static String getFileExtension(File file) {\n    String str = file.getName();\n    int i = str.lastIndexOf('.');\n    if (i > 0) {\n        return str.substring(i + 1);\n    } else {\n        return \"\";\n    }\n}",
+  "signature": "public String getFileExtension(File file)"
+}
+{
+  "task_id": 174,
+  "line_num": 9889,
+  "raw_nl": "判定一个字符串是不是整数",
+  "raw_code": "public static boolean isInteger(String numberString) {\n    try {\n        Integer.parseInt(numberString);\n        return true;\n    } catch (NumberFormatException ex) {\n        return false;\n    }\n}",
+  "signature": "public boolean isInteger(String numberString)"
+}
+{
+  "task_id": 175,
+  "line_num": 9925,
+  "raw_nl": "Creates a Thread Factory that names Threads with the given format",
+  "raw_code": "private ThreadFactory createThreadFactory(@NotNull final String nameFormat) {\n    checkNotNull(nameFormat, \"Thread Factory Name Format must not be null\");\n    return new ThreadFactoryBuilder().setNameFormat(nameFormat).build();\n}",
+  "signature": "public ThreadFactory createThreadFactory(String nameFormat)"
+}
+{
+  "task_id": 176,
+  "line_num": 9948,
+  "raw_nl": "Returns true if the bit at the given position is 1 and false otherwise.",
+  "raw_code": "public boolean getBinaryState(int position) {\n    if (position < 1 || position > 32) {\n        throw new IllegalArgumentException(\"Position out of bound. Should be between 1 and 32.\");\n    }\n    return (((value >> (position - 1)) & 0x01) == 0x01);\n}",
+  "signature": "public boolean getBinaryState(int position)"
+}
+{
+  "task_id": 177,
+  "line_num": 9972,
+  "raw_nl": "获取当前进程的ID",
+  "raw_code": "public static String getProcessId() {\n    // get name representing the running Java virtual machine.\n    String name = ManagementFactory.getRuntimeMXBean().getName();\n    String pid = name.split(\"@\")[0];\n    return pid;\n}",
+  "signature": "public String getProcessId()"
+}
+{
+  "task_id": 178,
+  "line_num": 10049,
+  "raw_nl": "Handles comparison between version numbers (the right way(TM))，bigger return 1 ，smaller return -1 and equals return 0. Examples of version strings: 1.6.7, 1.2_b10",
+  "raw_code": "public static int versionCompare(String v1, String v2) {\n    Matcher v1Matcher = versionPattern.matcher(v1);\n    Matcher v2Matcher = versionPattern.matcher(v2);\n    if (!v1Matcher.matches() || !v2Matcher.matches()) {\n        throw new IllegalArgumentException(v1Matcher.matches() ? v2 : v1 + \" is not a proper version\" + \" string\");\n    }\n    String[] v1Prefix = v1Matcher.group(1).split(\"\\\\.\");\n    String[] v2Prefix = v2Matcher.group(1).split(\"\\\\.\");\n    for (int i = 0; i < v1Prefix.length; i++) {\n        if (v2Prefix.length <= i) {\n            // v1 > v2\n            return 1;\n        }\n        int compare = Integer.parseInt(v1Prefix[i]) - Integer.parseInt(v2Prefix[i]);\n        if (compare != 0) {\n            return compare;\n        }\n    }\n    // So far they are equal (or v2 is longer than v1)\n    if (v2Prefix.length == v1Prefix.length) {\n        // then it is up to the suffixes\n        return v1Matcher.group(2).compareTo(v2Matcher.group(2));\n    }\n    // v2 is greater than v1,\n    return -1;\n}",
+  "signature": "public int versionCompare(String v1, String v2)"
+}
+{
+  "task_id": 179,
+  "line_num": 10092,
+  "raw_nl": "在map中，如果key存在,则value相加；如果key 不存在，增加新的key，value",
+  "raw_code": "public Long incrBy(String key, Long integer) {\n    Jedis jedis = null;\n    Long res = null;\n    try {\n        jedis = jedisPool.getResource();\n        res = jedis.incrBy(key, integer);\n    } catch (Exception e) {\n        log.error(e.getMessage());\n    } finally {\n        returnResource(jedisPool, jedis);\n    }\n    return res;\n}",
+  "signature": "public Long incrBy(Map<String,Long> valMap,String key, Long integer)"
+}
+{
+  "task_id": 180,
+  "line_num": 10221,
+  "raw_nl": "Check if a string is binary, which is composed of 0/1, and string length is multiple of 8.",
+  "raw_code": "private boolean isBin(String bin, Context context) {\n    if (bin != null && bin.length() % 8 == 0 && bin.matches(\"[0-1]+\")) {\n        return true;\n    }\n    Toast.makeText(context, R.string.info_not_bin_data, Toast.LENGTH_LONG).show();\n    return false;\n}",
+  "signature": "public boolean isBin(String bin)"
+}
+{
+  "task_id": 181,
+  "line_num": 10300,
+  "raw_nl": "通过反射, 获得Class定义中声明的父类的泛型参数的类型. 如无法找到, 返回Object.class.",
+  "raw_code": "public static Class getClassGenricType(final Class clazz, final int index) {\n    Type genType = clazz.getGenericSuperclass();\n    if (!(genType instanceof ParameterizedType)) {\n        logger.debug(clazz.getSimpleName() + \"'s superclass not ParameterizedType\");\n        return Object.class;\n    }\n    Type[] params = ((ParameterizedType) genType).getActualTypeArguments();\n    if (index >= params.length || index < 0) {\n        logger.debug(\"Index: \" + index + \", Size of \" + clazz.getSimpleName() + \"'s Parameterized Type: \" + params.length);\n        return Object.class;\n    }\n    if (!(params[index] instanceof Class)) {\n        logger.debug(clazz.getSimpleName() + \" not set the actual class on superclass generic parameter\");\n        return Object.class;\n    }\n    return (Class) params[index];\n}",
+  "signature": "public List<Class> getClassGenricType(Class clazz)"
+}
+{
+  "task_id": 182,
+  "line_num": 10366,
+  "raw_nl": "滤掉词串中的空格、标点符号",
+  "raw_code": "private String[] filter(String[] word_list) {\n    List<String> results = new ArrayList<String>();\n    for (String w : word_list) {\n        if (!FILTER_CHARS.contains(w)) {\n            results.add(w.toLowerCase());\n        }\n    }\n    return results.toArray(new String[results.size()]);\n}",
+  "signature": "public String[] filter(String[] word_list)"
+}
+{
+  "task_id": 183,
+  "line_num": 10506,
+  "raw_nl": "BigDecimal加法运算",
+  "raw_code": "public static BigDecimal add(BigDecimal aVal, BigDecimal bVal) {\n    aVal = aVal == null ? BigDecimal.ZERO : aVal;\n    bVal = bVal == null ? BigDecimal.ZERO : bVal;\n    return aVal.add(bVal);\n}",
+  "signature": "public BigDecimal add(BigDecimal aVal, BigDecimal bVal)"
+}
+{
+  "task_id": 184,
+  "line_num": 10558,
+  "raw_nl": "For a given string, remove all occurrences of chars 10 and 13 with \"\\\\n\" and \"\\\\r\" string literals, and adds quotes before and after the string. Additionally, if maxLen is greater than zero, truncates the string to that length if it's longer, adding \"...[length xyz]\" in the end",
+  "raw_code": "public static String removeEndLinesAndAddQuotes(String s, int maxLen) {\n    if (maxLen > 0 && s.length() > maxLen) {\n        // Don't print very long strings fully\n        s = s.substring(0, maxLen - 16) + \" ...[length \" + s.length() + ']';\n    }\n    if (s.indexOf('\\n') == -1 && s.indexOf('\\r') == -1) {\n        return \"\\\"\" + s + \"\\\"\";\n    }\n    char[] dst = new char[s.length() * 2 + 2];\n    dst[0] = '\"';\n    int dstIdx = 1;\n    int len = s.length();\n    for (int i = 0; i < len; i++) {\n        char c = s.charAt(i);\n        if (c == '\\n') {\n            dst[dstIdx++] = '\\\\';\n            dst[dstIdx++] = 'n';\n        } else if (c == '\\r') {\n            dst[dstIdx++] = '\\\\';\n            dst[dstIdx++] = 'r';\n        } else {\n            dst[dstIdx++] = c;\n        }\n    }\n    dst[dstIdx++] = '\"';\n    return new String(dst, 0, dstIdx);\n}",
+  "signature": "public String removeEndLinesAndAddQuotes(String s, int maxLen)"
+}
+{
+  "task_id": 185,
+  "line_num": 10638,
+  "raw_nl": "return the given list of defined IP addresses. The example is: |- IPv4: 192.168.1.6 |- IPv4: 127.0.0.1 |- IPv6: fe80:0:0:0:221:5cff:fe1d:ffdf%3 |- IPv6: 0:0:0:0:0:0:0:1%1",
+  "raw_code": "private void printOutDefinedIPs(List<String> definedIPs) {\n    List<String> ipList = new ArrayList<>();\n    for (String ip : definedIPs) {\n        if (ip.indexOf(':') != -1) {\n            ipList.add(\"|- IPv6: \" + ip);\n        } else {\n            ipList.add(\"|- IPv4: \" + ip);\n        }\n    }\n    Collections.sort(ipList);\n    for (String ip : ipList) {\n        log.info(ip);\n    }\n}",
+  "signature": "public List<String> printOutDefinedIPs(List<String> definedIPs)"
+}
+{
+  "task_id": 186,
+  "line_num": 10958,
+  "raw_nl": "Returns whether or no the JDK version is 1.7u40 and above.",
+  "raw_code": "public static boolean isJdk7u40Above() {\n    checkJdkVersion();\n    return _currentVersion.compareVersion(1.7, 0, 40) >= 0;\n}",
+  "signature": "public boolean isJdk7u40Above()"
+}

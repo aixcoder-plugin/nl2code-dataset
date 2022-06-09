@@ -1,0 +1,154 @@
+{
+  "line_num": 302,
+  "needModifyNL": "false",
+  "raw_nl": "return the last day of the date's month of specified string value in format: yyyy-MM",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static Date getMonthLastDay(String dateString)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 82,
+  "needModifyNL": "false",
+  "raw_nl": "Merges the given two lists to a new list, but eliminating duplicates elements.",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static <T> ArrayList<T> merge(ArrayList<T> list1, ArrayList<T> list2)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 2,
+  "needModifyNL": "false",
+  "raw_nl": "Multiplies the vector by the transpose of the given matrix.",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static double[] multiplyTranspose(double[] vector, double[][] matrix)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 20,
+  "needModifyNL": "false",
+  "raw_nl": "Removes and returns last element in list, return null if empty.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static String removeLast(ArrayList<String> list)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 262,
+  "needModifyNL": "true",
+  "raw_nl": "Returns the largest value in linked list.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static int getMax(LinkedList<Integer> list)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 364,
+  "needModifyNL": "false",
+  "raw_nl": "Calculate the elapsed time between two times specified in milliseconds.",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static long elapsedTime(Calendar start, Calendar end)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 318,
+  "needModifyNL": "false",
+  "raw_nl": "Compute the CRC32 of an array of bytes.",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static long crc32(byte[] bytes)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 93,
+  "needModifyNL": "false",
+  "raw_nl": "Create an instance of a clazz using the current thread context ClassLoader.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static <T> T newInstance(Class<T> clazz)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 56,
+  "needModifyNL": "false",
+  "raw_nl": "Delete data from start until end index (end inclusive) of a object List.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static <T> void delete(List<T> list, int start, int end) ",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 67,
+  "needModifyNL": "false",
+  "raw_nl": "Get the intersection point of two lines.",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static Point getIntersection(Line line1, Line line2)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 275,
+  "needModifyNL": "false",
+  "raw_nl": "Get the number of days for the given month in the given year.",
+  "correctness": 1,
+  "quality": 0,
+  "maintainability": 0,
+  "signature": "public static int getDaysInMonth(int year, int month)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 369,
+  "needModifyNL": "false",
+  "raw_nl": "得到filepath路径下第一层目录结构中所有的class文件",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static List<String> getClassFileNames(String filepath)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 328,
+  "needModifyNL": "false",
+  "raw_nl": "打开文件filename，并返回文件输入流",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static FileInputStream openFile(String filename)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 251,
+  "needModifyNL": "false",
+  "raw_nl": "用str2替换字符串str中第一个出现的str1",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static String replaceFirst(String str, String str1, String str2) ",
+  "Cyclomatic": -1,
+  "code_len": 0
+}

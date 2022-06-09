@@ -1,0 +1,8 @@
+/out/
+/.idea/
+/HumanTest.iml
+/.DS_Store
+/src/com/.DS_Store
+/src/main/com/aixcode/resource/tempFile/*.tmp
+/**/.DS_Store
+/*.zip

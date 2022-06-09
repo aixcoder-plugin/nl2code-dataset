@@ -1,0 +1,629 @@
+{
+  "line_num": 78,
+  "needModifyNL": "true",
+  "raw_nl": "Returns the entry associated with the specified key in map.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public Entry<K, V> getEntry(Object key)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 36,
+  "needModifyNL": "false",
+  "raw_nl": "Returns stylesheet for a given document.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 281,
+  "needModifyNL": "false",
+  "raw_nl": "Returns the index of the first occurrence of the specified element in this list, returns -1 if the element is not found",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static int indexOf(int[] array, int element) ",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 32,
+  "needModifyNL": "false",
+  "raw_nl": "Returns the minimum value in an array.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static int min(int[] array)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 317,
+  "needModifyNL": "false",
+  "raw_nl": "Returns the sum of logarithms, which is Sum( Log(x[i]) ).",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static double logSum(double[] x)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 111,
+  "needModifyNL": "false",
+  "raw_nl": "Do a simple bubble sort to sort the server ids in ascending order.",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "public void sortServers(int[] serverIds)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 243,
+  "needModifyNL": "false",
+  "raw_nl": "Ensure that an object reference passed as a parameter to the calling method is not null.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static void ensureNotNull(Object obj)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 300,
+  "needModifyNL": "false",
+  "raw_nl": "Extract the filename from the given path.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static String extractFileName(String path)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 315,
+  "needModifyNL": "false",
+  "raw_nl": "Fill 1D matrix with random numbers.",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static void fillMatrix_1D(double[] m)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 334,
+  "needModifyNL": "false",
+  "raw_nl": "Find the occurence of the given key in the given array. Linear search, worst case running time is O(n).",
+  "correctness": 4,
+  "quality": 2,
+  "maintainability": 4,
+  "signature": "public static int linearSearch(int[] arr, int key) ",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 338,
+  "needModifyNL": "false",
+  "raw_nl": "Generate a not existing temporary file in specified dir.",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "public static String generateTempFile(String dir)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 124,
+  "needModifyNL": "true",
+  "raw_nl": "Get one character of index i from a given string buffer.",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static char getChar(StringBuffer sb, int i)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 89,
+  "needModifyNL": "false",
+  "raw_nl": "将map中所有的key转为大写",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 3,
+  "signature": "public static Map<String, Object> getAllUpperCase(Map<String, Object> map)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 352,
+  "needModifyNL": "false",
+  "raw_nl": "得到距离当前时间前一年的时间 @Title: getLastYearDate",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 3,
+  "signature": "public static String getLastYearDate()",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 271,
+  "needModifyNL": "false",
+  "raw_nl": "更新url中的参数(保证参数不重复)",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "public static String updateUrl(String url, String key, String value)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 249,
+  "needModifyNL": "false",
+  "raw_nl": "移除 map 中的 null 或者 空字符串",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static void removeNullValue(Map<String, Object> map)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 368,
+  "needModifyNL": "false",
+  "raw_nl": "获取某个时间data的年份",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 4,
+  "signature": "public static int getYear(Date date)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 371,
+  "needModifyNL": "true",
+  "raw_nl": "Element-by-element matrix multiplication in place, A = A*B ",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static void matrixMultiply(double[][] A, double[][] B)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 372,
+  "needModifyNL": "false",
+  "raw_nl": "通过反射获取某个类的对象内所有的 public 成员变量, 包括该类的基类",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 3,
+  "signature": "public static List<Field> getFields(Class<?> clazz)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 373,
+  "needModifyNL": "true",
+  "raw_nl": "Adds all of the elements in collection to the Set.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static void addAll(Set<Integer> set, Collection<Integer> collection)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 374,
+  "needModifyNL": "false",
+  "raw_nl": "Write inputStream to file",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 3,
+  "signature": "public static void writeToFile(String fileName, String inputStream)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 375,
+  "needModifyNL": "true",
+  "raw_nl": "Helper function to convert a long number into a byte array (least significant byte first).",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 3,
+  "signature": "public static byte[] longToBytes(long x)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 378,
+  "needModifyNL": "false",
+  "raw_nl": "将一个字符串从旧的的字符集转到一个新的字符集, 一个辅助方法，主要用于HTTP调用时返回值的转换",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 3,
+  "signature": "public static String convert(String str, String oldCharset, String newCharset)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 379,
+  "needModifyNL": "false",
+  "raw_nl": "将byte数组转化为16进制字符串",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static String bytesToHexString(byte[] src)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 380,
+  "needModifyNL": "false",
+  "raw_nl": "Returns a hash code value for this bit array.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public int hashCode(byte[] byteArr)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 381,
+  "needModifyNL": "false",
+  "raw_nl": "Removes the entry with the specified key from this map if present.",
+  "correctness": 0,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "public void remove(Map<Integer, String> mapObj, Integer key)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 382,
+  "needModifyNL": "false",
+  "raw_nl": "Performs a PUT on an URL, checks the response code and returns the response.",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "protected HttpResponse put(String url)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 383,
+  "needModifyNL": "false",
+  "raw_nl": "Convert a primitive input array into its object array version (e.g. from int[] to Integer[]).",
+  "correctness": 4,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "public static Integer[] toObjectArray(int[] array)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 384,
+  "needModifyNL": "false",
+  "raw_nl": "Converting object to JSON string. If errors appears throw MeshinException and RuntimeException.",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 3,
+  "signature": "public static String toJson(Object object)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 386,
+  "needModifyNL": "false",
+  "raw_nl": "判断字符串是否只含字母和数字",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static boolean isLetterOrDigit(String str)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 387,
+  "needModifyNL": "false",
+  "raw_nl": "判断是否只含字母",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 3,
+  "signature": "public static boolean isLetter(char c)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 388,
+  "needModifyNL": "false",
+  "raw_nl": "Join 2 path elements if path separator not present at the end of first path element，else return the first element.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static String joinPath(String path1, String path2)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 389,
+  "needModifyNL": "false",
+  "raw_nl": "Converts an int into an array of byte using the default (little endian, Lsb0) byte and bit ordering.",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "public static byte[] intToByteArray(int value)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 390,
+  "needModifyNL": "false",
+  "raw_nl": "Returns the String representation of the bean given in the constructor. It uses the Class name as the prefix.",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "public String toString()",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 392,
+  "needModifyNL": "false",
+  "raw_nl": "gunzip from the source stream to the destination stream.",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 3,
+  "signature": "public static void gunzip(java.io.InputStream in, java.io.OutputStream out)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 393,
+  "needModifyNL": "false",
+  "raw_nl": "convert byte array to a hex string",
+  "correctness": 3,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static String bytesToHex(byte[] bytes)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 394,
+  "needModifyNL": "false",
+  "raw_nl": "Print a float and then flush the output stream.",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public void print(float x,OutputStream out)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 397,
+  "needModifyNL": "false",
+  "raw_nl": "Calculates combinatorial number C(n,m). ",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 2,
+  "signature": "public static int combinatorial(int n, int m)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 398,
+  "needModifyNL": "false",
+  "raw_nl": "检验用户名是否合法，只能包括a-z,A-Z,0-9和下划线_，不能以下划线结尾 用户名有最小长度和最大长度限制，比如用户名必须是4-20位",
+  "correctness": 3,
+  "quality": 2,
+  "maintainability": 2,
+  "signature": "public static boolean checkUsername(String username)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+{
+  "line_num": 401,
+  "needModifyNL": "false",
+  "raw_nl": "得到现在时间",
+  "correctness": 4,
+  "quality": 3,
+  "maintainability": 4,
+  "signature": "public static String getStringToday(String format)",
+  "Cyclomatic": -1,
+  "code_len": 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "task_id": 129,
+  "line_num": 6094,
+  "raw_nl": "获取当前系统时间 minute分钟后 的时间",
+  "raw_code": "public static String getNowDate(int minute) {\n    SimpleDateFormat formatter = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\n    Calendar c = Calendar.getInstance();\n    c.set(Calendar.MINUTE, c.get(Calendar.MINUTE) + minute);\n    return formatter.format(c.getTime());\n}",
+  "signature": "public String getNowDate(int minute)"
+}
+{
+  "task_id": 130,
+  "line_num": 6096,
+  "raw_nl": "Check the given value is in int range.",
+  "raw_code": "public static boolean isDecimalWithinIntRange(DecimalValue decimalValue) {\n    BigDecimal value = decimalValue.value;\n    return value.compareTo(RuntimeConstants.BINT_MAX_VALUE_BIG_DECIMAL_RANGE_MAX) < 0 && value.compareTo(RuntimeConstants.BINT_MIN_VALUE_BIG_DECIMAL_RANGE_MIN) > 0;\n}",
+  "signature": "public boolean isDecimalWithinIntRange(BigDecimal decimalValue)"
+}
+{
+  "task_id": 131,
+  "line_num": 6121,
+  "raw_nl": "Produces a new double array containing the elements between the start and end indices. The start index is inclusive, the end index exclusive. Null array input produces null output.",
+  "raw_code": "public static double[] subarray(final double[] array, int startIndexInclusive, int endIndexExclusive) {\n    if (array == null) {\n        return null;\n    }\n    if (startIndexInclusive < 0) {\n        startIndexInclusive = 0;\n    }\n    if (endIndexExclusive > array.length) {\n        endIndexExclusive = array.length;\n    }\n    final int newSize = endIndexExclusive - startIndexInclusive;\n    if (newSize <= 0) {\n        return EMPTY_DOUBLE_ARRAY;\n    }\n    final double[] subarray = new double[newSize];\n    System.arraycopy(array, startIndexInclusive, subarray, 0, newSize);\n    return subarray;\n}",
+  "signature": "public double[] subarray(final double[] array, int startIndexInclusive, int endIndexExclusive)"
+}
+{
+  "task_id": 132,
+  "line_num": 6212,
+  "raw_nl": "将微博时间字符串转换成yyyyMMddHHmmSS 微博时间字符串有： xx分钟前 今天 11:53 07月09日 13:36 2010-09-23 19:55:38",
+  "raw_code": "public static String parseDate(String weiboTimeStr) {\n    // 使用默认时区和语言环境获得一个日历。\n    Calendar currentTime = Calendar.getInstance();\n    if (weiboTimeStr.contains(\"分钟前\")) {\n        int minutes = Integer.parseInt(weiboTimeStr.split(\"分钟前\")[0]);\n        currentTime.add(Calendar.MINUTE, -minutes);\n        return simpleDateTimeFormat.format(currentTime.getTime());\n    } else if (weiboTimeStr.startsWith(\"今天\")) {\n        String[] time = weiboTimeStr.split(\"天\")[1].split(\":\");\n        int hour = Integer.parseInt(time[0].substring(1));\n        int minute = Integer.parseInt(time[1].substring(0, 2));\n        currentTime.set(Calendar.HOUR_OF_DAY, hour);\n        currentTime.set(Calendar.MINUTE, minute);\n        return simpleDateTimeFormat.format(currentTime.getTime());\n    } else if (weiboTimeStr.contains(\"月\")) {\n        String[] time = weiboTimeStr.split(\"日\")[1].split(\":\");\n        int dayIndex = weiboTimeStr.indexOf(\"日\") - 2;\n        int month = Integer.parseInt(weiboTimeStr.substring(0, 2));\n        int day = Integer.parseInt(weiboTimeStr.substring(dayIndex, dayIndex + 2));\n        int hour = Integer.parseInt(time[0].substring(1));\n        int minute = Integer.parseInt(time[1].substring(0, 2));\n        currentTime.set(Calendar.MONTH, month - 1);\n        currentTime.set(Calendar.DAY_OF_MONTH, day);\n        currentTime.set(Calendar.HOUR_OF_DAY, hour);\n        currentTime.set(Calendar.MINUTE, minute);\n        return simpleDateTimeFormat.format(currentTime.getTime());\n    } else if (weiboTimeStr.contains(\"-\")) {\n        return weiboTimeStr.replace(\"-\", \"\").replace(\":\", \"\").replace(\" \", \"\").substring(0, 14);\n    } else {\n        logger.info(\">> Error: Unknown time format - \" + weiboTimeStr);\n    }\n    return null;\n}",
+  "signature": "public String parseDate(String weiboTimeStr)"
+}
+{
+  "task_id": 133,
+  "line_num": 6215,
+  "raw_nl": "返回当月开始时间",
+  "raw_code": "public static long currentMonthStartUnixTime() {\n    Calendar monthStartCalendar = Calendar.getInstance();\n    monthStartCalendar.set(Calendar.DAY_OF_MONTH, 1);\n    monthStartCalendar.set(Calendar.HOUR_OF_DAY, 0);\n    monthStartCalendar.set(Calendar.MINUTE, 0);\n    monthStartCalendar.set(Calendar.SECOND, 0);\n    return monthStartCalendar.getTimeInMillis();\n}",
+  "signature": "public long currentMonthStartUnixTime()"
+}
+{
+  "task_id": 134,
+  "line_num": 6224,
+  "raw_nl": "Multiply Long and Double numbers.",
+  "raw_code": "private static Long multiply(Long number, Double multiplier) {\n    if (number == 0 || multiplier == 0) {\n        return 0L;\n    }\n    double bigNumber = Double.max(Math.abs(number), Math.abs(multiplier));\n    double smallNumber = Double.min(Math.abs(number), Math.abs(multiplier));\n    double maxMultiplier = Long.MAX_VALUE / bigNumber;\n    if (smallNumber < maxMultiplier) {\n        return Double.valueOf(number * multiplier).longValue();\n    } else {\n        if ((number > 0 && multiplier < 0) || (number < 0 && multiplier > 0)) {\n            return Long.MIN_VALUE;\n        } else {\n            return Long.MAX_VALUE;\n        }\n    }\n}",
+  "signature": "public Long multiply(Long number, Double multiplier)"
+}
+{
+  "task_id": 135,
+  "line_num": 6225,
+  "raw_nl": "Multiply two Short numbers.",
+  "raw_code": "private static Short multiply(Short a, Short b) {\n    if (a == 0 || b == 0) {\n        return 0;\n    }\n    int bigNumber = Integer.max(Math.abs(a), Math.abs(b));\n    int smallNumber = Integer.min(Math.abs(a), Math.abs(b));\n    int maxMultiplier = Short.MAX_VALUE / bigNumber;\n    if (smallNumber < maxMultiplier) {\n        return Integer.valueOf(a * b).shortValue();\n    } else {\n        if ((a > 0 && b < 0) || (a < 0 && b > 0)) {\n            return Short.MIN_VALUE;\n        } else {\n            return Short.MAX_VALUE;\n        }\n    }\n}",
+  "signature": "public Short multiply(Short a, Short b)"
+}
+{
+  "task_id": 136,
+  "line_num": 6230,
+  "raw_nl": "Attempt to find a field on the supplied Class with the supplied name and/or type. Searches all superclasses up to Object.",
+  "raw_code": "public static Field findField(Class clazz, String name, Class type) {\n    Class searchType = clazz;\n    while (!Object.class.equals(searchType) && searchType != null) {\n        Field[] fields = searchType.getDeclaredFields();\n        for (int i = 0; i < fields.length; i++) {\n            Field field = fields[i];\n            if ((name == null || name.equals(field.getName())) && (type == null || type.equals(field.getType()))) {\n                return field;\n            }\n        }\n        searchType = searchType.getSuperclass();\n    }\n    return null;\n}",
+  "signature": "public Field findField(Class clazz, String name, Class type)"
+}
+{
+  "task_id": 137,
+  "line_num": 6319,
+  "raw_nl": "获取request的IP地址",
+  "raw_code": "public String getIPAddr(HttpServletRequest request) {\n    // 先从nginx自定义配置获取\n    String ip = request.getHeader(\"X-real-ip\");\n    if (ip == null || ip.length() == 0 || \"unknown\".equalsIgnoreCase(ip)) {\n        ip = request.getHeader(\"x-forwarded-for\");\n    }\n    if (ip == null || ip.length() == 0 || \"unknown\".equalsIgnoreCase(ip)) {\n        ip = request.getHeader(\"Proxy-Client-IP\");\n    }\n    if (ip == null || ip.length() == 0 || \"unknown\".equalsIgnoreCase(ip)) {\n        ip = request.getHeader(\"WL-Proxy-Client-IP\");\n    }\n    if (ip == null || ip.length() == 0 || \"unknown\".equalsIgnoreCase(ip)) {\n        ip = request.getRemoteAddr();\n    }\n    return ip;\n}",
+  "signature": "public String getIPAddr(HttpRequest request)"
+}
+{
+  "task_id": 138,
+  "line_num": 6377,
+  "raw_nl": "Convert byte array to binary String",
+  "raw_code": "public static String toBinary(final byte[] pBytes) {\n    String ret = null;\n    if (pBytes != null && pBytes.length > 0) {\n        BigInteger val = new BigInteger(bytesToStringNoSpace(pBytes), HEXA);\n        StringBuilder build = new StringBuilder(val.toString(2));\n        // left pad with 0 to fit byte size\n        for (int i = build.length(); i < pBytes.length * BitUtils.BYTE_SIZE; i++) {\n            build.insert(0, 0);\n        }\n        ret = build.toString();\n    }\n    return ret;\n}",
+  "signature": "public String toBinary(byte[] pBytes) "
+}
+{
+  "task_id": 139,
+  "line_num": 6412,
+  "raw_nl": "Convert arguments of a method (signature) to an array of Type objects.",
+  "raw_code": "public static Type[] getArgumentTypes(String signature) {\n    ArrayList<Type> vec = new ArrayList<Type>();\n    int index;\n    Type[] types;\n    try {\n        // Read all declarations between for `(' and `)'\n        if (signature.charAt(0) != '(')\n            throw new ClassFormatException(\"Invalid method signature: \" + signature);\n        // current string position\n        index = 1;\n        while (signature.charAt(index) != ')') {\n            vec.add(getType(signature.substring(index)));\n            // update position\n            index += consumed_chars;\n        }\n    } catch (StringIndexOutOfBoundsException e) {\n        // Should never occur\n        throw new ClassFormatException(\"Invalid method signature: \" + signature);\n    }\n    types = new Type[vec.size()];\n    vec.toArray(types);\n    return types;\n}",
+  "signature": "public Type[] getArgumentTypes(String signature)"
+}
+{
+  "task_id": 140,
+  "line_num": 6524,
+  "raw_nl": "Convert a partial buffer to a String.",
+  "raw_code": "public static String toString(ByteBuffer buffer, int position, int length, Charset charset) {\n    if (buffer == null)\n        return null;\n    byte[] array = buffer.hasArray() ? buffer.array() : null;\n    if (array == null) {\n        ByteBuffer ro = buffer.asReadOnlyBuffer();\n        ro.position(position);\n        ro.limit(position + length);\n        byte[] to = new byte[length];\n        ro.get(to);\n        return new String(to, 0, to.length, charset);\n    }\n    return new String(array, buffer.arrayOffset() + position, length, charset);\n}",
+  "signature": "public String toString(ByteBuffer buffer, int position, int length, Charset charset)"
+}
+{
+  "task_id": 141,
+  "line_num": 6599,
+  "raw_nl": "两个时间之间相差距离多少天,时间格式yyyy-MM-dd",
+  "raw_code": "public static long getDistanceDays(String str1, String str2) throws Exception {\n    DateFormat df = new SimpleDateFormat(\"yyyy-MM-dd\");\n    Date one;\n    Date two;\n    long days = 0;\n    try {\n        one = df.parse(str1);\n        two = df.parse(str2);\n        long time1 = one.getTime();\n        long time2 = two.getTime();\n        long diff;\n        if (time1 < time2) {\n            diff = time2 - time1;\n        } else {\n            diff = time1 - time2;\n        }\n        days = diff / (1000 * 60 * 60 * 24);\n    } catch (ParseException e) {\n        e.printStackTrace();\n    }\n    return days;\n}",
+  "signature": "public long getDistanceDays(String str1, String str2)"
+}
+{
+  "task_id": 142,
+  "line_num": 6638,
+  "raw_nl": "获取url的顶级域名",
+  "raw_code": "public static String getTopDomain(String url) {\n    if (StringUtils.isEmpty(url)) {\n        return null;\n    }\n    try {\n        if (!url.startsWith(\"http://\") && !url.startsWith(\"https://\")) {\n            url = \"http://\" + url;\n        }\n        // 获取值转换为小写\n        String host = new URL(url).getHost().toLowerCase();\n        Matcher matcher = pattern.matcher(host);\n        while (matcher.find()) {\n            return matcher.group();\n        }\n    } catch (MalformedURLException e) {\n        e.printStackTrace();\n    }\n    return null;\n}",
+  "signature": "public String getTopDomain(String url)"
+}
+{
+  "task_id": 143,
+  "line_num": 8500,
+  "raw_nl": "Returns true if the given String matches to one of the provided Patterns, false otherwise.",
+  "raw_code": "public static boolean matchesPattern(String _string, Pattern[] _patterns) {\n    if (_string == null)\n        return false;\n    for (Pattern p : _patterns) {\n        final Matcher m = p.matcher(_string);\n        if (m.matches()) {\n            return true;\n        }\n    }\n    return false;\n}",
+  "signature": "public boolean matchesPattern(String _string, Pattern[] _patterns)"
+}
+{
+  "task_id": 144,
+  "line_num": 8506,
+  "raw_nl": "Extracts all the files in the given zip file to the input destination path. If zip file does not exist or destination path is invalid then an exception is thrown.",
+  "raw_code": "public void extractAll(String destPath, UnzipParameters unzipParameters) throws ZipException {\n    if (!Zip4jUtil.isStringNotNullAndNotEmpty(destPath)) {\n        throw new ZipException(\"output path is null or invalid\");\n    }\n    if (!Zip4jUtil.checkOutputFolder(destPath)) {\n        throw new ZipException(\"invalid output path\");\n    }\n    if (zipModel == null) {\n        readZipInfo();\n    }\n    // Throw an exception if zipModel is still null\n    if (zipModel == null) {\n        throw new ZipException(\"Internal error occurred when extracting zip file\");\n    }\n    if (progressMonitor.getState() == ProgressMonitor.STATE_BUSY) {\n        throw new ZipException(\"invalid operation - Zip4j is in busy state\");\n    }\n    Unzip unzip = new Unzip(zipModel);\n    unzip.extractAll(unzipParameters, destPath, progressMonitor, runInThread);\n}",
+  "signature": "public void extractAll(String destPath, String zipName)"
+}
+{
+  "task_id": 145,
+  "line_num": 8550,
+  "raw_nl": "判断两个数组的内容是否相等 用于equals的比较",
+  "raw_code": "public static boolean equals(Object[] array, Object[] other) {\n    int length = array.length;\n    if (length != other.length) {\n        return false;\n    }\n    for (int i = 0; i < length; i++) {\n        if (!KernelObject.equals(array[i], other[i])) {\n            return false;\n        }\n    }\n    return true;\n}",
+  "signature": "public boolean equals(Object[] array, Object[] other)"
+}
+{
+  "task_id": 146,
+  "line_num": 8553,
+  "raw_nl": "Returns a set with all unique methodNames of methods.",
+  "raw_code": "public static Set<String> getMethods(ClassLoader classLoader, String className) {\n    Set<String> targetMethods = new HashSet<>();\n    if (!methods.containsKey(classLoader))\n        return targetMethods;\n    for (String currentClass : methods.get(classLoader).keySet()) {\n        if (currentClass.equals(className) || currentClass.startsWith(className + \"$\"))\n            targetMethods.addAll(methods.get(classLoader).get(currentClass));\n    }\n    return targetMethods;\n}",
+  "signature": "public Set<String> getMethods(ClassLoader classLoader, String className)"
+}
+{
+  "task_id": 147,
+  "line_num": 8577,
+  "raw_nl": "Returns the pid of the task",
+  "raw_code": "String getPid(TaskRunner t) {\n    if (t != null && t.getTask() != null) {\n        if (t.getTask().isMapTask()) {\n            JVMId id = mapJvmManager.runningTaskToJvm.get(t);\n            if (id != null) {\n                return mapJvmManager.jvmIdToPid.get(id);\n            }\n        } else {\n            JVMId id = reduceJvmManager.runningTaskToJvm.get(t);\n            if (id != null) {\n                return reduceJvmManager.jvmIdToPid.get(id);\n            }\n        }\n    }\n    return null;\n}",
+  "signature": "String getPid(FutureTask t)"
+}
+{
+  "task_id": 148,
+  "line_num": 8596,
+  "raw_nl": "Swaps the elements at the specified positions in the specified list. (If the specified positions are equal, invoking this method leaves the list unchanged.)",
+  "raw_code": "public static <E> void swap(@NonNull List<E> list, int i, int j) {\n    Preconditions.checkArgument(i > 0, StringTemplates.indexStyleSupplier(\"index i is illegal : {}\"), i);\n    Preconditions.checkArgument(j > 0, StringTemplates.indexStyleSupplier(\"index j is illegal : {}\"), j);\n    final List<E> l = list;\n    l.set(i, l.set(j, l.get(i)));\n}",
+  "signature": "public <E> void swap(List<E> list, int i, int j)"
+}
+{
+  "task_id": 149,
+  "line_num": 8606,
+  "raw_nl": "Get the radian between current line(determined by point A and B) and horizontal line.",
+  "raw_code": "public static float getRadian(Point A, Point B) {\n    float lenA = B.x - A.x;\n    float lenB = B.y - A.y;\n    float lenC = (float) Math.sqrt(lenA * lenA + lenB * lenB);\n    float radian = (float) Math.acos(lenA / lenC);\n    radian = radian * (B.y < A.y ? -1 : 1);\n    return radian;\n}",
+  "signature": "public float getRadian(Point A, Point B)"
+}
+{
+  "task_id": 150,
+  "line_num": 8681,
+  "raw_nl": "Skips over and discards n bytes of data from the input stream",
+  "raw_code": "public synchronized long skip(long n) throws IOException {\n    if (n <= 0) {\n        return 0;\n    }\n    seek(getPos() + n);\n    return n;\n}",
+  "signature": "public long skip(long n)"
+}
+{
+  "task_id": 151,
+  "line_num": 8693,
+  "raw_nl": "Converts from an int array to an Integer array.",
+  "raw_code": "public static Integer[] asObjectArray(int[] array) {\n    Integer[] objectArray = new Integer[array.length];\n    for (int i = 0; i < array.length; i++) objectArray[i] = array[i];\n    return objectArray;\n}",
+  "signature": "public Integer[] asObjectArray(int[] array)"
+}
+{
+  "task_id": 152,
+  "line_num": 8707,
+  "raw_nl": "生成32位的MD5码",
+  "raw_code": "public static String toMd5Code(String str) {\n    String result = null;\n    if (null != str) {\n        try {\n            MessageDigest messageDigest = MessageDigest.getInstance(\"MD5\");\n            messageDigest.update(str.getBytes());\n            byte[] values = messageDigest.digest();\n            StringBuffer strBuffer = new StringBuffer();\n            for (byte value : values) {\n                int bt = value & 0xff;\n                if (bt < 16)\n                    strBuffer.append(0);\n                strBuffer.append(Integer.toHexString(bt));\n            }\n            result = strBuffer.toString();\n        } catch (Exception e) {\n            throw new UtilsRuntimeException(\"生成32位的MD5码失败[\" + e.toString() + \"]\");\n        }\n    }\n    return result;\n}",
+  "signature": "public String toMd5Code(String str)"
+}
+{
+  "task_id": 153,
+  "line_num": 8796,
+  "raw_nl": "计算 C2 = M xor t",
+  "raw_code": "private static byte[] calculateC2(byte[] m, byte[] t) {\n    if (m == null || m.length != t.length) {\n        return null;\n    }\n    byte[] bufOut = new byte[m.length];\n    for (int i = 0; i < m.length; i++) {\n        bufOut[i] = (byte) (m[i] ^ t[i]);\n    }\n    return bufOut;\n}",
+  "signature": "public byte[] calculateC2(byte[] m, byte[] t)"
+}
