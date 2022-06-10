@@ -1,7 +1,7 @@
 package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
-import com.aixcode.sampleHelperClass.sample27.TestFor27;
+import com.aixcode.sampleHelper.sample27.TestFor27;
 import com.aixcode.autoTest.version1.copilot.Copilot95;
 
 import java.beans.JavaBean;

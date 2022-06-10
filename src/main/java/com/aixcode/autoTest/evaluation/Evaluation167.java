@@ -1,7 +1,7 @@
 package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
-import com.aixcode.sampleHelperClass.Student;
+import com.aixcode.sampleHelper.Student;
 
 import java.util.Arrays;
 import java.util.List;

@@ -194,7 +194,7 @@ public abstract class GenerateMethodBase {
     public <T> List<T> array2List(T[] array) throws Exception {throw new RuntimeException("Not implemented");}
     public List<String> getWeekDate() throws Exception {throw new RuntimeException("Not implemented");}
     public long remaining(ByteBuffer[] buffers) throws Exception {throw new RuntimeException("Not implemented");}
-    public String getLunarDate(int year_log, int month_log, int day_log) throws Exception {throw new RuntimeException("Not implemented");}
+    public String getLunarDate(int year, int month, int day) throws Exception {throw new RuntimeException("Not implemented");}
     public String rvZeroAndDot(String s) throws Exception {throw new RuntimeException("Not implemented");}
     public String bigDecimalSubtract(String str, String str1) throws Exception {throw new RuntimeException("Not implemented");}
     public String getFileExtension(File file) throws Exception {throw new RuntimeException("Not implemented");}

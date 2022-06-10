@@ -3,7 +3,7 @@ package com.aixcode.autoTest.evaluation;
 
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
-import com.aixcode.sampleHelperClass.Male;
+import com.aixcode.sampleHelper.Male;
 
 import java.util.List;
 

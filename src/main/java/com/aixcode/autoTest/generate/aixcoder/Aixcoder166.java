@@ -5,6 +5,9 @@ import com.aixcode.autoTest.GenerateMethodBase;
 import java.lang.reflect.Field;
 
 public class Aixcoder166 extends GenerateMethodBase {
+    /**
+     * 通过反射为对象的对应字段注入值
+     */
     public<T> T initByReflect(String name, Object value, T t) {
         if (null == t) {
             throw new NullPointerException("t can not be null");

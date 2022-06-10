@@ -1,4 +1,4 @@
-package com.aixcode.sampleHelperClass;
+package com.aixcode.sampleHelper;
 
 public class Person <T,M>{
     private T name;

@@ -1,4 +1,4 @@
-package com.aixcode.sampleHelperClass;
+package com.aixcode.sampleHelper;
 
 import java.util.List;
 

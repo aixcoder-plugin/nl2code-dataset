@@ -1,4 +1,4 @@
-package com.aixcode.sampleHelperClass.sample27;
+package com.aixcode.sampleHelper.sample27;
 
 import java.beans.JavaBean;
 

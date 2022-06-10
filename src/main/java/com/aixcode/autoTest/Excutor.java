@@ -11,15 +11,15 @@ public class Excutor {
             //执行的line_num,只需要修改这个值即可
             String line_num="76";
 //            evaluationOneExample("com.aixcode.autoTest.generate.copilot","GenerateMethod",line_num);
-//            evaluationOneExample("com.aixcode.autoTest.generate.aixcoder","Aixcoder",line_num);
+            evaluationOneExample("com.aixcode.autoTest.generate.aixcoder","Aixcoder",line_num);
 //            evaluationOneExample("com.aixcode.autoTest.generate","GenerateMethod",line_num);
 //            evaluationOneExample("com.aixcode.autoTest.generate.aixcoderFirstHalf","AixcoderAuto",line_num);
 
 //            runAllTestV2("main.com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",104,186);
 //            runAllTestV2("main.com.aixcode.autoTest.generate.aixcoder","Aixcoder","Aixcoder模型",104,186);
 
-            runAllTestV2("com.aixcode.autoTest.generate","GenerateMethod","copilot前102个例子",0,103);
-            runAllTestV2("com.aixcode.autoTest.generate.aixcoderFirstHalf","AixcoderAuto","aixcoder前102个例子",0,103);
+//            runAllTestV2("com.aixcode.autoTest.generate","GenerateMethod","copilot前102个例子",0,103);
+//            runAllTestV2("com.aixcode.autoTest.generate.aixcoderFirstHalf","AixcoderAuto","aixcoder前102个例子",0,103);
 
 //            runAllTestV2("com.aixcode.autoTest.aixcoderV3","AixcoderNew","第三版模型",0,103);
 //            runAllTestV2("com.aixcode.autoTest.aixcoderV2","AixcoderOld","第二版模型",0,103);
@@ -47,7 +47,7 @@ public class Excutor {
 
     }
 
-    private static void evaluationOneExample(String basePackage,String prefix,String fileId){
+    public static void evaluationOneExample(String basePackage,String prefix,String fileId){
         try {
             int[] result= evaluationGenerateMethod(fileId,basePackage,prefix);
             System.out.println(prefix+" result:"+result[0]+"/"+result[1]);
@@ -83,8 +83,8 @@ public class Excutor {
                     }
                 }
             }
-            System.out.println(message+"模型测试结果：部分通过归一化求和:"+copilot_score+"  完全通过的测试用例数:"+CopilotExacttCount);
-            System.out.println("totalCount:"+totalCount);
+//            System.out.println(message+"模型测试结果：部分通过归一化求和:"+copilot_score+"  完全通过的测试用例数:"+CopilotExacttCount);
+//            System.out.println("totalCount:"+totalCount);
             return new double[]{copilot_score,CopilotExacttCount,totalCount};
         }catch (Exception e){
             e.printStackTrace();
