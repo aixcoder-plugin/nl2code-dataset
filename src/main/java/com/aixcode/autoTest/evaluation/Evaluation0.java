@@ -19,34 +19,31 @@ public class Evaluation0 extends AbstractBaseEvaluation {
             add("a");
             add("b");
             add("c");
-        }};
+        }};// one comma + and
         List<String> list2 = new ArrayList<String>(){{
             add("d");
             add("e");
-            add("f");
-        }};
+        }};// only and
         List<String> list3 = new ArrayList<String>(){{
             add("你");
-            add("我");
-            add("他");
-        }};
-        List<String> list4 = new ArrayList<String>(){{
+        }}; //no comma and no and
+        List<String> list4 = new ArrayList<String>();//list length is 0
+
+        List<String> list5 = new ArrayList<String>(){{
             add("1");
             add("2");
             add("3");
-        }};
-        List<String> list5 = new ArrayList<String>(){{
             add("4");
             add("5");
             add("6");
-        }};
+        }};// multiple comma + and
 
         Map<List<String>,String> map = new HashMap<List<String>,String>(){{
             put(list1,"a,bandc");
-            put(list2,"d,eandf");
-            put(list3,"你,我and他");
-            put(list4,"1,2and3");
-            put(list5,"4,5and6");
+            put(list2,"dande");
+            put(list3,"你");
+            put(list4,"");
+            put(list5,"1,2,3,4,5and6");
         }};
         int pass_count = 0;
 
@@ -54,6 +51,9 @@ public class Evaluation0 extends AbstractBaseEvaluation {
             try{
                 if(solution.collectionToCommaDelimitedString(entry.getKey()).replaceAll(" ","").equals(entry.getValue())){
                     pass_count++;
+                }else{
+                    System.out.println(solution.collectionToCommaDelimitedString(entry.getKey()));
+                    System.out.println(entry.getValue());
                 }
             }catch(Exception e){
 
