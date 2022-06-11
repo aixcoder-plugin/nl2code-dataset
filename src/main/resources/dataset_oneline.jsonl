@@ -52,13 +52,11 @@
 {"task_id": 51, "raw_nl": "Returns a hash code value for this bit array.", "signature": "public int hashCode(byte[] byteArr)", "line_num": 380}
 {"task_id": 52, "raw_nl": "Removes the entry with the specified key from this map if present.", "signature": "public void remove(Map<Integer, String> mapObj, Integer key)", "line_num": 381}
 {"task_id": 53, "raw_nl": "Convert a primitive input array into its object array version (e.g. from int[] to Integer[]).", "signature": "public static Integer[] toObjectArray(int[] array)", "line_num": 383}
-{"task_id": 54, "raw_nl": "Converting object to JSON string. If errors appears throw MeshinException and RuntimeException.", "signature": "public static String toJson(Object object)", "line_num": 384}
 {"task_id": 55, "raw_nl": "判断字符串是否只含字母和数字", "signature": "public static boolean isLetterOrDigit(String str)", "line_num": 386}
 {"task_id": 56, "raw_nl": "判断是否只含字母", "signature": "public static boolean isLetter(char c)", "line_num": 387}
 {"task_id": 57, "raw_nl": "Join 2 path elements if path separator not present at the end of first path element，else return the first element.", "signature": "public static String joinPath(String path1, String path2)", "line_num": 388}
 {"task_id": 58, "raw_nl": "Converts an int into an array of byte using the default (little endian, Lsb0) byte and bit ordering.", "signature": "public static byte[] intToByteArray(int value)", "line_num": 389}
 {"task_id": 60, "raw_nl": "convert byte array to a hex string", "signature": "public static String bytesToHex(byte[] bytes)", "line_num": 393}
-{"task_id": 61, "raw_nl": "Print a float and then flush the output stream.", "signature": "public void print(float x,OutputStream out)", "line_num": 394}
 {"task_id": 62, "raw_nl": "Calculates combinatorial number C(n,m). ", "signature": "public static int combinatorial(int n, int m)", "line_num": 397}
 {"task_id": 63, "raw_nl": "检验用户名是否合法，只能包括a-z,A-Z,0-9和下划线_，不能以下划线结尾 用户名有最小长度和最大长度限制，比如用户名必须是4-20位", "signature": "public static boolean checkUsername(String username)", "line_num": 398}
 {"task_id": 64, "raw_nl": "得到现在时间", "signature": "public static String getStringToday(String format)", "line_num": 401}
