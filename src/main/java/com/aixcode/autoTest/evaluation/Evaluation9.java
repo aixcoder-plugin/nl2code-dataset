@@ -18,23 +18,19 @@ public class Evaluation9 extends AbstractBaseEvaluation {
     @Override
     public int[] evaluation() {
         try {
+            Date date = new Date();
             DateFormat format =  new SimpleDateFormat( "yyyy-MM-dd");
-            Date date1 = format.parse("2022-01-01");
-            Date date2 = format.parse("2022-01-02");
-            Date date3 = format.parse("2022-01-03");
-            Date date4 = format.parse("2022-01-04");
-            Date date5 = format.parse("2022-01-05");
-            Map<Date,String> map = new HashMap<Date, String>(){{
-                put(date1,"2022-01-01");
-                put(date2, "2022-01-02");
-                put(date3, "2022-01-03");
-                put(date4, "2022-01-04");
-                put(date5, "2022-01-05");
+            Map<String,String> map = new HashMap<String, String>(){{
+                put("yyyy-MM-dd",new SimpleDateFormat("yyyy-MM-dd").format(date));
+                put("yyyy-MM-dd HH:mm:ss", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date));
+                put("yyyy-MM-dd HH:mm:ss zzzz", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss zzzz").format(date));
+                put("EEEE yyyy-MM-dd HH:mm:ss zzzz", new SimpleDateFormat("EEEE yyyy-MM-dd HH:mm:ss zzzz").format(date));
+                put("yyyy-MM-dd HH:mm:ss.SSSZ", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSZ").format(date));
             }};
             int pass_count = 0;
-            for (Map.Entry<Date, String> entry : map.entrySet()){
+            for (Map.Entry<String, String> entry : map.entrySet()){
                 try {
-                    if (solution.date2String(entry.getKey(),format).equals(entry.getValue())){
+                    if (solution.date2String(date,new SimpleDateFormat(entry.getKey())).equals(entry.getValue())){
                         pass_count++;
                     }
                 }catch (Exception e) {

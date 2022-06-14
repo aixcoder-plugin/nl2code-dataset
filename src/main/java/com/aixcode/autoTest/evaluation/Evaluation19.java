@@ -15,20 +15,22 @@ public class Evaluation19 extends AbstractBaseEvaluation {
     @Override
     public int[] evaluation() {
         Map<String,Integer> map = new HashMap<String,Integer>(){{
-            put("a=a",1);
-            put("a=a&b=b",2);
-            put("a=a&b=b&c=c",3);
-            put("a=a&b=b&c=c&d=d",4);
-            put("a=a&b=b&c=c&d=d&e=e",5);
+            put("https://aixcoder.com?id=1",1); //no &
+            put("https://aixcoder.com?id=1&rt=123456",2); //has &
+            put("https://aixcoder.com?userName=miaoxw&password=123456&enc=UTF-8",3); // multiple &
+            put("https://aixcoder.com?id=1&id=2",1);//have duplicate id
+            put("https://aixcoder.com",0);//no param
         }};
         int pass_count = 0;
         for (Map.Entry<String,Integer> entry : map.entrySet()){
             try {
-                if (solution.parseQueryString(entry.getKey()).size() == entry.getValue()){
-                    pass_count++;
+                Map<String,String> params = solution.parseQueryString(entry.getKey());
+                if(params != null && params.size() == entry.getValue()){
+                    pass_count ++;
+                }else if(params == null && entry.getValue() == 0){
+                    pass_count ++;
                 }
             }catch (Exception e) {
-
             }
         }
         return new int[]{pass_count,map.size()};

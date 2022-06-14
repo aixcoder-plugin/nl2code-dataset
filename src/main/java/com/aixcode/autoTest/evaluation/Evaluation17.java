@@ -24,7 +24,7 @@ public class Evaluation17 extends AbstractBaseEvaluation {
         SortedMap<String,Charset> setMap = Charset.availableCharsets();
 
         Map<String, String> map = new HashMap<String,String>(){{
-            put(name1,name1);
+            put(name1, name1);
             put(name2, name2);
             put(name3, name3);
             put(name4, name4);

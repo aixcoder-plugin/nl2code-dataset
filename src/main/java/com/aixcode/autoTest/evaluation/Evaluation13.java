@@ -2,8 +2,7 @@ package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Evaluation13 extends AbstractBaseEvaluation {
 
@@ -14,27 +13,54 @@ public class Evaluation13 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
-        String[] alphabet = {"abcd","efgh","ijkl","1234","7890"};
+        String[] alphabet = {"abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ","0123456789","abcABC012","!@#$%^&*()_+-=[]{}|;':,./<>?", ""};
 
         int length = 10;
         Map<Integer,String> map = new HashMap<Integer,String>(){{
-            put(0,"x");
-            put(1,"y");
-            put(2,"z");
-            put(3,"5");
-            put(4,"6");
+            put(10,"abcdefghijklmnopqrstuvwxyz");
+            put(11,"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+            put(12,"0123456789");
+            put(1,"abcABC012");
+            put(14,"!@#$%^&*()_+-=[]{}|;':,./<>?");
+            put(5,"");
         }};
         int pass_count = 0;
 
         for(Map.Entry<Integer,String> entry:map.entrySet()){
             try{
-                if(!solution.randomString(length,alphabet[entry.getKey()]).contains(entry.getValue())){
+                String resultStr = solution.randomString(length, entry.getValue());
+                if(entry.getValue() == "" && (resultStr == "" || resultStr == null)){
+                    pass_count++;
+                } else if(resultStr.length() == length && isCharInAlphabet(resultStr,entry.getValue()))
+                {
                     pass_count++;
                 }
             }catch(Exception e){
-
+                e.printStackTrace();
             }
         }
         return new int[]{pass_count,map.entrySet().size()};
+    }
+
+    private boolean isCharInAlphabet(String target,String alphabet){
+        if(target==null||alphabet==null){
+            return false;
+        }
+        char[] targetChars = target.toCharArray();
+        Set<Character> alphabetSet = new HashSet<Character>();
+        for(char c:alphabet.toCharArray()){
+            alphabetSet.add(c);
+        }
+        boolean isContain = true;
+        if(targetChars.length < 1){
+            isContain = false;
+        }
+        for(int i=0;i<targetChars.length;i++){
+            if(!alphabetSet.contains(targetChars[i])){
+                isContain = false;
+                break;
+            }
+        }
+        return isContain;
     }
 }

@@ -14,43 +14,50 @@ public class Evaluation21 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
-        Map<String,Object> map = new HashMap<String,Object>(){{
+        Map<String,Object> mapPerperties = new HashMap<String,Object>(){{
             put("a","a");
             put("b","b");
             put("c","c");
             put("d","d");
             put("e","e");
         }};
-        Map<String,Object> m = new HashMap<String,Object>(){{
-            put("c","a");
-            put("d","b");
-            put("e","c");
-            put("f","x");
-            put("g","y");
+        Map<String,Object> mAdditional = new HashMap<String,Object>(){{
+            put("c","a");//existed， value replaced
+            put("d",null); //existed， value is null
+            put("e","e"); //existed， value not changed
+            put("f","x");//non-existed key， add it
+            put("g",null);//non-existed key， add it， value is null
         }};
 
         int pass_count = 0;
 
-        for(Map.Entry<String,Object> entry:m.entrySet()){
+        for(Map.Entry<String,Object> entry:mAdditional.entrySet()){
             try{
-                if(null == map.get(entry.getKey())){
-                    solution.putAdditionalProperty(entry.getKey(),entry.getValue(),map);
-                    if (map.get(entry.getKey()).equals(entry.getValue())){
+                if(null == mapPerperties.get(entry.getKey())){
+                    solution.putAdditionalProperty(entry.getKey(),entry.getValue(),mapPerperties);
+                    if (entry.getValue() != null && mapPerperties.get(entry.getKey()).equals(entry.getValue())){
                         pass_count++;
+                    }else if(entry.getValue() == null && mapPerperties.get(entry.getKey()) == null){
+                        pass_count++;
+                    }else {
+                        System.out.println(entry.getValue() + " " + mapPerperties.get(entry.getKey()));
                     }
+
                 }else{
-                    Object value = map.get(entry.getKey());
-                    solution.putAdditionalProperty(entry.getKey(),entry.getValue(),map);
-                    Object newValue = map.get(entry.getKey());
+                    Object value = mapPerperties.get(entry.getKey());
+                    solution.putAdditionalProperty(entry.getKey(),entry.getValue(),mapPerperties);
+                    Object newValue = mapPerperties.get(entry.getKey());
                     if (!value.equals(newValue)){
+                        pass_count++;
+                    }else if(entry.getValue().equals(newValue)){
                         pass_count++;
                     }
                 }
-                //assertEquals(checkUsername(entry.getKey()),entry.getValue());
-            }catch(Exception e){
 
+            }catch(Exception e){
+                e.printStackTrace();
             }
         }
-        return new int[]{pass_count,m.entrySet().size()};
+        return new int[]{pass_count,mAdditional.entrySet().size()};
     }
 }

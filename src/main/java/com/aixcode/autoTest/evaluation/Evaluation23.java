@@ -16,16 +16,16 @@ public class Evaluation23 extends AbstractBaseEvaluation {
     public int[] evaluation() {
         Float result = 5f;
         float[] f1 = {0,0,3,4};
-        float[] f2 = {1,1,4,5};
-        float[] f3 = {2,3,5,7};
-        float[] f4 = {0,0,4,3};
-        float[] f5 = {1,1,5,4};
+        float[] f2 = {-1,1,2,5};// X negative point location
+        float[] f3 = {2,-3,5,1};// Y positive point location
+        float[] f4 = {0,0,-4,-3}; // X， Y All negative
+        float[] f5 = {1,1,1,1}; // 0 distance
         Map<float[],Float> map = new HashMap<float[],Float>(){{
             put(f1,result);
             put(f2,result);
             put(f3,result);
             put(f4,result);
-            put(f5,result);
+            put(f5,0f);
         }};
         int pass_count = 0;
         for (Map.Entry<float[],Float> entry: map.entrySet()){

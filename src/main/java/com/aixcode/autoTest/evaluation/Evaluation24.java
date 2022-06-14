@@ -21,16 +21,29 @@ public class Evaluation24 extends AbstractBaseEvaluation {
     public int[] evaluation() {
         int pass_count = 0 ;
         List<String> list1 = new ArrayList<String>(){{add("a"); add("b");}};
-        List<String> list2 = new ArrayList<String>(){{add("b"); add("c");}};
-        List<String> list3 = new ArrayList<String>(){{add("c"); add("d");}};
-        List<String> list4 = new ArrayList<String>(){{add("d"); add("e");}};
-        List<String> list5 = new ArrayList<String>(){{add("e"); add("f");}};
+        List<String> list2 = new ArrayList<String>(){{add(""); add("c");}};
+        List<String> list3 = new ArrayList<String>(){{add("      "); add("d");}};
+
+        List<String> list4 = new ArrayList<String>(){{
+            StringBuilder sb = new StringBuilder();
+            for(int i = 0; i < 1024; i++) {
+                sb.append("a");
+            }
+            add(sb.toString());//1024个a
+        }};
+        List<String> list5 = new ArrayList<String>(){{
+            StringBuilder sb = new StringBuilder();
+            for(int i = 0; i < 1025; i++) {
+                sb.append("b");
+            }
+            add(sb.toString());//1025个b
+        }};
         Map<List<String>,String> map = new HashMap<List<String>,String>(){{
             put(list1, "a");
-            put(list2, "b");
-            put(list3, "c");
-            put(list4, "d");
-            put(list5, "e");
+            put(list2, "");
+            put(list3, "      ");
+            put(list4, list4.get(0));
+            put(list5, list5.get(0));
         }};
         for (Map.Entry<List<String>, String> entry : map.entrySet()){
             try {
@@ -43,6 +56,8 @@ public class Evaluation24 extends AbstractBaseEvaluation {
                     while ((line = br.readLine())!= null){
                         if (line.equals(entry.getValue())){
                             pass_count++;
+                        }else {
+                            System.out.println(line + " " + entry.getValue());
                         }
                         break ;
                     }

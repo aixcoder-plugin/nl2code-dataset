@@ -4,6 +4,7 @@ import com.aixcode.autoTest.AbstractBaseEvaluation;
 
 import java.io.File;
 import java.nio.file.Files;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,12 +17,13 @@ public class Evaluation3 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
+        String randomStr = new Date().getTime() + "";
         Map<String,String> map = new HashMap<String,String>(){{
             put("a","a.txt");
-            put("b","b.txt");
-            put("c", "c.txt");
-            put("d", "d.txt");
-            put("e", "e.txt");
+            put("# title \n test","b.md");
+            put("<html></html>", "c.html");
+            put("", "d.css");
+            put("print('hello world')", randomStr + "e.py");
         }};
         int pass_count = 0;
         for (Map.Entry<String,String> entry : map.entrySet()){

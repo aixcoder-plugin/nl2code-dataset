@@ -14,17 +14,17 @@ public class Evaluation5 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
-        float[] f1 = {1,3,2};
-        float[] f2 = {3,3,1};
-        float[] f3 = {2,3,1};
-        float[] f4 = {4,3,2};
-        float[] f5 = {5,3,4};
+        float[] f1 = {1.00001f,1,0.9999f};
+        float[] f2 = {0,-1,-0.000001f};
+        float[] f3 = {Float.MIN_VALUE,3,1};
+        float[] f4 = {-4,-3,Float.MAX_VALUE};
+        float[] f5 = {Float.MIN_NORMAL,Float.MIN_NORMAL,Float.MIN_NORMAL};
         Map<float[],Float> map = new HashMap<float[],Float>(){{
-            put(f1,3f);
-            put(f2,3f);
+            put(f1,1.00001f);
+            put(f2,0f);
             put(f3,3f);
-            put(f4,4f);
-            put(f5,5f);
+            put(f4,Float.MAX_VALUE);
+            put(f5,Float.MIN_NORMAL);
         }};
         int pass_count = 0;
 

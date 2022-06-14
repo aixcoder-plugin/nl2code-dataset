@@ -13,24 +13,35 @@ public class Evaluation1 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
-        Map<Integer,String> map = new HashMap<Integer,String>(){{
+        Map<Integer,Character> inputMap = new HashMap<Integer,Character>(){{
+            put(1,'a');
+            put(2,'A');
+            put(3,'+');
+            put(4,'\t');
+            put(5,'0');
+        }};
+
+        Map<Integer,String> outputMap = new HashMap<Integer,String>(){{
             put(1,"a");
-            put(2,"aa");
-            put(3,"aaa");
-            put(4,"aaaa");
-            put(5,"aaaaa");
+            put(2,"AA");
+            put(3,"+++");
+            put(4,"\t\t\t\t");
+            put(5,"00000");
         }};
         int pass_count = 0;
 
-        for(Map.Entry<Integer,String> entry:map.entrySet()){
+        for(Map.Entry<Integer,Character> entry:inputMap.entrySet()){
             try{
-                if(solution.createPadding(entry.getKey(),'a').equals(entry.getValue())){
+                String outputString = outputMap.get(entry.getKey());
+                if(solution.createPadding(entry.getKey(),entry.getValue()).equals(outputString)){
                     pass_count++;
+                }else {
+                    System.out.println("input: " + entry.getKey() + " " + entry.getValue() + " output: " + solution.createPadding(entry.getKey(),entry.getValue()));
                 }
             }catch(Exception e){
 
             }
         }
-        return new int[]{pass_count,map.entrySet().size()};
+        return new int[]{pass_count,inputMap.entrySet().size()};
     }
 }

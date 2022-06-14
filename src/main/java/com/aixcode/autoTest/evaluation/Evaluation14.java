@@ -14,32 +14,38 @@ public class Evaluation14 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
-        try {
-            int n = 10;
-            int[][] arr = new int[n][n];
-            Map<Integer,Integer> map = new HashMap<Integer,Integer>(){{
-                put(0,n+1);
-                put(1,n+2);
-                put(2,n+3);
-                put(3,n+4);
-                put(4,n+5);
-            }};
-            int pass_count = 0;
-            solution.init(arr,n);
-            for(Map.Entry<Integer,Integer> entry:map.entrySet()){
-                try{
-                    if(arr[entry.getKey()].length <= entry.getValue()){
-                        pass_count++;
+
+        int[][] arr = new int[][]{};
+        Map<Integer, int[][]> map = new HashMap<Integer, int[][]>() {{
+            put(10, new int[10][10]); // range = length of array
+            put(9, new int[5][5]);//range > length of array
+            put(11, new int[15][15]); // range < length of array
+            put(0, new int[5][5]); // max = 0 and range =0
+            put(6, new int[][]{}); // length of array = 0
+        }};
+        int pass_count = 0;
+
+        for (Map.Entry<Integer, int[][]> entry : map.entrySet()) {
+            try {
+                arr = entry.getValue();
+                solution.init(arr, entry.getKey());
+                boolean pass = true;
+                for (int i = 0; i < entry.getValue().length; i++) {
+                    for (int j = 0; j < entry.getValue()[i].length; j++) {
+                        if (arr[i][j] > entry.getKey() || arr[i][j] < 0)
+                            pass = false;
+                        break;
                     }
-                }catch(Exception e){
-
+                    if (!pass) {
+                        break;
+                    }
                 }
+                if (pass)
+                    pass_count++;
+            } catch (Exception e) {
+
             }
-            return new int[]{pass_count,map.entrySet().size()};
-        }catch (Exception e){
-
         }
-        return new int[]{0,5};
-
+        return new int[]{pass_count, map.entrySet().size()};
     }
 }

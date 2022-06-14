@@ -15,7 +15,7 @@ public class Evaluation29 extends AbstractBaseEvaluation {
     @Override
     public int[] evaluation() {
         double[] p1 = {1, 1};
-        double[] p2 = {2,2};
+        double[] p2 = {2, 2};
         double[] p3 = {3, 3};
         double[] p4 = {4, 4};
         double[] p5 = {5, 5};
@@ -25,7 +25,7 @@ public class Evaluation29 extends AbstractBaseEvaluation {
         double[] q4 = {7, 8};
         double[] q5 = {8, 9};
         Map<double[],double[]> map = new HashMap<double[], double[]>(){{
-            put(p1,q1);
+            put(p1, q1);
             put(p2, q2);
             put(p3, q3);
             put(p4, q4);
