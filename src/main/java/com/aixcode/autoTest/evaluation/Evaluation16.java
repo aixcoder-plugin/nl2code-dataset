@@ -16,36 +16,34 @@ public class Evaluation16 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
-        try {
-            double[] vector ={1,2,3};
-            double[] vector1 ={1,2,3,NaN};
-            double[] vector2 ={1,2,3,NaN,NaN};
-            double[] vector3 ={1,2,3,NaN,NaN,NaN};
-            double[] vector4 ={1,2,3,NaN,NaN,NaN,NaN};
-            double[] vector5 ={1,2,3,NaN,NaN,NaN,NaN,NaN};
-            Map<double[],Boolean> map = new HashMap<double[],Boolean>(){{
-                put(vector1,true);
-                put(vector2,true);
-                put(vector3,true);
-                put(vector4,true);
-                put(vector5,true);
-            }};
-            int pass_count = 0;
-            int value = solution.hashCode(vector);
-            for(Map.Entry<double[],Boolean> entry:map.entrySet()){
-                try{
-                    if ((value == solution.hashCode(entry.getKey())) == entry.getValue()){
-                        pass_count ++;
-                    }
-                }catch (Exception e){
+        double[] vector = {1, 2, 3};
+        double[] vector1 = {1, 2, 3, NaN};
+        double[] vector2 = {1, 2, 3, NaN, NaN};
+        double[] vector3 = {1, 2, 3, NaN, NaN, NaN};
+        double[] vector4 = {1, 2, 3, NaN, NaN, NaN, NaN};
+        double[] vector5 = {1, 2, 3, NaN, NaN, NaN, NaN, NaN};
+        Map<double[], Boolean> map = new HashMap<double[], Boolean>() {{
+            put(vector1, true);
+            put(vector2, true);
+            put(vector3, true);
+            put(vector4, true);
+            put(vector5, true);
+        }};
+        int pass_count = 0;
 
+        for (Map.Entry<double[], Boolean> entry : map.entrySet()) {
+            try {
+                int size = solution.hashCode(vector);
+                if ((size == solution.hashCode(entry.getKey())) == entry.getValue()) {
+                    pass_count++;
+                }else {
+                    System.out.println(size + " " + solution.hashCode(entry.getKey()));
                 }
+            } catch (Exception e) {
+
             }
-
-            return new int[]{pass_count,map.entrySet().size()};
-        } catch (Exception e) {
-
         }
-        return new int[]{0,5};
+
+        return new int[]{pass_count, map.entrySet().size()};
     }
 }

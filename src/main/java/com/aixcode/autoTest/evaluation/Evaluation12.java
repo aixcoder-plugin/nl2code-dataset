@@ -17,36 +17,36 @@ public class Evaluation12 extends AbstractBaseEvaluation {
     @Override
     public int[] evaluation() {
         List<String> list1 = new ArrayList<String>(){{
-            add("a");
-            add("b");
-            add("c");
-            add("d");
-            add("e");
+            add("abcefghijklmnopqrstuvwxyz");
+            add("");
+            add(null);
+            add("1234");
+            add("true");
         }};
-        List<Boolean> list2 = new ArrayList<Boolean>(){{
-            add(true);
-            add(true);
-            add(false);
-            add(false);
-            add(true);
-        }};
+
+        List<String> list3 = new ArrayList<String>();
         Map<Integer,String> map = new HashMap<Integer, String>(){{
-            put(0,"a");
-            put(1,"b");
-            put(2,"d");
-            put(3,"c");
-            put(4,"e");
+            put(0,"abcefghijklmnopqrstuvwxyz");
+            put(1,"");  //空字符串
+            put(2,null);// element 3 is null
+            put(3,"1234");
+            put(4,"true");
+            put(5,null);//out of range
         }};
         int pass_count = 0;
 
         for(Map.Entry<Integer,String> entry:map.entrySet()){
             try{
-                if(solution.getValue(list1,entry.getKey()).equals(entry.getValue()) == list2.get(entry.getKey()) ){
+                Object resultValue = solution.getValue(list1,entry.getKey());
+                if(resultValue == null && entry.getValue() == null){
+                    pass_count++;
+                    continue;
+                }else if (resultValue == null) {
+                    continue;
+                }if(resultValue != null && resultValue.equals(entry.getValue())){
                     pass_count++;
                 }
-                //assertEquals(checkUsername(entry.getKey()),entry.getValue());
             }catch(Exception e){
-
             }
         }
         return new int[]{pass_count,map.entrySet().size()};

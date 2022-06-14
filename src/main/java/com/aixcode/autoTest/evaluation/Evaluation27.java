@@ -1,8 +1,8 @@
 package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
+import com.aixcode.autoTest.generate.GenerateMethod95;
 import com.aixcode.sampleHelper.sample27.TestFor27;
-import com.aixcode.autoTest.version1.copilot.Copilot95;
 
 import java.beans.JavaBean;
 import java.util.HashMap;
@@ -20,7 +20,7 @@ public class Evaluation27 extends AbstractBaseEvaluation {
         String name1 = "main.com.aixcode.autoTest.copilot.Copilot95";
         String name2 = "main.com.aixcode.helper.sample91.InterfaceWithAnnotation";
         Map<Class,String> map = new HashMap<Class,String>(){{
-            put(Copilot95.class,name1);
+            put(GenerateMethod95.class,name1);
             put(TestFor27.class,name2);
         }};
         int pass_count = 0;

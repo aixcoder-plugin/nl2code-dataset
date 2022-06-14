@@ -14,13 +14,13 @@ public class Evaluation20 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
-        Object[] objs = {"a","b", "c"};
+        Object[] objs = {"a", null, 123, true};
         Map<Integer,Object> map = new HashMap<Integer, Object>(){{
-            put(0, "a");
-            put(1, "b");
-            put(2, "c");
-            put(3,null);
-            put(4, null);
+            put(0, "a");//String value
+            put(1, null);//null
+            put(2, 123);//numbers
+            put(3, true);//boolean
+            put(4, null);// out of range
         }};
         int pass_count = 0;
         for (Map.Entry<Integer,Object> entry : map.entrySet()){
