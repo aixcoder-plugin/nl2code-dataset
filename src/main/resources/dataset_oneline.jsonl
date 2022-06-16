@@ -69,13 +69,12 @@
 {"task_id": 71, "raw_nl": "Compute the CRC32 of an array of bytes.", "signature": "public static long crc32(byte[] bytes)", "line_num": 318}
 {"task_id": 72, "raw_nl": "Create an instance of a clazz using the current thread context ClassLoader.", "signature": "public static <T> T newInstance(Class<T> clazz)", "line_num": 93}
 {"task_id": 73, "raw_nl": "Delete data from start until end index (end inclusive) of a object List.", "signature": "public static <T> void delete(List<T> list, int start, int end) ", "line_num": 56}
-{"task_id": 74, "raw_nl": "Get the intersection point of two lines.", "signature": "public static Point getIntersection(Line line1, Line line2)", "line_num": 67}
 {"task_id": 75, "raw_nl": "Get the number of days for the given month in the given year.", "signature": "public static int getDaysInMonth(int year, int month)", "line_num": 275}
 {"task_id": 76, "raw_nl": "得到filepath路径下第一层目录结构中所有的class文件", "signature": "public static List<String> getClassFileNames(String filepath)", "line_num": 369}
 {"task_id": 78, "raw_nl": "用str2替换字符串str中第一个出现的str1", "signature": "public static String replaceFirst(String str, String str1, String str2) ", "line_num": 251}
 {"task_id": 79, "raw_nl": "Writes certain bytes from the specified byte array starting from an offset to this output stream.", "signature": "public void write(byte[] b, int off, int len, OutputStream outputStream)", "line_num": 116}
 {"task_id": 80, "raw_nl": "随机生成[origin, bound)范围之内的一个int值", "signature": "public static int randomInt(int origin, int bound)", "line_num": 265}
-{"task_id": 81, "raw_nl": "上传一个文件至指定路径pathname下", "signature": "public static void uploadFile(String pathname, String filename)", "line_num": 376}
+{"task_id": 81, "raw_nl": "上传一个文件filename至指定路径pathname下", "signature": "public static void uploadFile(String pathname, String filename)", "line_num": 376}
 {"task_id": 82, "raw_nl": "Debug helper function that returns the diff of two property maps, only displaying the key that is different and in which map it exists compared to the other map,example:map:key1,key2 map2:key1,key2,key3", "signature": "public static String diff(java.util.Map<String, String> map1, java.util.Map<String, String> map2) ", "line_num": 385}
 {"task_id": 83, "raw_nl": "Returns a new, immutable collection containing the names of all entities within the directory denoted by the current path", "signature": "public static List<String> getFiles(String dir)", "line_num": 395}
 {"task_id": 84, "raw_nl": "Rotate this a two-dimensional point around Y axis with the given angle in radians.", "signature": "public static Point rotateY(double angle, Point point)", "line_num": 399}

@@ -11,10 +11,10 @@ public class Evaluation34 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
-        int[] arrTest = {10,20,33,322,404};// the first is minimum
-        int[] arrTest1 = {10,0,33,322,-404};// the last is minimum
-        int[] arrTest2 = {10,10,1,322,304};// middle one is minimum
-        int[] arrTest3 = {12,12,12,12,12};// anyone is minimum
+        int[] arrTest = {10,20,33,322,404};// sorted ascending
+        int[] arrTest1 = {9,8,7,6,5};// sorted descending
+        int[] arrTest2 = {10,10,1,-2,304};// unsorted
+        int[] arrTest3 = {12,12,12,12,12};// anyone is the same
         int[] arrTest4 = {1};// the only one is minimum
 
 

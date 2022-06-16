@@ -2,10 +2,7 @@ package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Evaluation66 extends AbstractBaseEvaluation {
 
@@ -13,46 +10,43 @@ public class Evaluation66 extends AbstractBaseEvaluation {
     public Evaluation66(String basePackage, String prefix) {
         super(basePackage, prefix);
     }
-
-    private Map<String, String> init() {
-        Map<String, String> map = new HashMap<>();
-        map.put("1,2,3 3,4,5", "1,2,3,4,5");
-        map.put("1,4,5 1,4,5", "1,4,5");
-        map.put("a,b,c a", "a,b,c");
-        map.put(" a,b,c", "a,b,c");
-        return map;
-    }
-
-    private ArrayList<String> convert2List(String str) {
-        ArrayList<String> list = new ArrayList<>();
-        for (String s : str.split(",")) {
-            if (!s.isEmpty()) {
-                list.add(s);
-            }
-        }
-        return list;
-    }
-
     @Override
     public int[] evaluation() {
-        Map<String, String> map = init();
+        Map<String, ArrayList<String>> mapParam1 = new HashMap<>();
+        mapParam1.put("one-dup", new ArrayList<>(Arrays.asList("a","b","c")));
+        mapParam1.put("all-dup", new ArrayList<>(Arrays.asList("x","y","z")));
+        mapParam1.put("no-dup", new ArrayList<>(Arrays.asList("e","f","g")));
+        mapParam1.put("one-empty", new ArrayList<>());
+        mapParam1.put("empty-value", new ArrayList<>(Arrays.asList("a","b","c")));
+
+        Map<String, ArrayList<String>> mapParam2 = new HashMap<>();
+        mapParam2.put("one-dup", new ArrayList<>(Arrays.asList("e","d","c")));
+        mapParam2.put("all-dup", new ArrayList<>(Arrays.asList("x","y","z")));
+        mapParam2.put("no-dup", new ArrayList<>(Arrays.asList("H","I","J")));
+        mapParam2.put("one-empty", new ArrayList<>(Arrays.asList("J","Q","K")));
+        mapParam2.put("empty-value", new ArrayList<>(Arrays.asList("","c")));
+
+        Map<String, ArrayList<String>> ExpectedResult = new HashMap<>();
+        ExpectedResult.put("one-dup", new ArrayList<>(Arrays.asList("a","b","c","e","d")));
+        ExpectedResult.put("all-dup", new ArrayList<>(Arrays.asList("x","y","z")));
+        ExpectedResult.put("no-dup", new ArrayList<>(Arrays.asList("e","f","g","H","I","J")));
+        ExpectedResult.put("one-empty", new ArrayList<>(Arrays.asList("J","Q","K")));
+        ExpectedResult.put("empty-value", new ArrayList<>(Arrays.asList("a","b","c","")));
 
         int passCount = 0;
 
-        for (Map.Entry<String, String> entry : map.entrySet()) {
+        for (Map.Entry<String, ArrayList<String>> entry : ExpectedResult.entrySet()) {
             try {
-                String[] tmp = entry.getKey().split(" ");
-                ArrayList<String> input1 = new ArrayList<String>(Arrays.asList(tmp[0].split(",")));
-                ArrayList<String> input2 = new ArrayList<String>(Arrays.asList(tmp[1].split(",")));
-                ArrayList<String> result = solution.merge(input1, input2);
-                String resultStr = String.join(",", result);
-                if (resultStr.equals(entry.getValue())) {
+                String topic = entry.getKey();
+
+                ArrayList<String> result = solution.merge(mapParam1.get(topic), mapParam2.get(topic));
+                if (result.equals(entry.getValue())) {
                     passCount++;
                 }
             } catch (Exception e) {
 
             }
         }
-        return new int[]{passCount, map.size()};
+        return new int[]{passCount, ExpectedResult.size()};
     }
 }
