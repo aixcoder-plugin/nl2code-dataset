@@ -8,19 +8,21 @@ import java.util.List;
 
 public class Evaluation84 extends AbstractBaseEvaluation {
     List<Double> list1=new ArrayList<>(){{
-        add(Math.PI/4);
-        add(Math.PI/6);
-        add(Math.PI/8);
-        add(Math.PI/10);
-        add(Math.PI/3);
+        add(Math.PI/4);//45度
+        add(Math.PI/6);//30度
+        add(0d);// 0度
+        add(Math.PI);//180度
+        add(Math.PI/3);//60
+        add(Math.PI/8);//180度
     }
     };
     List<Point> list2=new ArrayList<>(){{
-        add(new Point(3,10));
+        add(new Point(3,0));//x轴上的点
         add(new Point(12,32));
         add(new Point(25,16));
         add(new Point(41,12));
         add(new Point(22,32));
+        add(new Point(0,12));//Y轴上的点
     }
     };
 

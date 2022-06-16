@@ -13,6 +13,8 @@ public class Evaluation163 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
+        int passCount = 0;
+        int totalCount = 1;
         try {
             String srcPath="src/main/com/aixcode/resource/tempFile/test163/srcDir/";
             String fileName="dir1"+File.separator+"dir2"+File.separator+"file1.tmp";
@@ -26,16 +28,14 @@ public class Evaluation163 extends AbstractBaseEvaluation {
             }
             solution.move(new File(srcPath).toPath(), new File(desPath).toPath());
             if (new File(desPath+fileName).exists()){
-
-                return new int[]{1,1};
+                passCount++;
             }
 
         }catch (Exception e){
 
         }
 
-
-        return new int[]{0,1};
+        return new int[]{passCount,totalCount};
     }
 
     private static void delFileAndDir(File file){

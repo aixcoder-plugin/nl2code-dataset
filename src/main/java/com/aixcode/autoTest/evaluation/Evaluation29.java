@@ -14,35 +14,39 @@ public class Evaluation29 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
-        double[] p1 = {1, 1};
-        double[] p2 = {2, 2};
-        double[] p3 = {3, 3};
-        double[] p4 = {4, 4};
-        double[] p5 = {5, 5};
-        double[] q1 = {4, 5};
-        double[] q2 = {5, 6};
-        double[] q3 = {6, 7};
-        double[] q4 = {7, 8};
-        double[] q5 = {8, 9};
-        Map<double[],double[]> map = new HashMap<double[], double[]>(){{
-            put(p1, q1);
-            put(p2, q2);
-            put(p3, q3);
-            put(p4, q4);
-            put(p5, q5);
-        }};
+        double[][] params1 = {
+                {1, 1},
+                {-1, -1},
+                {0, 0},
+                {2.5, 3.75},
+                {Double.POSITIVE_INFINITY, 0}
+        };
+        double[][] params2 = {
+                {1, -1},
+                {-1, -1},
+                {4, 3},
+                {-0.5, -0.25},
+                {0, Double.POSITIVE_INFINITY}
+        };
+        double[][] params3 = {
+                {2},
+                {0},
+                {5},
+                {5},
+                {Double.POSITIVE_INFINITY}
+        };
+
         int pass_count = 0;
-        for (Map.Entry<double[], double[]> entry : map.entrySet()){
+        for (int i = 0; i < params1.length; i++) {
             try {
-                double result = solution.euclideanDistance(entry.getKey(), entry.getValue());
-                if (result == 5){
+                if (solution.euclideanDistance(params1[i], params2[i]) == params3[i][0]) {
                     pass_count++;
                 }
-            }catch (Exception e){
+            } catch (Exception e) {
 
             }
-
         }
-        return new int[]{pass_count, map.size()};
+
+        return new int[]{pass_count, params1.length};
     }
 }

@@ -12,13 +12,12 @@ public class Evaluation62 extends AbstractBaseEvaluation {
     @Override
     public int[] evaluation() {
         int[][] dataSource = new int[7][10];
-        dataSource[0] = new int[]{10, 1, 10};
-        dataSource[1] = new int[]{10, 10, 1};
-        dataSource[2] = new int[]{10, 0, 1};
-        dataSource[3] = new int[]{0, -1, 0};
-        dataSource[4] = new int[]{-1, 0, 0};
-        dataSource[5] = new int[]{2, 3, 3};
-        dataSource[6] = new int[]{3, 2, 3};
+        dataSource[0] = new int[]{10, 1, 10};//十选1 组合为10
+        dataSource[1] = new int[]{10, 10, 1};//十选10 组合为1
+        dataSource[2] = new int[]{10, 0, 1};// 十选0 组合为1
+        dataSource[3] = new int[]{0, -1, 0};// 非法组合
+        dataSource[4] = new int[]{-1, 0, 0};// 非法组合
+        dataSource[5] = new int[]{3, 2, 3}; //3选2 3
         int pass_count = 0;
         int total_count = dataSource.length;
 
