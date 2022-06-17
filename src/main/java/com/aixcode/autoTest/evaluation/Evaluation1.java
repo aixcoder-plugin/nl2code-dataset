@@ -35,8 +35,6 @@ public class Evaluation1 extends AbstractBaseEvaluation {
                 String outputString = outputMap.get(entry.getKey());
                 if(solution.createPadding(entry.getKey(),entry.getValue()).equals(outputString)){
                     pass_count++;
-                }else {
-                    System.out.println("input: " + entry.getKey() + " " + entry.getValue() + " output: " + solution.createPadding(entry.getKey(),entry.getValue()));
                 }
             }catch(Exception e){
 

@@ -39,10 +39,7 @@ public class Evaluation21 extends AbstractBaseEvaluation {
                         pass_count++;
                     }else if(entry.getValue() == null && mapPerperties.get(entry.getKey()) == null){
                         pass_count++;
-                    }else {
-                        System.out.println(entry.getValue() + " " + mapPerperties.get(entry.getKey()));
                     }
-
                 }else{
                     Object value = mapPerperties.get(entry.getKey());
                     solution.putAdditionalProperty(entry.getKey(),entry.getValue(),mapPerperties);

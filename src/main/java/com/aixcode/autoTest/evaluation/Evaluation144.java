@@ -4,7 +4,6 @@ import com.aixcode.autoTest.AbstractBaseEvaluation;
 
 import java.io.File;
 import java.nio.file.Files;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -59,16 +58,6 @@ public class Evaluation144 extends AbstractBaseEvaluation {
                 f.delete();
             }
         }
-    }
-
-    public static void main(String[] args) {
-        String fileName="src/main/com/aixcode/resource/tempFile/test144";
-        File[] files=new File(fileName).listFiles();
-        List<String> fileNames=new ArrayList<>();
-        for (File f:files) {
-            fileNames.add(f.getName());
-        }
-        System.out.println(fileNames);
     }
 
 }

@@ -2,7 +2,6 @@ package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
 
-import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,7 +28,6 @@ public class Evaluation76 extends AbstractBaseEvaluation {
                     passCount++;
                 }
             } catch (Exception e) {
-                System.out.println(1);
             }
         }
         return new int[]{passCount, map.size()};

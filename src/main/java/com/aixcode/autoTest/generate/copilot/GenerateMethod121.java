@@ -15,7 +15,7 @@ public class GenerateMethod121 extends GenerateMethodBase {
         return slashIndex;
     }
 
-    public static void main(String[] args) {
-        System.out.println(new GenerateMethod121().getNextSlash("",1));
-    }
+//    public static void main(String[] args) {
+//        System.out.println(new GenerateMethod121().getNextSlash("",1));
+//    }
 }

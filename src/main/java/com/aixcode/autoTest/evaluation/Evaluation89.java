@@ -38,12 +38,6 @@ public class Evaluation89 extends AbstractBaseEvaluation {
         super(basePackage, prefix);
     }
 
-    public static void main(String[] args) {
-        int num=(int)2e9;
-        System.out.println(num);
-    }
-
-
     @Override
     public int[] evaluation() {
         int passCount=0;

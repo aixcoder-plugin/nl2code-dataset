@@ -11,7 +11,7 @@ public class Evaluation31 extends AbstractBaseEvaluation {
 
     @Override
     public int[] evaluation() {
-        int[] arrTest = {-33,0,663};
+        int[] arrTest = {10,20,33,322,404,515,663,774,288,199};
         int[] arrTest2 = {12,12,12,12,12};
 
         int pass_count = 0;
@@ -28,21 +28,25 @@ public class Evaluation31 extends AbstractBaseEvaluation {
             }
         }
         // {12,12,12,12,12} return index should be 0 for the first occurance
-        total_count++;
-        try{
-            if(solution.indexOf(arrTest2, 12) == 0){
-                pass_count++;
+        for(int i = 0; i < arrTest2.length; i++){
+            total_count++;
+            try{
+                if(solution.indexOf(arrTest2, arrTest2[i]) == 0){
+                    pass_count++;
+                }
+            }catch(Exception e){
+                e.printStackTrace();
             }
-        }catch(Exception e){
         }
 
         // for not found, return -1
         try {
             total_count++;
-            if(solution.indexOf(new int[]{}, 100) == -1) {
+            if(solution.indexOf(arrTest, 100) == -1) {
                 pass_count++;
             }
         }catch (Exception e){
+            e.printStackTrace();
         }
 
         // for null input, return -1
@@ -51,7 +55,8 @@ public class Evaluation31 extends AbstractBaseEvaluation {
             if(solution.indexOf(null, -1) == -1) {
                 pass_count++;
             }
-        }catch (Exception e){}
+        }catch (Exception e){
+        }
 
         return new int[]{pass_count,total_count};
     }

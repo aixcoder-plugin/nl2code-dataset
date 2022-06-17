@@ -33,10 +33,6 @@ public class Evaluation152 extends AbstractBaseEvaluation {
                 if (actualReturn.length() == 32){
                     if(actualReturn.equals(result)){
                         pass_count++;
-                    }else {
-                        System.out.println("TestData: " + source);
-                        System.out.println("Expected: " + result);
-                        System.out.println("Actual: " + actualReturn);
                     }
                 }
             }
