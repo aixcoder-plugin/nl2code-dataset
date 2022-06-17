@@ -29,7 +29,7 @@ public class Evaluation83 extends AbstractBaseEvaluation {
     public int[] evaluation() {
         int passCount=0;
         try {
-            String dir="src/main/com/aixcode/resource/tempFile";
+            String dir="src/main/resources/tempFile";
             List<String> fileList=solution.getFiles(dir);
             if (fileList!=null){
                 Collections.sort(fileList);

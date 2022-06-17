@@ -16,14 +16,14 @@ public class Evaluation144 extends AbstractBaseEvaluation {
     public int[] evaluation() {
         int passCount = 0;
         try{
-            String zipFileName = "src/main/com/aixcode/resource/tempFile/test144/data144.zip";
-            String zipBackupFileName = "src/main/com/aixcode/resource/tempFile/test144/data144.zip.bak";
+            String zipFileName = "src/main/resources/tempFile/test144/data144.zip";
+            String zipBackupFileName = "src/main/resources/tempFile/test144/data144.zip.bak";
             File zipFile = new File(zipFileName);
             if (!zipFile.exists()){
                 File zipBackupFile=new File(zipBackupFileName);
                 Files.copy(zipBackupFile.toPath(),zipFile.toPath());
             }
-            String destPath = "src/main/com/aixcode/resource/tempFile/test144/desDir";
+            String destPath = "src/main/resources/tempFile/test144/desDir";
             File destFile=new File(destPath);
             deleteFile(destFile);
             solution.extractAll(destPath,zipFileName);
