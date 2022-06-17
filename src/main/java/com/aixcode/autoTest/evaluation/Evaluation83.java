@@ -25,13 +25,6 @@ public class Evaluation83 extends AbstractBaseEvaluation {
         return entityList;
     }
 
-    public static void main(String[] args) {
-        String dir="src/main/com/aixcode/resource/tempFile";
-        List<String> fileList=getFiles(dir);
-        Collections.sort(fileList);
-        System.out.println(fileList);
-    }
-
     @Override
     public int[] evaluation() {
         int passCount=0;

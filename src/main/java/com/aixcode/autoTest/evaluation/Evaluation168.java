@@ -36,11 +36,6 @@ public class Evaluation168 extends AbstractBaseEvaluation {
         }
         return new int[]{passCount,1};
     }
-
-    public static void main(String[] args) {
-        System.out.println(getWeekDate());
-    }
-
     public static List<String> getWeekDate() {
         List<String> dates = new ArrayList<>();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd", Locale.getDefault());

@@ -40,8 +40,6 @@ public class Evaluation139 extends AbstractBaseEvaluation {
                 }
                 else if (actualReturn != null && actualReturn.length == testData.getValue()) {
                     pass_count++;
-                } else {
-                    System.out.println("Expected: " + testData.getKey() + ", Actual: " + actualReturn);
                 }
             } catch (Exception e) {
             }

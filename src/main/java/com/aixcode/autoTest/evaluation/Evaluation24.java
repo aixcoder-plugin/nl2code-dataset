@@ -56,8 +56,6 @@ public class Evaluation24 extends AbstractBaseEvaluation {
                     while ((line = br.readLine())!= null){
                         if (line.equals(entry.getValue())){
                             pass_count++;
-                        }else {
-                            System.out.println(line + " " + entry.getValue());
                         }
                         break ;
                     }

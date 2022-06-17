@@ -39,8 +39,6 @@ public class Evaluation28 extends AbstractBaseEvaluation {
                 List<String> list  = solution.split(entry.getKey(), entry.getValue());
                 if (null!=list && list.size() == expected.get(entry.getKey())){
                     pass_count++;
-                }else {
-                    System.out.println(list.size() + " " + expected.get(entry.getKey()));
                 }
             }catch (Exception e){
             }

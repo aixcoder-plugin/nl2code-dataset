@@ -40,7 +40,6 @@ public class Evaluation41 extends AbstractBaseEvaluation {
                 }
             }
         }catch(Exception e){
-            System.out.println("Exception: " + e.getMessage());
         }
 
         return new int[]{pass_count,total_count};

@@ -53,10 +53,8 @@ public class Evaluation79 extends AbstractBaseEvaluation {
             if (!executorService.awaitTermination(3, TimeUnit.SECONDS)){
                 System.err.println("Pool did not terminate");
             }
-            System.out.println(passCount);
 
         }catch (Exception e){
-            e.printStackTrace();
         }
 
 

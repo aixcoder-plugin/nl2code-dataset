@@ -44,8 +44,6 @@ public class Evaluation147 extends AbstractBaseEvaluation {
                 returnPid = solution.getPid(ft);
                 if (returnPid.equals(ExpectValue)) {
                     pass_count++;
-                }else {
-                    System.out.println("Fail: " + returnPid + " != " + ExpectValue);
                 }
             }
             catch (Exception e) {

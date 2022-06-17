@@ -56,7 +56,6 @@ public class Evaluation31 extends AbstractBaseEvaluation {
                 pass_count++;
             }
         }catch (Exception e){
-            System.out.println(e.getMessage());
         }
 
         return new int[]{pass_count,total_count};
