@@ -51,6 +51,7 @@ public class Evaluation6 extends AbstractBaseEvaluation {
                     pass_count++;
                 }
             }catch(Exception e){
+                e.printStackTrace();
 
             }
         }

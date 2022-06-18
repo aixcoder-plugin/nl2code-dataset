@@ -10,4 +10,8 @@ public class AixcoderAuto6 extends GenerateMethodBase {
         data[offset] = (byte)((value >>> 0) & 0xFF);
         data[offset + 1] = (byte)((value >>> 8) & 0xFF);
     }
+
+    public static void main(String[] args) {
+        System.out.println(2>>>1);
+    }
 }

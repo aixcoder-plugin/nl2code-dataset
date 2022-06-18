@@ -9,7 +9,7 @@ public class Excutor {
     public static void main(String[] args) {
         try {
             //执行的line_num,只需要修改这个值即可
-            String line_num="76";
+            String line_num="121";
 //            evaluationOneExample("com.aixcode.autoTest.generate.copilot","GenerateMethod",line_num);
             evaluationOneExample("com.aixcode.autoTest.generate.aixcoder","Aixcoder",line_num);
 //            evaluationOneExample("com.aixcode.autoTest.generate","GenerateMethod",line_num);
@@ -26,7 +26,7 @@ public class Excutor {
 
 
 //
-            runAllTestV3();
+//            runAllTestV3();
 
         }catch (Exception e){
             e.printStackTrace();
