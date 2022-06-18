@@ -13,7 +13,7 @@ int range2 = 0 ;
 while ( range1 < list1 . size ( ) && range2 < list2 . size ( ) ) { 
 T elem1 = list1 . get ( range1 ) ; 
 T elem2 = list2 . get ( range2 ) ; 
-int cmp = elem1 . compareTo ( elem2 ) ; 
+int cmp = 0 ;
 if ( cmp < 0 ) { 
 // We know list1 is sorted so we can add elem1 at the front.
 result . add ( elem1 ) ; 

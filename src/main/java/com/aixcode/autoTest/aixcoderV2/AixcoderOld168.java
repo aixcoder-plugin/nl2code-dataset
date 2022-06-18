@@ -6,9 +6,9 @@ import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld168 extends GenerateMethodBase {
         public List < String > getWeekDate ( ) { 
 List < String > list = new ArrayList < > ( ) ; 
-for ( int i = 0 ; i < 7 ; i ++ ) { 
-list . add ( getShortDate ( ) ) ; 
-} 
+//for ( int i = 0 ; i < 7 ; i ++ ) {
+//list . add ( getShortDate ( ) ) ;
+//}
 return list ; 
 } 
     }

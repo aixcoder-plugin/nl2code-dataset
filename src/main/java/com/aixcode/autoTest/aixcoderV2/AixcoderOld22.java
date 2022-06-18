@@ -9,6 +9,6 @@ FileInputStream fis = new FileInputStream ( filename ) ;
 byte [ ] data = new byte [ fis . available ( ) ] ; 
 fis . read ( data ) ; 
 fis . close ( ) ; 
-return Base64 . encode ( data ) ; 
+return Base64.getEncoder().encodeToString(data) ;
 } 
     }

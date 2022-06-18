@@ -169,7 +169,7 @@
 {"task_id": 178, "raw_nl": "Handles comparison between version numbers (the right way(TM))，bigger return 1 ，smaller return -1 and equals return 0. Examples of version strings: 1.6.7, 1.2_b10", "signature": "public int versionCompare(String v1, String v2)"}
 {"task_id": 179, "raw_nl": "在map中，如果key存在,则value相加；如果key 不存在，增加新的key，value", "signature": "public Long incrBy(Map<String,Long> valMap,String key, Long integer)"}
 {"task_id": 180, "raw_nl": "Check if a string is binary, which is composed of 0/1, and string length is multiple of 8.", "signature": "public boolean isBin(String bin)"}
-{"task_id": 181, "raw_nl": "通过反射, 获得Class定义中声明的泛型参数的类型. 如无法找到, 返回Object.class.", "signature": "public Class getClassGenricType(Class clazz)"}
+{"task_id": 181, "raw_nl": "通过反射, 获得Class定义中声明的泛型参数的类型. 如无法找到, 返回Object.class.", "signature": "public List<Class> getClassGenricType(Class clazz)"}
 {"task_id": 182, "raw_nl": "滤掉词串中的空格、标点符号", "signature": "public String[] filter(String[] word_list)"}
 {"task_id": 183, "raw_nl": "BigDecimal加法运算", "signature": "public BigDecimal add(BigDecimal aVal, BigDecimal bVal)"}
 {"task_id": 186, "raw_nl": "Returns whether or no the JDK version is 1.7u40 and above.", "signature": "public boolean isJdk7u40Above()"}

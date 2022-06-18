@@ -1,11 +1,12 @@
 package com.aixcode.autoTest.aixcoderV2;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld65 extends GenerateMethodBase {
         public Date getMonthLastDay ( String dateString ) { 
-SimpleDateFormat simpleDateFormat = new SimpleDateFormat ( "yyyy-MM" ) ; 
+SimpleDateFormat simpleDateFormat = new SimpleDateFormat ( "yyyy-MM" ) ;
 Date date = null ; 
 try { 
 date = simpleDateFormat . parse ( dateString ) ; 

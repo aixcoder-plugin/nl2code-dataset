@@ -7,7 +7,7 @@ public class AixcoderOld160 extends GenerateMethodBase {
         public List < String > doDrawRandom ( List < String > users , int count ) { 
 List < String > result = new ArrayList < > ( ) ; 
 for ( int i = 0 ; i < count ; i ++ ) { 
-result . add ( users . get ( getRandom ( users . size ( ) ) ) ) ; 
+result . add ( users . get ( new Random().nextInt ( users . size ( ) ) ) ) ;
 } 
 return result ; 
 } 

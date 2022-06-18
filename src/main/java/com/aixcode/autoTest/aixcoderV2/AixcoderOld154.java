@@ -1,11 +1,12 @@
 package com.aixcode.autoTest.aixcoderV2;
 
-import java.util.*;
-import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
+
+import java.net.URL;
+
 public class AixcoderOld154 extends GenerateMethodBase {
-        public URL getUrlFile ( String fileName ) { 
-if ( StringUtil . isEmpty ( fileName ) ) { 
+        public URL getUrlFile (String fileName ) {
+if ( fileName ==null ) {
 return null ; 
 } 
 return this . getClass ( ) . getClassLoader ( ) . getResource ( fileName ) ; 

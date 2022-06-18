@@ -1,10 +1,11 @@
 package com.aixcode.autoTest.aixcoderV2;
 
+import java.awt.*;
 import java.util.*;
 import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld149 extends GenerateMethodBase {
-        public float getRadian ( Point A , Point B ) { 
+        public float getRadian (Point A , Point B ) {
 if ( A == null || B == null ) { 
 return 0 ; 
 } 

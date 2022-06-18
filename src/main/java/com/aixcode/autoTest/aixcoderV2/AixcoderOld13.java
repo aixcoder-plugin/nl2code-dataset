@@ -16,7 +16,7 @@ throw new IllegalArgumentException ( "Length must not exceed alphabet length." )
 } 
 StringBuilder sb = new StringBuilder ( length ) ; 
 for ( int i = 0 ; i < length ; i ++ ) { 
-sb . append ( alphabet . charAt ( nextInt ( alphabet . length ( ) ) ) ) ; 
+sb . append ( alphabet . charAt ( new Random().nextInt ( alphabet . length ( ) ) ) ) ;
 } 
 return sb . toString ( ) ; 
 } 

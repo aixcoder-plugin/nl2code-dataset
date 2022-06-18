@@ -1,5 +1,8 @@
 package com.aixcode.autoTest.aixcoderV2;
 
+import java.nio.charset.Charset;
+import java.nio.charset.IllegalCharsetNameException;
+import java.nio.charset.UnsupportedCharsetException;
 import java.util.*;
 import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
@@ -9,10 +12,10 @@ if ( encoding == null ) {
 return null ; 
 } 
 try { 
-return Charset . forName ( encoding ) . name ( ) ; 
-} catch ( IllegalCharsetNameException icne ) { 
+return Charset. forName ( encoding ) . name ( ) ;
+} catch ( IllegalCharsetNameException icne ) {
 return encoding ; 
-} catch ( UnsupportedCharsetException uce ) { 
+} catch ( UnsupportedCharsetException uce ) {
 return encoding ; 
 } 
 } 
