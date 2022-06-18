@@ -5,7 +5,7 @@ import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld16 extends GenerateMethodBase {
         public int hashCode ( double [ ] vector ) { 
-if ( isNaN ( vector ) ) { 
+if ( vector ==null ) {
 return 9 ; 
 } 
 int h = 1 ; 

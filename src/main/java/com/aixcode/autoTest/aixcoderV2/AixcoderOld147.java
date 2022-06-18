@@ -1,16 +1,26 @@
 package com.aixcode.autoTest.aixcoderV2;
 
-import java.util.*;
-import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
+
+import java.util.concurrent.FutureTask;
+
 public class AixcoderOld147 extends GenerateMethodBase {
-        String getPid ( FutureTask t ) { 
-if ( t != null ) { 
-Object o = t . result ; 
-if ( o != null ) { 
-return o . toString ( ) ; 
-} 
-} 
-return null ; 
+        public String getPid ( FutureTask t ) {
+//            if (t != null && t.getTask() != null) {
+//                if (t.getTask().isMapTask()) {
+//                    JVMId id = mapJvmManager.runningTaskToJvm.get(t);
+//
+//                    if (id != null) {
+//                        return mapJvmManager.jvmIdToPid.get(id);
+//                    }
+//                } else {
+//                    JVMId id = reduceJvmManager.runningTaskToJvm.get(t);
+//
+//                    if (id != null) {
+//                        return reduceJvmManager.jvmIdToPid.get(id);
+//                    }
+//                }
+//            }
+            return null;
 } 
     }

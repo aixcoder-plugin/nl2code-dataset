@@ -6,7 +6,7 @@ import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld48 extends GenerateMethodBase {
         public void addAll ( Set < Integer > set , Collection < Integer > collection ) { 
 for ( int i : collection ) { 
-add ( i ) ; 
+//add ( i ) ;
 } 
 } 
     }

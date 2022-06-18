@@ -1,10 +1,13 @@
 package com.aixcode.autoTest.aixcoderV2;
 
+import java.awt.*;
 import java.util.*;
 import java.io.*;
+import java.util.List;
+
 import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld161 extends GenerateMethodBase {
-        public Point getCenter ( List < Point > points ) { 
+        public Point getCenter (List < Point > points ) {
 int n = points . size ( ) ; 
 if ( n < 1 ) { 
 throw new IllegalArgumentException ( "must have at least 1 point" ) ; 
@@ -16,6 +19,6 @@ Point p = points . get ( i ) ;
 x += p . getX ( ) ; 
 y += p . getY ( ) ; 
 } 
-return new Point ( x / n , y / n ) ; 
+return new Point ( (int) x / n , (int) y / n ) ;
 } 
     }

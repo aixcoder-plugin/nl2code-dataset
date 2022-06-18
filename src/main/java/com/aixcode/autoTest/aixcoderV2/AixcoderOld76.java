@@ -8,7 +8,7 @@ public class AixcoderOld76 extends GenerateMethodBase {
 List < String > fileNames = new ArrayList < String > ( ) ; 
 File file = new File ( filepath ) ; 
 if ( file . exists ( ) ) { 
-fileNames = getClassFileNames ( file ) ; 
+//fileNames = getClassFileNames ( file ) ;
 } 
 return fileNames ; 
 } 

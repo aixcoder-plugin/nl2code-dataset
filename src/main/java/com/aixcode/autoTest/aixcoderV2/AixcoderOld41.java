@@ -10,7 +10,7 @@ return null ;
 } 
 Map < String , Object > mapUpper = new HashMap < > ( ) ; 
 for ( Map . Entry < String , Object > entry : map . entrySet ( ) ) { 
-mapUpper . put ( toUpperCase ( entry . getKey ( ) ) , entry . getValue ( ) ) ; 
+mapUpper . put (  ( entry . getKey ( ).toUpperCase() ) , entry . getValue ( ) ) ;
 } 
 return mapUpper ; 
 } 

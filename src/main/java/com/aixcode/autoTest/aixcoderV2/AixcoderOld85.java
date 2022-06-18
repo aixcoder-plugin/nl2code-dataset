@@ -8,10 +8,10 @@ public class AixcoderOld85 extends GenerateMethodBase {
 if ( str == null || str . isEmpty ( ) ) { 
 return null ; 
 } 
-if ( isEmpty ( trailing ) ) { 
+if ( trailing==null ) {
 return trailing ; 
 } 
-if ( isEmpty ( ) ) { 
+if ( trailing=="" ) {
 return str ; 
 } 
 if ( str . endsWith ( "\n" ) ) { 

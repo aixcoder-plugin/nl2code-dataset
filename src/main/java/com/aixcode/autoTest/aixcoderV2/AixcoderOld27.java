@@ -1,10 +1,11 @@
 package com.aixcode.autoTest.aixcoderV2;
 
+import java.lang.annotation.Annotation;
 import java.util.*;
 import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld27 extends GenerateMethodBase {
-        public String getInterfaceName ( Class < ? > clazz , Class < ? extends Annotation > annotation ) { 
+        public String getInterfaceName ( Class < ? > clazz , Class < ? extends Annotation> annotation ) {
 if ( clazz == null ) { 
 return null ; 
 } 
