@@ -1,10 +1,9 @@
 package com.aixcode.autoTest.aixcoderV2;
 
+import com.aixcode.autoTest.GenerateMethodBase;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.*;
-import java.io.*;
-import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld152 extends GenerateMethodBase {
     public String toMd5Code(String s) {
         String str = "";
@@ -35,4 +34,4 @@ public class AixcoderOld152 extends GenerateMethodBase {
 
         return str;
     }
-    }
+}

@@ -1,11 +1,11 @@
 package com.aixcode.autoTest.aixcoderV2;
 
-import java.io.*;
-import java.nio.file.Path;
-
 import com.aixcode.autoTest.GenerateMethodBase;
+
+import java.io.IOException;
+import java.nio.file.Path;
 public class AixcoderOld163 extends GenerateMethodBase {
-        public void move (Path src , Path dest ) throws IOException {
+    public void move(Path src, Path dest) throws IOException {
 //if ( ! fs . isDirectory ( src ) ) {
 //// source is a file
 //fs . rename ( src , dest ) ;
@@ -36,5 +36,5 @@ public class AixcoderOld163 extends GenerateMethodBase {
 //fs . delete ( dest , true ) ;
 //}
 //}
-} 
     }
+}
