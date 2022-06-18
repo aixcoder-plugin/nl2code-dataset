@@ -13,8 +13,8 @@ public class GenerateMethod128 extends GenerateMethodBase {
         return c;
     }
 
-    public static void main(String[] args) {
-        Calendar cal = Calendar.getInstance();
-        System.out.println(cal.getTime());
-    }
+//    public static void main(String[] args) {
+//        Calendar cal = Calendar.getInstance();
+//        System.out.println(cal.getTime());
+//    }
 }

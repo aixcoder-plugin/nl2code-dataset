@@ -95,7 +95,6 @@ public class Evaluation48 extends AbstractBaseEvaluation {
             if (targetNonConfict.size() == sourceNonConflict.size() + targetSize) {
                 pass_count++;
             } else {
-                System.out.println("targetNonConfict.size() = " + targetNonConfict.size());
             }
 
         } catch (Exception e) {
@@ -111,7 +110,6 @@ public class Evaluation48 extends AbstractBaseEvaluation {
             if (targetNonConfict.size() == targetSize) {
                 pass_count++;
             } else {
-                System.out.println("targetNonConfict.size() = " + targetNonConfict.size());
             }
 
         } catch (Exception e) {
@@ -126,10 +124,7 @@ public class Evaluation48 extends AbstractBaseEvaluation {
 
             if (targetNonConfict.size() == targetSize) {
                 pass_count++;
-            } else {
-                System.out.println("targetNonConfict.size() = " + targetNonConfict.size());
             }
-
         } catch (Exception e) {
 
         }

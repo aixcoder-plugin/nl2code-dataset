@@ -11,4 +11,7 @@ public class GenerateMethod6 extends GenerateMethodBase {
         data[offset + 1] = (byte) value;
     }
 
+
+
+
 }

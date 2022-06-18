@@ -12,8 +12,8 @@ public class Evaluation173 extends AbstractBaseEvaluation {
     }
     Map<File,String> fileMap=new HashMap<>(){
         {
-            put(new File("src/main/com/aixcode/autoTest/Excutor.java"), "java");
-            put(new File("src/main/com/aixcode/resource/tempFile/sample173.txt"), "txt");
+            put(new File("src/main/java/com/aixcode/autoTest/Excutor.java"), "java");
+            put(new File("src/main/resources/tempFile/sample173.txt"), "txt");
         }
     };
 

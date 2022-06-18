@@ -38,7 +38,6 @@ public class Evaluation34 extends AbstractBaseEvaluation {
                 pass_count++;
             }
         }catch (Exception e){
-            System.out.println(e.getMessage());
         }
 
         total_count++;
@@ -58,7 +57,6 @@ public class Evaluation34 extends AbstractBaseEvaluation {
                 pass_count++;
             }
         }catch (Exception e){
-            System.out.println(e.getMessage());
         }
 
         total_count++;
@@ -78,7 +76,6 @@ public class Evaluation34 extends AbstractBaseEvaluation {
                 pass_count++;
             }
         }catch (Exception e){
-            System.out.println(e.getMessage());
         }
 
         total_count++;
@@ -98,7 +95,6 @@ public class Evaluation34 extends AbstractBaseEvaluation {
                 pass_count++;
             }
         }catch (Exception e){
-            System.out.println(e.getMessage());
         }
 
         total_count++;
@@ -118,7 +114,6 @@ public class Evaluation34 extends AbstractBaseEvaluation {
                 pass_count++;
             }
         }catch (Exception e){
-            System.out.println(e.getMessage());
         }
 
         return new int[]{pass_count,total_count};

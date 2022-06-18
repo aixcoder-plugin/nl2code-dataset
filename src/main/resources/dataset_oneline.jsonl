@@ -1,175 +1,175 @@
-{"task_id": 0, "raw_nl": "Take a collection of Strings and return a combined string as a comma separated list with 'and' between the final pair. For example: [a, b, c] to \"a, b and c\".", "signature": "public static String collectionToCommaDelimitedString(List<String> coll)", "line_num": 259}
-{"task_id": 1, "raw_nl": "Creates a padding string of a certain length", "signature": "public String createPadding(int length, char padChar)", "line_num": 322}
-{"task_id": 2, "raw_nl": "Create and returns a HttpURLConnection connection to a webpage", "signature": "public HttpURLConnection createHttpConnection(URL url, int connectTimeout, Map<String, String> requestProperties)", "line_num": 35}
-{"task_id": 3, "raw_nl": "Write content to the file. If file does not exist, it will create one.", "signature": "public void writeToFile(String content, String fileName)", "line_num": 344}
-{"task_id": 4, "raw_nl": "Close Reader. If object is null it is ignored", "signature": "public void close(Reader reader)", "line_num": 272}
-{"task_id": 5, "raw_nl": "max() that works on three integers. Like many of the other max() functions in this class", "signature": "public static float max(float a, float b, float c) ", "line_num": 114}
-{"task_id": 6, "raw_nl": "put a short value into a byte array with specific offset", "signature": "public void putShort(byte[] data, short value, int offset)", "line_num": 95}
-{"task_id": 7, "raw_nl": "从 http 服务拉取配置文件并解析为Properties 对象", "signature": "public Properties getProperties(String url)", "line_num": 250}
-{"task_id": 8, "raw_nl": "给一个数组，找出最大值并且返回。", "signature": "public int findMaxNumber(int[] nums)", "line_num": 253}
-{"task_id": 9, "raw_nl": "将 Date 类型转为时间字符串，格式为 format", "signature": "public String date2String(final Date date, final DateFormat format)", "line_num": 366}
-{"task_id": 10, "raw_nl": "Looks through the backups directory and assembles a list of all json backup files found. ", "signature": "private List<String> getBackupFiles(String dir)", "line_num": 103}
-{"task_id": 11, "raw_nl": "Rearranges the elements of the specified subarray in random order.", "signature": "public static void shuffle(int[] array)", "line_num": 306}
-{"task_id": 12, "raw_nl": "Retrieves the value by specified int index of the given List.", "signature": "public static String getValue(List<String> list, int index)", "line_num": 11}
-{"task_id": 13, "raw_nl": "Returns a string, consisting of given length random char from given alphabet. ", "signature": "public static String randomString(int length, String alphabet)", "line_num": 263}
-{"task_id": 14, "raw_nl": "用1到n随机初始化二维数组", "signature": "public static void init(int[][] arr, int n) ", "line_num": 286}
-{"task_id": 15, "raw_nl": "Copy a file from source path to destination path", "signature": "public static void copyFile(String sourcePath, String destPath)", "line_num": 402}
-{"task_id": 16, "raw_nl": "Get a hashCode for the real vector. All NaN values have the same hash code.", "signature": "public static int hashCode(double[] vector)", "line_num": 52}
-{"task_id": 17, "raw_nl": "Parses character set name to Charset object", "signature": "public static Charset charsetForName(String charsetName)", "line_num": 311}
-{"task_id": 18, "raw_nl": "Reads up to len bytes of data from this input stream into an array of bytes", "signature": "public static byte[] readBytes(java.io.InputStream in, int len)", "line_num": 24}
-{"task_id": 19, "raw_nl": "Parses query string to Map from an url.", "signature": "public static Map<String, String> parseQueryString(String queryString)", "line_num": 307}
-{"task_id": 20, "raw_nl": "Returns the value of an array by index, or null if the array has no value at that index.", "signature": "public static Object get(Object[] array, int index)", "line_num": 320}
-{"task_id": 21, "raw_nl": "Set the additional (undeclared) property with the specified name and value. If the property does not already exist, create it otherwise replace it.", "signature": "public void putAdditionalProperty(String key, Object value, Map<String, Object> additionalProperties)", "line_num": 34}
-{"task_id": 22, "raw_nl": "Read the base64 encoded image data from a JPEG image.", "signature": "public static String readImageData(String filename)", "line_num": 76}
-{"task_id": 23, "raw_nl": "Returns the distance for the two given point", "signature": "public float distance(float x0, float y0, float x1, float y1)", "line_num": 54}
-{"task_id": 24, "raw_nl": "Writes a collection of Strings to a File, overwriting any previous file contents. Each String is converted into a line in the File.", "signature": "public void writeFile(Collection<String> lines, File file)", "line_num": 69}
-{"task_id": 25, "raw_nl": "Generate a hex string for the specified bytes.", "signature": "public static final String toHex(byte[] byteArr)", "line_num": 100}
-{"task_id": 26, "raw_nl": "获取相应文件filepath的input stream", "signature": "public static java.io.InputStream getInputStream(String filepath)", "line_num": 7}
-{"task_id": 27, "raw_nl": "获取类上具有指定注解的接口的名称，如果有多个，则以第一个为准 找不到符合条件的接口则返回 clazz 类的名称", "signature": "public static String getInterfaceName(Class<?> clazz, Class<? extends Annotation> annotation)", "line_num": 91}
-{"task_id": 28, "raw_nl": "Split the given sequence with the given delimiter and return list of values.", "signature": "public static java.util.List<String> split(String sequence, String delimiter)", "line_num": 362}
-{"task_id": 29, "raw_nl": "This returns the euclidean distance of two vectors sum(i=1,n) (q_i - p_i)^2", "signature": "public static double euclideanDistance(double[] p, double[] q)", "line_num": 358}
-{"task_id": 30, "raw_nl": "Returns the entry associated with the specified key in map.", "signature": "public <K,V> Map.Entry<K, V> getEntry(Map<K,V> map, K key)", "line_num": 78}
-{"task_id": 31, "raw_nl": "Returns the index of the first occurrence of the specified element in this list, returns -1 if the element is not found", "signature": "public static int indexOf(int[] array, int element) ", "line_num": 281}
-{"task_id": 32, "raw_nl": "Returns the minimum value in an array.", "signature": "public static int min(int[] array)", "line_num": 32}
-{"task_id": 33, "raw_nl": "Returns the sum of logarithms, which is Sum( Log(x[i]) ).", "signature": "public static double logSum(double[] x)", "line_num": 317}
-{"task_id": 34, "raw_nl": "Do a simple bubble sort to sort the server ids in ascending order.", "signature": "public void sortServers(int[] serverIds)", "line_num": 111}
-{"task_id": 35, "raw_nl": "Ensure that an object reference passed as a parameter to the calling method is not null.", "signature": "public static void ensureNotNull(Object obj)", "line_num": 243}
-{"task_id": 36, "raw_nl": "Extract the filename from the given path.", "signature": "public static String extractFileName(String path)", "line_num": 300}
-{"task_id": 37, "raw_nl": "Fill 1D matrix with random numbers.", "signature": "public static void fillMatrix_1D(double[] m)", "line_num": 315}
-{"task_id": 38, "raw_nl": "Find the occurence of the given key in the given array. Linear search, worst case running time is O(n).", "signature": "public static int linearSearch(int[] arr, int key) ", "line_num": 334}
-{"task_id": 39, "raw_nl": "Generate a not existing temporary file in specified dir.", "signature": "public static String generateTempFile(String dir)", "line_num": 338}
-{"task_id": 40, "raw_nl": "Get one character of index i from a given string buffer.", "signature": "public static char getChar(StringBuffer sb, int i)", "line_num": 124}
-{"task_id": 41, "raw_nl": "将map中所有的key转为大写", "signature": "public static Map<String, Object> getAllUpperCase(Map<String, Object> map)", "line_num": 89}
-{"task_id": 42, "raw_nl": "得到距离当前时间前一年的时间 @Title: getLastYearDate", "signature": "public static String getLastYearDate()", "line_num": 352}
-{"task_id": 43, "raw_nl": "更新url中的参数(保证参数不重复)", "signature": "public static String updateUrl(String url, String key, String value)", "line_num": 271}
-{"task_id": 44, "raw_nl": "移除 map 中的 null 或者 空字符串", "signature": "public static void removeNullValue(Map<String, Object> map)", "line_num": 249}
-{"task_id": 45, "raw_nl": "获取某个时间data的年份", "signature": "public static int getYear(Date date)", "line_num": 368}
-{"task_id": 46, "raw_nl": "Element-by-element matrix multiplication in place, A = A*B ", "signature": "public static void matrixMultiply(double[][] A, double[][] B)", "line_num": 371}
-{"task_id": 47, "raw_nl": "通过反射获取某个类的对象内所有的 public 成员变量, 包括该类的基类", "signature": "public static List<Field> getFields(Class<?> clazz)", "line_num": 372}
-{"task_id": 48, "raw_nl": "Adds all of the elements in collection to the Set.", "signature": "public static void addAll(Set<Integer> set, Collection<Integer> collection)", "line_num": 373}
-{"task_id": 49, "raw_nl": "Helper function to convert a long number into a byte array (least significant byte first).", "signature": "public static byte[] longToBytes(long x)", "line_num": 375}
-{"task_id": 50, "raw_nl": "将byte数组转化为16进制字符串", "signature": "public static String bytesToHexString(byte[] src)", "line_num": 379}
-{"task_id": 51, "raw_nl": "Returns a hash code value for this bit array.", "signature": "public int hashCode(byte[] byteArr)", "line_num": 380}
-{"task_id": 52, "raw_nl": "Removes the entry with the specified key from this map if present.", "signature": "public void remove(Map<Integer, String> mapObj, Integer key)", "line_num": 381}
-{"task_id": 53, "raw_nl": "Convert a primitive input array into its object array version (e.g. from int[] to Integer[]).", "signature": "public static Integer[] toObjectArray(int[] array)", "line_num": 383}
-{"task_id": 55, "raw_nl": "判断字符串是否只含字母和数字", "signature": "public static boolean isLetterOrDigit(String str)", "line_num": 386}
-{"task_id": 56, "raw_nl": "判断是否只含字母", "signature": "public static boolean isLetter(char c)", "line_num": 387}
-{"task_id": 57, "raw_nl": "Join 2 path elements if path separator not present at the end of first path element，else return the first element.", "signature": "public static String joinPath(String path1, String path2)", "line_num": 388}
-{"task_id": 58, "raw_nl": "Converts an int into an array of byte using the default (little endian, Lsb0) byte and bit ordering.", "signature": "public static byte[] intToByteArray(int value)", "line_num": 389}
-{"task_id": 60, "raw_nl": "convert byte array to a hex string", "signature": "public static String bytesToHex(byte[] bytes)", "line_num": 393}
-{"task_id": 62, "raw_nl": "Calculates combinatorial number C(n,m). ", "signature": "public static int combinatorial(int n, int m)", "line_num": 397}
-{"task_id": 63, "raw_nl": "检验用户名是否合法，只能包括a-z,A-Z,0-9和下划线_，不能以下划线结尾 用户名有最小长度和最大长度限制，比如用户名必须是4-20位", "signature": "public static boolean checkUsername(String username)", "line_num": 398}
-{"task_id": 64, "raw_nl": "得到现在时间", "signature": "public static String getStringToday(String format)", "line_num": 401}
-{"task_id": 65, "raw_nl": "return the last day of the date's month of specified string value in format: yyyy-MM", "signature": "public static Date getMonthLastDay(String dateString)", "line_num": 302}
-{"task_id": 66, "raw_nl": "Merges the given two lists to a new list, but eliminating duplicates elements.", "signature": "public static <T> ArrayList<T> merge(ArrayList<T> list1, ArrayList<T> list2)", "line_num": 82}
-{"task_id": 67, "raw_nl": "Multiplies the vector by the transpose of the given matrix.", "signature": "public static double[] multiplyTranspose(double[] vector, double[][] matrix)", "line_num": 2}
-{"task_id": 68, "raw_nl": "Removes and returns last element in list, return null if empty.", "signature": "public static String removeLast(ArrayList<String> list)", "line_num": 20}
-{"task_id": 69, "raw_nl": "Returns the largest value in linked list.", "signature": "public static int getMax(LinkedList<Integer> list)", "line_num": 262}
-{"task_id": 70, "raw_nl": "Calculate the elapsed time between two times specified in milliseconds.", "signature": "public static long elapsedTime(Calendar start, Calendar end)", "line_num": 364}
-{"task_id": 71, "raw_nl": "Compute the CRC32 of an array of bytes.", "signature": "public static long crc32(byte[] bytes)", "line_num": 318}
-{"task_id": 72, "raw_nl": "Create an instance of a clazz using the current thread context ClassLoader.", "signature": "public static <T> T newInstance(Class<T> clazz)", "line_num": 93}
-{"task_id": 73, "raw_nl": "Delete data from start until end index (end inclusive) of a object List.", "signature": "public static <T> void delete(List<T> list, int start, int end) ", "line_num": 56}
-{"task_id": 75, "raw_nl": "Get the number of days for the given month in the given year.", "signature": "public static int getDaysInMonth(int year, int month)", "line_num": 275}
-{"task_id": 76, "raw_nl": "得到filepath路径下第一层目录结构中所有的class文件", "signature": "public static List<String> getClassFileNames(String filepath)", "line_num": 369}
-{"task_id": 78, "raw_nl": "用str2替换字符串str中第一个出现的str1", "signature": "public static String replaceFirst(String str, String str1, String str2) ", "line_num": 251}
-{"task_id": 79, "raw_nl": "Writes certain bytes from the specified byte array starting from an offset to this output stream.", "signature": "public void write(byte[] b, int off, int len, OutputStream outputStream)", "line_num": 116}
-{"task_id": 80, "raw_nl": "随机生成[origin, bound)范围之内的一个int值", "signature": "public static int randomInt(int origin, int bound)", "line_num": 265}
-{"task_id": 81, "raw_nl": "上传一个文件filename至指定路径pathname下", "signature": "public static void uploadFile(String pathname, String filename)", "line_num": 376}
-{"task_id": 82, "raw_nl": "Debug helper function that returns the diff of two property maps, only displaying the key that is different and in which map it exists compared to the other map,example:map:key1,key2 map2:key1,key2,key3", "signature": "public static String diff(java.util.Map<String, String> map1, java.util.Map<String, String> map2) ", "line_num": 385}
-{"task_id": 83, "raw_nl": "Returns a new, immutable collection containing the names of all entities within the directory denoted by the current path", "signature": "public static List<String> getFiles(String dir)", "line_num": 395}
-{"task_id": 84, "raw_nl": "Rotate this a two-dimensional point around Y axis with the given angle in radians.", "signature": "public static Point rotateY(double angle, Point point)", "line_num": 399}
-{"task_id": 85, "raw_nl": "If the string passed in is not blank or null and did not end with the trailing value, then appended the trailing value to it and return the result ", "signature": "public static String appendTrailing(String str, String trailing)", "line_num": 400}
-{"task_id": 86, "raw_nl": "Returns true if the collection contains an element for the key.", "signature": "public static boolean containsKey(Collection<String> collection, String key)", "line_num": 126}
-{"task_id": 87, "raw_nl": "Returns true if the given object is an instance of the class or interface specified.", "signature": "public boolean isInstanceOf(Object object, Class<?> type)", "line_num": 106}
-{"task_id": 88, "raw_nl": "将16进制字符串转10进制", "signature": "public int hexStringToInt(String hexString)", "line_num": 23}
-{"task_id": 89, "raw_nl": "Add two integers, checking for overflow.", "signature": "public boolean checkOverflow(int x, int y)", "line_num": 22}
-{"task_id": 90, "raw_nl": "Add the value to the HashSet given by map.get(key), creating a new HashSet if the HashSet is null", "signature": "public void addToSet(Map<String, HashSet<Integer>> map, String key, Integer value)", "line_num": 323}
-{"task_id": 91, "raw_nl": "Calculate and return the average of the two values rounded DOWN.", "signature": "public static int average(int a, int b)", "line_num": 336}
-{"task_id": 92, "raw_nl": "Check if #MIN_VALUE <= value <= #MAX_VALUE and if not an IllegalArgumentException is thrown.", "signature": "public static void checkRange(int value, int min, int max)", "line_num": 273}
-{"task_id": 93, "raw_nl": "Check whether the String is a valid Java number", "signature": "public static boolean isNumber(String str)", "line_num": 26}
-{"task_id": 94, "raw_nl": "Choose a pseudo-random element from the specified array.", "signature": "public static int random(int[] array)", "line_num": 241}
-{"task_id": 95, "raw_nl": "Compare two java objects for equality.", "signature": "public static boolean equals(Object o1, Object o2)", "line_num": 258}
-{"task_id": 96, "raw_nl": "Compute the product of this matrix and the given column vector.", "signature": "public double[] product(double[] columnVector,double[][] matrix)", "line_num": 304}
-{"task_id": 97, "raw_nl": "Concatenate two arrays of T type", "signature": "public static <T> T[] concat(T[] a, T[] b)", "line_num": 77}
-{"task_id": 98, "raw_nl": "Convert the text '&' mnemonic string to text string. The '&' symbol is treated as the mnemonic pointer. The double \"&&\" symbols are treated as the single '&'. For example the string \"&Look && Feel\" is converted to \"Look & Feel\".", "signature": "public static String convertMnemonicString(String text)", "line_num": 289}
-{"task_id": 99, "raw_nl": "Convert a boolean value into a string.", "signature": "public static String boolToString(boolean b)", "line_num": 268}
-{"task_id": 100, "raw_nl": "Convert an arbitrary text encoding to its canonical name.", "signature": "public static String canonicalEncodingName(String encoding)", "line_num": 298}
-{"task_id": 101, "raw_nl": "Create a copy of the Integer array.", "signature": "public int[] copy(int[] arr)", "line_num": 60}
-{"task_id": 102, "raw_nl": "Returns the current number of entries in the map.", "signature": "public static int size(Map<String, String> map)", "line_num": 404}
-{"task_id": 103, "raw_nl": "Returns true if two doubles are considered equal. Tests if the absolute difference between the two doubles has a difference less then a given double (epsilon)Returns true if two doubles are considered equal. Tests if the absolute difference between the two doubles has a difference less then a given double (epsilon)", "signature": "public static boolean equals(double a, double b, double epsilon)", "line_num": 405}
-{"task_id": 104, "raw_nl": "Puts a byte and a short into this byte vector. The byte vector is automatically enlarged if necessary.", "signature": "public void putShort(byte[] data, byte b, short s)", "line_num": 1011}
-{"task_id": 105, "raw_nl": "Advances the iterator either forward or backward the specified number of steps. Negative values move backward, and positive values move forward. This is equivalent to repeatedly calling next() or previous().","signature": "public int next(Iterator<Integer> iterator, int n)","line_num": 1018}
-{"task_id": 106, "raw_nl": "一维数组转为二维数组", "signature": "public int[][] arrayToMatrix(int[] m, int width, int height)", "line_num": 1028}
-{"task_id": 107, "raw_nl": "Verifies that the given array is not null or empty.", "signature": "public boolean checkNotNullOrEmpty(int[] array)", "line_num": 1043}
-{"task_id": 108, "raw_nl": "Removes all white spaces from a string A whitespace is identified using the Java method Character.isWhiteSpace", "signature": "public String removeAllWhiteSpaces(String str)", "line_num": 1170}
-{"task_id": 109, "raw_nl": "subtract b from a", "signature": "public String[] sub(String[] a, String[] b)", "line_num": 1187}
-{"task_id": 110, "raw_nl": "Converts the string argument into a float value.", "signature": "public float parseFloat(String floatStr)", "line_num": 1230}
-{"task_id": 111, "raw_nl": "Return true if the local path is a Windows absolute path.", "signature": "private boolean isWindowsAbsolutePath(String path)", "line_num": 1286}
-{"task_id": 112, "raw_nl": "Calculates the distance between two points in high-dimensional space.", "signature": "public double length(double[] p0, double[] p1)", "line_num": 1310}
-{"task_id": 113, "raw_nl": "This function takes an array of words, and returns a string with all the words in the separated by a space.", "signature": "public String getStringfromStringArray(String[] array)", "line_num": 1320}
-{"task_id": 114, "raw_nl": "Check whether a file is actually a valid zip", "signature": "public boolean isValidZip(File zip)", "line_num": 3530}
-{"task_id": 115, "raw_nl": "Parse a list of longs into strings.", "signature": "public String[] toTimestampStrs(long[] timestamps)", "line_num": 3587}
-{"task_id": 116, "raw_nl": "Change the size of this array. Content between indexes 0 and min(size(), newSize) will be preserved.", "signature": "public void resize(int[] arr,long newSize)", "line_num": 3595}
-{"task_id": 117, "raw_nl": "概述：截取指定长度的数组", "signature": "public byte[] subBytes(byte[] src, int pos, int count)", "line_num": 3644}
-{"task_id": 118, "raw_nl": "返回不小于输入值value的最小整数", "signature": "public int floor(double val)", "line_num": 3820}
-{"task_id": 119, "raw_nl": "保留两位小数", "signature": "public String formatDouble(double val)", "line_num": 3881}
-{"task_id": 120, "raw_nl": "Compares the two specified double values,return 1 if the first value is greater than the second value,-1 if the first value is less than the second value,0 if the two values are equal. There are two special cases: Double.NaN is equal to Double.NaN and it is greater than any other double value, including Double.POSITIVE_INFINITY; +0.0d is greater than -0.0d", "signature": "public int compare(double double1, double double2)", "line_num": 3888}
-{"task_id": 121, "raw_nl": "Get the index of the next slash.", "signature": "public int getNextSlash(String path, int index)", "line_num": 3890}
-{"task_id": 122, "raw_nl": "Returns true iff all entries of (all subarrays of) the input array are >= 0. Returns true if the array is non-null, but empty", "signature": "public boolean isNonNegative(long[][] in)", "line_num": 3894}
-{"task_id": 123, "raw_nl": "Returns maximum possible integer, less or equal than oldValue, divisible by quantum.", "signature": "public int floor(int x, int quantum)", "line_num": 3897}
-{"task_id": 124, "raw_nl": "Appends an item to the list.", "signature": "public void append(List<String> list, String item)", "line_num": 3911}
-{"task_id": 125, "raw_nl": "判断某个日期属于本月的第几天", "signature": "public int getDaysByMonth(String dateTime)", "line_num": 6004}
-{"task_id": 126, "raw_nl": "Unzip the contents of the given zip in the given directory (create it if it doesn't exist)", "signature": "public void unzip(String zipPath, String destDirPath)", "line_num": 6028}
-{"task_id": 127, "raw_nl": "returns a array including given range. [start, end)", "signature": "public int[] range(int start, int end)", "line_num": 6053}
-{"task_id": 128, "raw_nl": "Clear the given calendar, setting to zero all time values less than or equal to that of the given field. For example, clearing to Calendar#HOUR will floor the time to nearest hour which occurred before or at the given time (e.g., 1:32 --> 1:30).", "signature": "public Calendar clearTo(Calendar c, int field)", "line_num": 6076}
-{"task_id": 129, "raw_nl": "获取当前系统时间 minute分钟后 的时间", "signature": "public String getNowDate(int minute)", "line_num": 6094}
-{"task_id": 130, "raw_nl": "Check the given value is in int range.", "signature": "public boolean isDecimalWithinIntRange(BigDecimal decimalValue)", "line_num": 6096}
-{"task_id": 131, "raw_nl": "Produces a new double array containing the elements between the start and end indices. The start index is inclusive, the end index exclusive. Null array input produces null output.", "signature": "public double[] subarray(final double[] array, int startIndexInclusive, int endIndexExclusive)", "line_num": 6121}
-{"task_id": 132, "raw_nl": "将微博时间字符串转换成yyyyMMddHHmmSS 微博时间字符串有： xx分钟前 今天 11:53 07月09日 13:36 2010-09-23 19:55:38", "signature": "public String parseDate(String weiboTimeStr)", "line_num": 6212}
-{"task_id": 133, "raw_nl": "返回当月开始时间", "signature": "public long currentMonthStartUnixTime()", "line_num": 6215}
-{"task_id": 134, "raw_nl": "Multiply Long and Double numbers.", "signature": "public Long multiply(Long number, Double multiplier)", "line_num": 6224}
-{"task_id": 135, "raw_nl": "Multiply two Short numbers.", "signature": "public Short multiply(Short a, Short b)", "line_num": 6225}
-{"task_id": 136, "raw_nl": "Attempt to find a field on the supplied Class with the supplied name and/or type. Searches all superclasses up to Object.", "signature": "public Field findField(Class clazz, String name, Class type)", "line_num": 6230}
-{"task_id": 137, "raw_nl": "获取request的IP地址", "signature": "public String getIPAddr(HttpRequest request)", "line_num": 6319}
-{"task_id": 138, "raw_nl": "Convert byte array to binary String", "signature": "public String toBinary(byte[] pBytes) ", "line_num": 6377}
-{"task_id": 139, "raw_nl": "Convert arguments of a method (signature) to an array of Type objects.", "signature": "public Type[] getArgumentTypes(String signature)", "line_num": 6412}
-{"task_id": 140, "raw_nl": "Convert a partial buffer to a String.", "signature": "public String toString(ByteBuffer buffer, int position, int length, Charset charset)", "line_num": 6524}
-{"task_id": 141, "raw_nl": "两个时间之间相差距离多少天,时间格式yyyy-MM-dd", "signature": "public long getDistanceDays(String str1, String str2)", "line_num": 6599}
-{"task_id": 142, "raw_nl": "获取url的顶级域名", "signature": "public String getTopDomain(String url)", "line_num": 6638}
-{"task_id": 143, "raw_nl": "Returns true if the given String matches to one of the provided Patterns, false otherwise.", "signature": "public boolean matchesPattern(String _string, Pattern[] _patterns)", "line_num": 8500}
-{"task_id": 144, "raw_nl": "Extracts all the files in the given zip file to the input destination path. If zip file does not exist or destination path is invalid then an exception is thrown.", "signature": "public void extractAll(String destPath, String zipName)", "line_num": 8506}
-{"task_id": 145, "raw_nl": "判断两个数组的内容是否相等 用于equals的比较", "signature": "public boolean equals(Object[] array, Object[] other)", "line_num": 8550}
-{"task_id": 146, "raw_nl": "Returns a set with all unique methodNames of methods.", "signature": "public Set<String> getMethods(ClassLoader classLoader, String className)", "line_num": 8553}
-{"task_id": 147, "raw_nl": "Returns the pid of the task", "signature": "String getPid(FutureTask t)", "line_num": 8577}
-{"task_id": 148, "raw_nl": "Swaps the elements at the specified positions in the specified list. (If the specified positions are equal, invoking this method leaves the list unchanged.)", "signature": "public <E> void swap(List<E> list, int i, int j)", "line_num": 8596}
-{"task_id": 149, "raw_nl": "Get the radian between current line(determined by point A and B) and horizontal line.", "signature": "public float getRadian(Point A, Point B)", "line_num": 8606}
-{"task_id": 151, "raw_nl": "Converts from an int array to an Integer array.", "signature": "public Integer[] asObjectArray(int[] array)", "line_num": 8693}
-{"task_id": 152, "raw_nl": "生成32位的MD5码", "signature": "public String toMd5Code(String str)", "line_num": 8707}
-{"task_id": 153, "raw_nl": "计算 C2 = M xor t", "signature": "public byte[] calculateC2(byte[] m, byte[] t)", "line_num": 8796}
-{"task_id": 154, "raw_nl": "获取资源文件的url", "signature": "public URL getUrlFile(String fileName)", "line_num": 8804}
-{"task_id": 156, "raw_nl": "Adds a given vector (array) to another one. * Every element of the second array (missing element is treated to be zero) is added to the corresponding element (if not missing) of the first array.", "signature": "public void addTo(float[] arrayA, float[] arrayB)", "line_num": 8859}
-{"task_id": 157, "raw_nl": "Searches backward for value in a given array", "signature": "public int lastIndexOf(float value, float[] array)", "line_num": 8860}
-{"task_id": 160, "raw_nl": "随机抽取指定数量的用户，作为中奖用户", "signature": "public List<String> doDrawRandom(List<String> users, int count)", "line_num": 9018}
-{"task_id": 161, "raw_nl": "Returns the geometric center of this sequence of points", "signature": "public Point getCenter(List<Point> points)", "line_num": 9171}
-{"task_id": 162, "raw_nl": "括号匹配检测.", "signature": "public boolean checkbracket(String str)", "line_num": 9353}
-{"task_id": 163, "raw_nl": "Move a file or directory from source to destination, recursively copying subdirectories.", "signature": "public void move(Path src, Path dest)", "line_num": 9373}
-{"task_id": 164, "raw_nl": "Reverse a Map into a ValueSetMap, where each original value is mapped to the set of all its original keys.", "signature": "public <K, V> Map<V, Set<K> > reverseMapIntoValueSetMap(Map<K, V> map)", "line_num": 9415}
-{"task_id": 165, "raw_nl": "Decode base64 string to bytes", "signature": "public byte[] base64decode(String base64string)", "line_num": 9506}
-{"task_id": 166, "raw_nl": "通过反射为对象的对应字段注入值", "signature": "public <T> T initByReflect(String name, String value, T t)", "line_num": 9590}
-{"task_id": 167, "raw_nl": "将数组转为 List", "signature": "public <T> List<T> array2List(T[] array)", "line_num": 9607}
-{"task_id": 168, "raw_nl": "获取过去7天的时期(包括今天)，格式为yymmdd", "signature": "public List<String> getWeekDate()", "line_num": 9630}
-{"task_id": 169, "raw_nl": "Returns the total number of bytes remaining in the buffer array.", "signature": "public long remaining(ByteBuffer[] buffers)", "line_num": 9662}
-{"task_id": 170, "raw_nl": "返回y年m月d日对应的农历.返回格式为某年某月某日 ?", "signature": "public String getLunarDate(int year_log, int month_log, int day_log)", "line_num": 9752}
-{"task_id": 171, "raw_nl": "去掉浮点数多余的0", "signature": "public String rvZeroAndDot(String s)", "line_num": 9799}
-{"task_id": 172, "raw_nl": "十进制整型数值减法，字符串表示每一个数", "signature": "public String bigDecimalSubtract(String str, String str1)", "line_num": 9800}
-{"task_id": 173, "raw_nl": "Get the extension of a file. Return a null string if there is no extension.", "signature": "public String getFileExtension(File file)", "line_num": 9854}
-{"task_id": 174, "raw_nl": "判定一个字符串是不是整数", "signature": "public boolean isInteger(String numberString)", "line_num": 9889}
-{"task_id": 176, "raw_nl": "Returns true if the bit at the given position is 1 and false otherwise.", "signature": "public boolean getBinaryState(int position)", "line_num": 9948}
-{"task_id": 177, "raw_nl": "获取当前进程的ID", "signature": "public String getProcessId()", "line_num": 9972}
-{"task_id": 178, "raw_nl": "Handles comparison between version numbers (the right way(TM))，bigger return 1 ，smaller return -1 and equals return 0. Examples of version strings: 1.6.7, 1.2_b10", "signature": "public int versionCompare(String v1, String v2)", "line_num": 10049}
-{"task_id": 179, "raw_nl": "在map中，如果key存在,则value相加；如果key 不存在，增加新的key，value", "signature": "public Long incrBy(Map<String,Long> valMap,String key, Long integer)", "line_num": 10092}
-{"task_id": 180, "raw_nl": "Check if a string is binary, which is composed of 0/1, and string length is multiple of 8.", "signature": "public boolean isBin(String bin)", "line_num": 10221}
-{"task_id": 181, "raw_nl": "通过反射, 获得Class定义中声明的泛型参数的类型. 如无法找到, 返回Object.class.", "signature": "public Class getClassGenricType(Class clazz)", "line_num": 10300}
-{"task_id": 182, "raw_nl": "滤掉词串中的空格、标点符号", "signature": "public String[] filter(String[] word_list)", "line_num": 10366}
-{"task_id": 183, "raw_nl": "BigDecimal加法运算", "signature": "public BigDecimal add(BigDecimal aVal, BigDecimal bVal)", "line_num": 10506}
-{"task_id": 186, "raw_nl": "Returns whether or no the JDK version is 1.7u40 and above.", "signature": "public boolean isJdk7u40Above()", "line_num": 10958}
+{"task_id": 0, "raw_nl": "Take a collection of Strings and return a combined string as a comma separated list with 'and' between the final pair. For example: [a, b, c] to \"a, b and c\".", "signature": "public String collectionToCommaDelimitedString(List<String> coll)"}
+{"task_id": 1, "raw_nl": "Creates a padding string of a certain length", "signature": "public String createPadding(int length, char padChar)"}
+{"task_id": 2, "raw_nl": "Create and returns a HttpURLConnection connection to a webpage", "signature": "public HttpURLConnection createHttpConnection(URL url, int connectTimeout, Map<String, String> requestProperties)"}
+{"task_id": 3, "raw_nl": "Write content to the file. If file does not exist, it will create one.", "signature": "public void writeToFile(String content, String fileName)"}
+{"task_id": 4, "raw_nl": "Close Reader. If object is null it is ignored", "signature": "public void close(Reader reader)"}
+{"task_id": 5, "raw_nl": "max() that works on three integers. Like many of the other max() functions in this class", "signature": "public float max(float a, float b, float c) "}
+{"task_id": 6, "raw_nl": "put a short value into a byte array with specific offset", "signature": "public void putShort(byte[] data, short value, int offset)"}
+{"task_id": 7, "raw_nl": "从 http 服务拉取配置文件并解析为Properties 对象", "signature": "public Properties getProperties(String url)"}
+{"task_id": 8, "raw_nl": "给一个数组，找出最大值并且返回。", "signature": "public int findMaxNumber(int[] nums)"}
+{"task_id": 9, "raw_nl": "将 Date 类型转为时间字符串，格式为 format", "signature": "public String date2String(final Date date, final DateFormat format)"}
+{"task_id": 10, "raw_nl": "Looks through the backups directory and assembles a list of all json backup files found. ", "signature": "public List<String> getBackupFiles(String dir)"}
+{"task_id": 11, "raw_nl": "Rearranges the elements of the specified subarray in random order.", "signature": "public void shuffle(int[] array)"}
+{"task_id": 12, "raw_nl": "Retrieves the value by specified int index of the given List.", "signature": "public String getValue(List<String> list, int index)"}
+{"task_id": 13, "raw_nl": "Returns a string, consisting of given length random char from given alphabet. ", "signature": "public String randomString(int length, String alphabet)"}
+{"task_id": 14, "raw_nl": "用1到n随机初始化二维数组", "signature": "public void init(int[][] arr, int n) "}
+{"task_id": 15, "raw_nl": "Copy a file from source path to destination path", "signature": "public void copyFile(String sourcePath, String destPath)"}
+{"task_id": 16, "raw_nl": "Get a hashCode for the real vector. All NaN values have the same hash code.", "signature": "public int hashCode(double[] vector)"}
+{"task_id": 17, "raw_nl": "Parses character set name to Charset object", "signature": "public Charset charsetForName(String charsetName)"}
+{"task_id": 18, "raw_nl": "Reads up to len bytes of data from this input stream into an array of bytes", "signature": "public byte[] readBytes(java.io.InputStream in, int len)"}
+{"task_id": 19, "raw_nl": "Parses query string to Map from an url.", "signature": "public Map<String, String> parseQueryString(String queryString)"}
+{"task_id": 20, "raw_nl": "Returns the value of an array by index, or null if the array has no value at that index.", "signature": "public Object get(Object[] array, int index)"}
+{"task_id": 21, "raw_nl": "Set the additional (undeclared) property with the specified name and value. If the property does not already exist, create it otherwise replace it.", "signature": "public void putAdditionalProperty(String key, Object value, Map<String, Object> additionalProperties)"}
+{"task_id": 22, "raw_nl": "Read the base64 encoded image data from a JPEG image.", "signature": "public String readImageData(String filename)"}
+{"task_id": 23, "raw_nl": "Returns the distance for the two given point", "signature": "public float distance(float x0, float y0, float x1, float y1)"}
+{"task_id": 24, "raw_nl": "Writes a collection of Strings to a File, overwriting any previous file contents. Each String is converted into a line in the File.", "signature": "public void writeFile(Collection<String> lines, File file)"}
+{"task_id": 25, "raw_nl": "Generate a hex string for the specified bytes.", "signature": "public final String toHex(byte[] byteArr)"}
+{"task_id": 26, "raw_nl": "获取相应文件filepath的input stream", "signature": "public java.io.InputStream getInputStream(String filepath)"}
+{"task_id": 27, "raw_nl": "获取类上具有指定注解的接口的名称，如果有多个，则以第一个为准 找不到符合条件的接口则返回 clazz 类的名称", "signature": "public String getInterfaceName(Class<?> clazz, Class<? extends Annotation> annotation)"}
+{"task_id": 28, "raw_nl": "Split the given sequence with the given delimiter and return list of values.", "signature": "public java.util.List<String> split(String sequence, String delimiter)"}
+{"task_id": 29, "raw_nl": "This returns the euclidean distance of two vectors sum(i=1,n) (q_i - p_i)^2", "signature": "public double euclideanDistance(double[] p, double[] q)"}
+{"task_id": 30, "raw_nl": "Returns the entry associated with the specified key in map.", "signature": "public <K,V> Map.Entry<K, V> getEntry(Map<K,V> map, K key)"}
+{"task_id": 31, "raw_nl": "Returns the index of the first occurrence of the specified element in this list, returns -1 if the element is not found", "signature": "public int indexOf(int[] array, int element) "}
+{"task_id": 32, "raw_nl": "Returns the minimum value in an array.", "signature": "public int min(int[] array)"}
+{"task_id": 33, "raw_nl": "Returns the sum of logarithms, which is Sum( Log(x[i]) ).", "signature": "public double logSum(double[] x)"}
+{"task_id": 34, "raw_nl": "Do a simple bubble sort to sort the server ids in ascending order.", "signature": "public void sortServers(int[] serverIds)"}
+{"task_id": 35, "raw_nl": "Ensure that an object reference passed as a parameter to the calling method is not null.", "signature": "public void ensureNotNull(Object obj)"}
+{"task_id": 36, "raw_nl": "Extract the filename from the given path.", "signature": "public String extractFileName(String path)"}
+{"task_id": 37, "raw_nl": "Fill 1D matrix with random numbers.", "signature": "public void fillMatrix_1D(double[] m)"}
+{"task_id": 38, "raw_nl": "Find the occurence of the given key in the given array. Linear search, worst case running time is O(n).", "signature": "public int linearSearch(int[] arr, int key) "}
+{"task_id": 39, "raw_nl": "Generate a not existing temporary file in specified dir.", "signature": "public String generateTempFile(String dir)"}
+{"task_id": 40, "raw_nl": "Get one character of index i from a given string buffer.", "signature": "public char getChar(StringBuffer sb, int i)"}
+{"task_id": 41, "raw_nl": "将map中所有的key转为大写", "signature": "public Map<String, Object> getAllUpperCase(Map<String, Object> map)"}
+{"task_id": 42, "raw_nl": "得到距离当前时间前一年的时间 @Title: getLastYearDate", "signature": "public String getLastYearDate()"}
+{"task_id": 43, "raw_nl": "更新url中的参数(保证参数不重复)", "signature": "public String updateUrl(String url, String key, String value)"}
+{"task_id": 44, "raw_nl": "移除 map 中的 null 或者 空字符串", "signature": "public void removeNullValue(Map<String, Object> map)"}
+{"task_id": 45, "raw_nl": "获取某个时间data的年份", "signature": "public int getYear(Date date)"}
+{"task_id": 46, "raw_nl": "Element-by-element matrix multiplication in place, A = A*B ", "signature": "public void matrixMultiply(double[][] A, double[][] B)"}
+{"task_id": 47, "raw_nl": "通过反射获取某个类的对象内所有的 public 成员变量, 包括该类的基类", "signature": "public List<Field> getFields(Class<?> clazz)"}
+{"task_id": 48, "raw_nl": "Adds all of the elements in collection to the Set.", "signature": "public void addAll(Set<Integer> set, Collection<Integer> collection)"}
+{"task_id": 49, "raw_nl": "Helper function to convert a long number into a byte array (least significant byte first).", "signature": "public byte[] longToBytes(long x)"}
+{"task_id": 50, "raw_nl": "将byte数组转化为16进制字符串", "signature": "public String bytesToHexString(byte[] src)"}
+{"task_id": 51, "raw_nl": "Returns a hash code value for this bit array.", "signature": "public int hashCode(byte[] byteArr)"}
+{"task_id": 52, "raw_nl": "Removes the entry with the specified key from this map if present.", "signature": "public void remove(Map<Integer, String> mapObj, Integer key)"}
+{"task_id": 53, "raw_nl": "Convert a primitive input array into its object array version (e.g. from int[] to Integer[]).", "signature": "public Integer[] toObjectArray(int[] array)"}
+{"task_id": 55, "raw_nl": "判断字符串是否只含字母和数字", "signature": "public boolean isLetterOrDigit(String str)"}
+{"task_id": 56, "raw_nl": "判断是否只含字母", "signature": "public boolean isLetter(char c)"}
+{"task_id": 57, "raw_nl": "Join 2 path elements if path separator not present at the end of first path element，else return the first element.", "signature": "public String joinPath(String path1, String path2)"}
+{"task_id": 58, "raw_nl": "Converts an int into an array of byte using the default (little endian, Lsb0) byte and bit ordering.", "signature": "public byte[] intToByteArray(int value)"}
+{"task_id": 60, "raw_nl": "convert byte array to a hex string", "signature": "public String bytesToHex(byte[] bytes)"}
+{"task_id": 62, "raw_nl": "Calculates combinatorial number C(n,m). ", "signature": "public int combinatorial(int n, int m)"}
+{"task_id": 63, "raw_nl": "检验用户名是否合法，只能包括a-z,A-Z,0-9和下划线_，不能以下划线结尾 用户名有最小长度和最大长度限制，比如用户名必须是4-20位", "signature": "public boolean checkUsername(String username)"}
+{"task_id": 64, "raw_nl": "得到现在时间", "signature": "public String getStringToday(String format)"}
+{"task_id": 65, "raw_nl": "return the last day of the date's month of specified string value in format: yyyy-MM", "signature": "public Date getMonthLastDay(String dateString)"}
+{"task_id": 66, "raw_nl": "Merges the given two lists to a new list, but eliminating duplicates elements.", "signature": "public <T> ArrayList<T> merge(ArrayList<T> list1, ArrayList<T> list2)"}
+{"task_id": 67, "raw_nl": "Multiplies the vector by the transpose of the given matrix.", "signature": "public double[] multiplyTranspose(double[] vector, double[][] matrix)"}
+{"task_id": 68, "raw_nl": "Removes and returns last element in list, return null if empty.", "signature": "public String removeLast(ArrayList<String> list)"}
+{"task_id": 69, "raw_nl": "Returns the largest value in linked list.", "signature": "public int getMax(LinkedList<Integer> list)"}
+{"task_id": 70, "raw_nl": "Calculate the elapsed time between two times specified in milliseconds.", "signature": "public long elapsedTime(Calendar start, Calendar end)"}
+{"task_id": 71, "raw_nl": "Compute the CRC32 of an array of bytes.", "signature": "public long crc32(byte[] bytes)"}
+{"task_id": 72, "raw_nl": "Create an instance of a clazz using the current thread context ClassLoader.", "signature": "public <T> T newInstance(Class<T> clazz)"}
+{"task_id": 73, "raw_nl": "Delete data from start until end index (end inclusive) of a object List.", "signature": "public <T> void delete(List<T> list, int start, int end) "}
+{"task_id": 75, "raw_nl": "Get the number of days for the given month in the given year.", "signature": "public int getDaysInMonth(int year, int month)"}
+{"task_id": 76, "raw_nl": "得到filepath路径下第一层目录结构中所有的class文件", "signature": "public List<String> getClassFileNames(String filepath)"}
+{"task_id": 78, "raw_nl": "用str2替换字符串str中第一个出现的str1", "signature": "public String replaceFirst(String str, String str1, String str2) "}
+{"task_id": 79, "raw_nl": "Writes certain bytes from the specified byte array starting from an offset to this output stream.", "signature": "public void write(byte[] b, int off, int len, OutputStream outputStream)"}
+{"task_id": 80, "raw_nl": "随机生成[origin, bound)范围之内的一个int值", "signature": "public int randomInt(int origin, int bound)"}
+{"task_id": 81, "raw_nl": "上传一个文件filename至指定路径pathname下", "signature": "public void uploadFile(String pathname, String filename)"}
+{"task_id": 82, "raw_nl": "Debug helper function that returns the diff of two property maps, only displaying the key that is different and in which map it exists compared to the other map,example:map:key1,key2 map2:key1,key2,key3", "signature": "public String diff(java.util.Map<String, String> map1, java.util.Map<String, String> map2) "}
+{"task_id": 83, "raw_nl": "Returns a new, immutable collection containing the names of all entities within the directory denoted by the current path", "signature": "public List<String> getFiles(String dir)"}
+{"task_id": 84, "raw_nl": "Rotate this a two-dimensional point around Y axis with the given angle in radians.", "signature": "public Point rotateY(double angle, Point point)"}
+{"task_id": 85, "raw_nl": "If the string passed in is not blank or null and did not end with the trailing value, then appended the trailing value to it and return the result ", "signature": "public String appendTrailing(String str, String trailing)"}
+{"task_id": 86, "raw_nl": "Returns true if the collection contains an element for the key.", "signature": "public boolean containsKey(Collection<String> collection, String key)"}
+{"task_id": 87, "raw_nl": "Returns true if the given object is an instance of the class or interface specified.", "signature": "public boolean isInstanceOf(Object object, Class<?> type)"}
+{"task_id": 88, "raw_nl": "将16进制字符串转10进制", "signature": "public int hexStringToInt(String hexString)"}
+{"task_id": 89, "raw_nl": "Add two integers, checking for overflow.", "signature": "public boolean checkOverflow(int x, int y)"}
+{"task_id": 90, "raw_nl": "Add the value to the HashSet given by map.get(key), creating a new HashSet if the HashSet is null", "signature": "public void addToSet(Map<String, HashSet<Integer>> map, String key, Integer value)"}
+{"task_id": 91, "raw_nl": "Calculate and return the average of the two values rounded DOWN.", "signature": "public int average(int a, int b)"}
+{"task_id": 92, "raw_nl": "Check if #MIN_VALUE <= value <= #MAX_VALUE and if not an IllegalArgumentException is thrown.", "signature": "public void checkRange(int value, int min, int max)"}
+{"task_id": 93, "raw_nl": "Check whether the String is a valid Java number", "signature": "public boolean isNumber(String str)"}
+{"task_id": 94, "raw_nl": "Choose a pseudo-random element from the specified array.", "signature": "public int random(int[] array)"}
+{"task_id": 95, "raw_nl": "Compare two java objects for equality.", "signature": "public boolean equals(Object o1, Object o2)"}
+{"task_id": 96, "raw_nl": "Compute the product of this matrix and the given column vector.", "signature": "public double[] product(double[] columnVector,double[][] matrix)"}
+{"task_id": 97, "raw_nl": "Concatenate two arrays of T type", "signature": "public <T> T[] concat(T[] a, T[] b)"}
+{"task_id": 98, "raw_nl": "Convert the text '&' mnemonic string to text string. The '&' symbol is treated as the mnemonic pointer. The double \"&&\" symbols are treated as the single '&'. For example the string \"&Look && Feel\" is converted to \"Look & Feel\".", "signature": "public String convertMnemonicString(String text)"}
+{"task_id": 99, "raw_nl": "Convert a boolean value into a string.", "signature": "public String boolToString(boolean b)"}
+{"task_id": 100, "raw_nl": "Convert an arbitrary text encoding to its canonical name.", "signature": "public String canonicalEncodingName(String encoding)"}
+{"task_id": 101, "raw_nl": "Create a copy of the Integer array.", "signature": "public int[] copy(int[] arr)"}
+{"task_id": 102, "raw_nl": "Returns the current number of entries in the map.", "signature": "public int size(Map<String, String> map)"}
+{"task_id": 103, "raw_nl": "Returns true if two doubles are considered equal. Tests if the absolute difference between the two doubles has a difference less then a given double (epsilon)Returns true if two doubles are considered equal. Tests if the absolute difference between the two doubles has a difference less then a given double (epsilon)", "signature": "public boolean equals(double a, double b, double epsilon)"}
+{"task_id": 104, "raw_nl": "Puts a byte and a short into this byte vector. The byte vector is automatically enlarged if necessary.", "signature": "public void putShort(byte[] data, byte b, short s)"}
+{"task_id": 105, "raw_nl": "Advances the iterator either forward or backward the specified number of steps. Negative values move backward, and positive values move forward. This is equivalent to repeatedly calling next() or previous().","signature": "public int next(Iterator<Integer> iterator, int n)"}
+{"task_id": 106, "raw_nl": "一维数组转为二维数组", "signature": "public int[][] arrayToMatrix(int[] m, int width, int height)"}
+{"task_id": 107, "raw_nl": "Verifies that the given array is not null or empty.", "signature": "public boolean checkNotNullOrEmpty(int[] array)"}
+{"task_id": 108, "raw_nl": "Removes all white spaces from a string A whitespace is identified using the Java method Character.isWhiteSpace", "signature": "public String removeAllWhiteSpaces(String str)"}
+{"task_id": 109, "raw_nl": "subtract b from a", "signature": "public String[] sub(String[] a, String[] b)"}
+{"task_id": 110, "raw_nl": "Converts the string argument into a float value.", "signature": "public float parseFloat(String floatStr)"}
+{"task_id": 111, "raw_nl": "Return true if the local path is a Windows absolute path.", "signature": "private boolean isWindowsAbsolutePath(String path)"}
+{"task_id": 112, "raw_nl": "Calculates the distance between two points in high-dimensional space.", "signature": "public double length(double[] p0, double[] p1)"}
+{"task_id": 113, "raw_nl": "This function takes an array of words, and returns a string with all the words in the separated by a space.", "signature": "public String getStringfromStringArray(String[] array)"}
+{"task_id": 114, "raw_nl": "Check whether a file is actually a valid zip", "signature": "public boolean isValidZip(File zip)"}
+{"task_id": 115, "raw_nl": "Parse a list of longs into strings.", "signature": "public String[] toTimestampStrs(long[] timestamps)"}
+{"task_id": 116, "raw_nl": "Change the size of this array. Content between indexes 0 and min(size(), newSize) will be preserved.", "signature": "public void resize(int[] arr,long newSize)"}
+{"task_id": 117, "raw_nl": "概述：截取指定长度的数组", "signature": "public byte[] subBytes(byte[] src, int pos, int count)"}
+{"task_id": 118, "raw_nl": "返回不小于输入值value的最小整数", "signature": "public int floor(double val)"}
+{"task_id": 119, "raw_nl": "保留两位小数", "signature": "public String formatDouble(double val)"}
+{"task_id": 120, "raw_nl": "Compares the two specified double values,return 1 if the first value is greater than the second value,-1 if the first value is less than the second value,0 if the two values are equal. There are two special cases: Double.NaN is equal to Double.NaN and it is greater than any other double value, including Double.POSITIVE_INFINITY; +0.0d is greater than -0.0d", "signature": "public int compare(double double1, double double2)"}
+{"task_id": 121, "raw_nl": "Get the index of the next slash.", "signature": "public int getNextSlash(String path, int index)"}
+{"task_id": 122, "raw_nl": "Returns true if all entries of (all subarrays of) the input array are >= 0. Returns true if the array is non-null, but empty", "signature": "public boolean isNonNegative(long[][] in)"}
+{"task_id": 123, "raw_nl": "Returns maximum possible integer, less or equal than oldValue, divisible by quantum.", "signature": "public int floor(int x, int quantum)"}
+{"task_id": 124, "raw_nl": "Appends an item to the list.", "signature": "public void append(List<String> list, String item)"}
+{"task_id": 125, "raw_nl": "判断某个日期属于本月的第几天", "signature": "public int getDaysByMonth(String dateTime)"}
+{"task_id": 126, "raw_nl": "Unzip the contents of the given zip in the given directory (create it if it doesn't exist)", "signature": "public void unzip(String zipPath, String destDirPath)"}
+{"task_id": 127, "raw_nl": "returns a array including given range. [start, end)", "signature": "public int[] range(int start, int end)"}
+{"task_id": 128, "raw_nl": "Clear the given calendar, setting to zero all time values less than or equal to that of the given field. For example, clearing to Calendar#HOUR will floor the time to nearest hour which occurred before or at the given time (e.g., 1:32 --> 1:30).", "signature": "public Calendar clearTo(Calendar c, int field)"}
+{"task_id": 129, "raw_nl": "获取当前系统时间 minute分钟后 的时间", "signature": "public String getNowDate(int minute)"}
+{"task_id": 130, "raw_nl": "Check the given value is in int range.", "signature": "public boolean isDecimalWithinIntRange(BigDecimal decimalValue)"}
+{"task_id": 131, "raw_nl": "Produces a new double array containing the elements between the start and end indices. The start index is inclusive, the end index exclusive. Null array input produces null output.", "signature": "public double[] subarray(final double[] array, int startIndexInclusive, int endIndexExclusive)"}
+{"task_id": 132, "raw_nl": "将微博时间字符串转换成yyyyMMddHHmmSS 微博时间字符串有： xx分钟前 今天 11:53 07月09日 13:36 2010-09-23 19:55:38", "signature": "public String parseDate(String weiboTimeStr)"}
+{"task_id": 133, "raw_nl": "返回当月开始时间", "signature": "public long currentMonthStartUnixTime()"}
+{"task_id": 134, "raw_nl": "Multiply Long and Double numbers.", "signature": "public Long multiply(Long number, Double multiplier)"}
+{"task_id": 135, "raw_nl": "Multiply two Short numbers.", "signature": "public Short multiply(Short a, Short b)"}
+{"task_id": 136, "raw_nl": "Attempt to find a field on the supplied Class with the supplied name and/or type. Searches all superclasses up to Object.", "signature": "public Field findField(Class clazz, String name, Class type)"}
+{"task_id": 137, "raw_nl": "获取request的IP地址", "signature": "public String getIPAddr(HttpRequest request)"}
+{"task_id": 138, "raw_nl": "Convert byte array to binary String", "signature": "public String toBinary(byte[] pBytes) "}
+{"task_id": 139, "raw_nl": "Convert arguments of a method (signature) to an array of Type objects.", "signature": "public Type[] getArgumentTypes(String signature)"}
+{"task_id": 140, "raw_nl": "Convert a partial buffer to a String.", "signature": "public String toString(ByteBuffer buffer, int position, int length, Charset charset)"}
+{"task_id": 141, "raw_nl": "两个时间之间相差距离多少天,时间格式yyyy-MM-dd", "signature": "public long getDistanceDays(String str1, String str2)"}
+{"task_id": 142, "raw_nl": "获取url的顶级域名", "signature": "public String getTopDomain(String url)"}
+{"task_id": 143, "raw_nl": "Returns true if the given String matches to one of the provided Patterns, false otherwise.", "signature": "public boolean matchesPattern(String _string, Pattern[] _patterns)"}
+{"task_id": 144, "raw_nl": "Extracts all the files in the given zip file to the input destination path. If zip file does not exist or destination path is invalid then an exception is thrown.", "signature": "public void extractAll(String destPath, String zipName)"}
+{"task_id": 145, "raw_nl": "判断两个数组的内容是否相等 用于equals的比较", "signature": "public boolean equals(Object[] array, Object[] other)"}
+{"task_id": 146, "raw_nl": "Returns a set with all unique methodNames of methods.", "signature": "public Set<String> getMethods(ClassLoader classLoader, String className)"}
+{"task_id": 147, "raw_nl": "Returns the pid of the task", "signature": "String getPid(FutureTask t)"}
+{"task_id": 148, "raw_nl": "Swaps the elements at the specified positions in the specified list. (If the specified positions are equal, invoking this method leaves the list unchanged.)", "signature": "public <E> void swap(List<E> list, int i, int j)"}
+{"task_id": 149, "raw_nl": "Get the radian between current line(determined by point A and B) and horizontal line.", "signature": "public float getRadian(Point A, Point B)"}
+{"task_id": 151, "raw_nl": "Converts from an int array to an Integer array.", "signature": "public Integer[] asObjectArray(int[] array)"}
+{"task_id": 152, "raw_nl": "生成32位的MD5码", "signature": "public String toMd5Code(String str)"}
+{"task_id": 153, "raw_nl": "计算 C2 = M xor t", "signature": "public byte[] calculateC2(byte[] m, byte[] t)"}
+{"task_id": 154, "raw_nl": "获取资源文件的url", "signature": "public URL getUrlFile(String fileName)"}
+{"task_id": 156, "raw_nl": "Adds a given vector (array) to another one. * Every element of the second array (missing element is treated to be zero) is added to the corresponding element (if not missing) of the first array.", "signature": "public void addTo(float[] arrayA, float[] arrayB)"}
+{"task_id": 157, "raw_nl": "Searches backward for value in a given array", "signature": "public int lastIndexOf(float value, float[] array)"}
+{"task_id": 160, "raw_nl": "随机抽取指定数量的用户，作为中奖用户", "signature": "public List<String> doDrawRandom(List<String> users, int count)"}
+{"task_id": 161, "raw_nl": "Returns the geometric center of this sequence of points", "signature": "public Point getCenter(List<Point> points)"}
+{"task_id": 162, "raw_nl": "括号匹配检测.", "signature": "public boolean checkbracket(String str)"}
+{"task_id": 163, "raw_nl": "Move a file or directory from source to destination, recursively copying subdirectories.", "signature": "public void move(Path src, Path dest)"}
+{"task_id": 164, "raw_nl": "Reverse a Map into a ValueSetMap, where each original value is mapped to the set of all its original keys.", "signature": "public <K, V> Map<V, Set<K> > reverseMapIntoValueSetMap(Map<K, V> map)"}
+{"task_id": 165, "raw_nl": "Decode base64 string to bytes", "signature": "public byte[] base64decode(String base64string)"}
+{"task_id": 166, "raw_nl": "通过反射为对象的对应字段注入值", "signature": "public <T> T initByReflect(String name, String value, T t)"}
+{"task_id": 167, "raw_nl": "将数组转为 List", "signature": "public <T> List<T> array2List(T[] array)"}
+{"task_id": 168, "raw_nl": "获取过去7天的时期(包括今天)，格式为yymmdd", "signature": "public List<String> getWeekDate()"}
+{"task_id": 169, "raw_nl": "Returns the total number of bytes remaining in the buffer array.", "signature": "public long remaining(ByteBuffer[] buffers)"}
+{"task_id": 170, "raw_nl": "返回y年m月d日对应的农历.返回格式为某年某月某日 ?", "signature": "public String getLunarDate(int year_log, int month_log, int day_log)"}
+{"task_id": 171, "raw_nl": "去掉浮点数多余的0", "signature": "public String rvZeroAndDot(String s)"}
+{"task_id": 172, "raw_nl": "十进制整型数值减法，字符串表示每一个数", "signature": "public String bigDecimalSubtract(String str, String str1)"}
+{"task_id": 173, "raw_nl": "Get the extension of a file. Return a null string if there is no extension.", "signature": "public String getFileExtension(File file)"}
+{"task_id": 174, "raw_nl": "判定一个字符串是不是整数", "signature": "public boolean isInteger(String numberString)"}
+{"task_id": 176, "raw_nl": "Returns true if the bit at the given position is 1 and false otherwise.", "signature": "public boolean getBinaryState(int position)"}
+{"task_id": 177, "raw_nl": "获取当前进程的ID", "signature": "public String getProcessId()"}
+{"task_id": 178, "raw_nl": "Handles comparison between version numbers (the right way(TM))，bigger return 1 ，smaller return -1 and equals return 0. Examples of version strings: 1.6.7, 1.2_b10", "signature": "public int versionCompare(String v1, String v2)"}
+{"task_id": 179, "raw_nl": "在map中，如果key存在,则value相加；如果key 不存在，增加新的key，value", "signature": "public Long incrBy(Map<String,Long> valMap,String key, Long integer)"}
+{"task_id": 180, "raw_nl": "Check if a string is binary, which is composed of 0/1, and string length is multiple of 8.", "signature": "public boolean isBin(String bin)"}
+{"task_id": 181, "raw_nl": "通过反射, 获得Class定义中声明的泛型参数的类型. 如无法找到, 返回Object.class.", "signature": "public Class getClassGenricType(Class clazz)"}
+{"task_id": 182, "raw_nl": "滤掉词串中的空格、标点符号", "signature": "public String[] filter(String[] word_list)"}
+{"task_id": 183, "raw_nl": "BigDecimal加法运算", "signature": "public BigDecimal add(BigDecimal aVal, BigDecimal bVal)"}
+{"task_id": 186, "raw_nl": "Returns whether or no the JDK version is 1.7u40 and above.", "signature": "public boolean isJdk7u40Above()"}

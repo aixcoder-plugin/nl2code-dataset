@@ -13,7 +13,7 @@ public class Evaluation154 extends AbstractBaseEvaluation {
 
     List<String> resourceFileNames=new ArrayList<String>(){
         {
-            add("src/main/com/aixcode/autoTest/Excutor.java");
+            add("src/main/java/com/aixcode/autoTest/Excutor.java");
             add(".");
             add("/");
     }};

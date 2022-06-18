@@ -16,14 +16,14 @@ public class Evaluation39 extends AbstractBaseEvaluation {
     @Override
     public int[] evaluation() {
         Map<String, String> map = new HashMap<String, String>();
-        map.put("src/main/com/aixcode/resource/tempFile", "Checking");
-        map.put("src/main/com/aixcode/resource/tempFile/Sub0", "Checking");
-        map.put("src/main/com/aixcode/resource/tempFile/Sub1", "Checking");
+        map.put("src/main/resources/tempFile", "Checking");
+        map.put("src/main/resources/tempFile/Sub0", "Checking");
+        map.put("src/main/resources/tempFile/Sub1", "Checking");
 
         String nonExistedDir = "hah/notExistedDir/";
         String dirNull = null;
 
-        File file = new File("src/main/com/aixcode/resource/tempFile");
+        File file = new File("src/main/resources/tempFile");
         if (!file.isDirectory()) {
             file.mkdir();
         }
