@@ -16,13 +16,13 @@ public class Evaluation163 extends AbstractBaseEvaluation {
         int passCount = 0;
         int totalCount = 1;
         try {
-            String srcPath="src/main/com/aixcode/resource/tempFile/test163/srcDir/";
+            String srcPath="src/main/resources/tempFile/test163/srcDir/";
             String fileName="dir1"+File.separator+"dir2"+File.separator+"file1.tmp";
             File srcFile= new File(srcPath+fileName);
             if (!srcFile.exists()){
                 createFileRecursion(srcPath+fileName,0);
             }
-            String desPath="src/main/com/aixcode/resource/tempFile/test163/desDir/";
+            String desPath="src/main/resources/tempFile/test163/desDir/";
             if (new File(desPath+fileName).exists()){
                 delFileAndDir(new File(desPath));
             }

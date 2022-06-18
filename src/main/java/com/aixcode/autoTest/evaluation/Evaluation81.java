@@ -26,13 +26,13 @@ public class Evaluation81 extends AbstractBaseEvaluation {
         int passCount = 0;
         int totalCount = 1;
         try {
-            String src_Path_Name = project_root_path + File.separator + "nl2code-dataset/src/main/resources/tempFile/test81/fromDir/";
+            String src_Path_Name = project_root_path + File.separator + "src/main/resources/tempFile/test81/fromDir/";
             String fileName = "file1.tmp";
             File srcFile= new File(src_Path_Name + fileName);
             if (!srcFile.exists()){
                 createFileRecursion(src_Path_Name+fileName,0);
             }
-            String desPath = project_root_path + File.separator + "nl2code-dataset/src/main/resources/tempFile/test81/toDir/";
+            String desPath = project_root_path + File.separator + "src/main/resources/tempFile/test81/toDir/";
             if (new File(desPath+fileName).exists()){
                 delFileAndDir(new File(desPath));
             }

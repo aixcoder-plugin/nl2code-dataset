@@ -51,9 +51,6 @@ public class Evaluation0 extends AbstractBaseEvaluation {
             try{
                 if(solution.collectionToCommaDelimitedString(entry.getKey()).replaceAll(" ","").equals(entry.getValue())){
                     pass_count++;
-                }else{
-                    System.out.println(solution.collectionToCommaDelimitedString(entry.getKey()));
-                    System.out.println(entry.getValue());
                 }
             }catch(Exception e){
 

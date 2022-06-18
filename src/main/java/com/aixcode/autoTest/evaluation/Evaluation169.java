@@ -29,11 +29,4 @@ public class Evaluation169 extends AbstractBaseEvaluation {
         }
         return new int[]{passCount,1};
     }
-
-
-    public static void main(String[] args) {
-        ByteBuffer buffer = ByteBuffer.allocate(24);
-        buffer.putDouble(1.0);
-        System.out.println(buffer.remaining());
-    }
 }

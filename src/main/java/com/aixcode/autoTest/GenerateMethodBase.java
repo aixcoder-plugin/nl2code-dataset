@@ -190,7 +190,7 @@ public abstract class GenerateMethodBase {
     public void move(Path src, Path dest) throws Exception {throw new RuntimeException("Not implemented");}
     public <K, V> Map<V, Set<K> > reverseMapIntoValueSetMap(Map<K, V> map) throws Exception {throw new RuntimeException("Not implemented");}
     public byte[] base64decode(String base64string) throws Exception {throw new RuntimeException("Not implemented");}
-    public <T> T initByReflect(String name, Object value, T t) throws Exception {throw new RuntimeException("Not implemented");}
+    public <T> T initByReflect(String name, String value, T t) throws Exception {throw new RuntimeException("Not implemented");}
     public <T> List<T> array2List(T[] array) throws Exception {throw new RuntimeException("Not implemented");}
     public List<String> getWeekDate() throws Exception {throw new RuntimeException("Not implemented");}
     public long remaining(ByteBuffer[] buffers) throws Exception {throw new RuntimeException("Not implemented");}

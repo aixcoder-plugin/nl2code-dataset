@@ -35,8 +35,6 @@ public class Evaluation180 extends AbstractBaseEvaluation {
                 actualReturn = solution.isBin(keyStr);
                 if (actualReturn == result) {
                     pass_count++;
-                }else {
-                    System.out.println("Fail: " + keyStr + " expect: " + result + " actual: " + actualReturn);
                 }
             } catch (Exception e) {
             }

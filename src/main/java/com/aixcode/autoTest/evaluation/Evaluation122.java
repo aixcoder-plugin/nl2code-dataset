@@ -15,11 +15,12 @@ public class Evaluation122 extends AbstractBaseEvaluation {
     public int[] evaluation() {
         int pass_count = 0;
         Map<long[][],Boolean> map = new HashMap<>(){{
-            put(new long[][]{{-1},{1}}, false);
-            put(new long[][]{{-3}, {1,12}}, false);
-            put(new long[][]{{1},{2}}, true);
-            put(new long[][]{{1,2},{}}, true);
+            put(new long[][]{{-1},{1}}, false);//contain negative array
+            put(new long[][]{null, {1,12}}, false);//contain null array
+            put(new long[][]{{1},{2}}, true);//all positive array
+            put(new long[][]{{1,2},{}}, true);//contain empty array
             put(new long[][]{{1,2},{-2}}, false);
+            put(null, false);
         }};
         for (Map.Entry<long[][],Boolean> entry : map.entrySet()){
             try {

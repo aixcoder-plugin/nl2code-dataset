@@ -29,7 +29,7 @@ public class AixcoderAuto81 extends GenerateMethodBase {
             fos.close();
             fis.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
     }
 }

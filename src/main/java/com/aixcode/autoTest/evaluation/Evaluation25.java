@@ -32,10 +32,7 @@ public class Evaluation25 extends AbstractBaseEvaluation {
             try{
                 if(solution.toHex(entry.getKey()).equals( entry.getValue())){
                     pass_count++;
-                }else {
-                    System.out.println(solution.toHex(entry.getKey()) + " " + entry.getValue());
                 }
-                //assertEquals(checkUsername(entry.getKey()),entry.getValue());
             }catch(Exception e){
 
             }

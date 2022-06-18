@@ -8,29 +8,19 @@ public class Aixcoder166 extends GenerateMethodBase {
     /**
      * 通过反射为对象的对应字段注入值
      */
-    public<T> T initByReflect(String name, Object value, T t) {
-        if (null == t) {
-            throw new NullPointerException("t can not be null");
-        }
-
-        if (null == value) {
-            return null;
-        }
-
-        Class<?> clazz = t.getClass();
-
-        if (!clazz.isAssignableFrom(value.getClass())) {
-            throw new IllegalArgumentException("value must be assignable to" + clazz);
-        }
-
+    public<T> T initByReflect(String name, String value, T t) {
         try {
-            Field field = clazz.getDeclaredField(name);
-            field.setAccessible(true);
-            field.set(t, value);
-        } catch (NoSuchFieldException e) {
-            throw new IllegalArgumentException("no such field:" + name);
-        } catch (IllegalAccessException e) {
-            throw new IllegalArgumentException("illegal access:" + name);
+            Class<?> clazz = t.getClass();
+            Field[] fields = clazz.getDeclaredFields();
+
+            for (Field field : fields) {
+                if (field.getName().equals(name)) {
+                    field.setAccessible(true);
+                    field.set(t, value);
+                }
+            }
+        } catch (Exception e) {
+            //e.printStackTrace();
         }
 
         return t;

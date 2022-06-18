@@ -42,10 +42,8 @@ public class Evaluation44 extends AbstractBaseEvaluation {
                 }
             }
             pass_count = total_count - fail_count;
-            System.out.println(pass_count);
 
         }catch(Exception e){
-//            e.printStackTrace();
         }
 
         try {

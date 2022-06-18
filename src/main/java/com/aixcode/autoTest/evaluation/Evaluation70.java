@@ -48,7 +48,6 @@ public class Evaluation70 extends AbstractBaseEvaluation {
                     passCount++;
                 }
             } catch (Exception e) {
-                System.out.println(1);
             }
         }
         return new int[]{passCount, map.size()};

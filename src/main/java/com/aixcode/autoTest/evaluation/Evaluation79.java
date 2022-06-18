@@ -25,7 +25,7 @@ public class Evaluation79 extends AbstractBaseEvaluation {
                 Callable callable=new Callable<Integer>() {
                     @Override
                     public Integer call() throws Exception {
-                        String fileName= "src/main/com/aixcode/resource/tempFile/tempFile116.txt";
+                        String fileName= "src/main/resources/tempFile/tempFile116.txt";
                         byte[] b = input.getBytes();
                         FileOutputStream outputStream = new FileOutputStream(fileName);
                         solution.write(b, 0, b.length, outputStream);
@@ -53,10 +53,8 @@ public class Evaluation79 extends AbstractBaseEvaluation {
             if (!executorService.awaitTermination(3, TimeUnit.SECONDS)){
                 System.err.println("Pool did not terminate");
             }
-            System.out.println(passCount);
 
         }catch (Exception e){
-            e.printStackTrace();
         }
 
 

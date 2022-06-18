@@ -33,10 +33,6 @@ public class Evaluation11 extends AbstractBaseEvaluation {
                 solution.shuffle(arr);
                 if(!isSorted(arr)){
                     pass_count++;
-                }else {
-                    for(int i = 0; i < arr.length; i++)
-                        System.out.print(arr[i] + " ");
-                    System.out.println();
                 }
             }catch (Exception e) {
             }
