@@ -1,11 +1,12 @@
 package com.aixcode.autoTest.aixcoderV2;
 
-import java.util.*;
-import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld110 extends GenerateMethodBase {
-        public float parseFloat ( String floatStr ) { 
-java . lang . Float floatValue = new java . lang . Float ( floatStr ) ; 
-return floatValue . floatValue ( ) ; 
-} 
+    public float parseFloat(String floatStr) {
+        try {
+            return Float.parseFloat(floatStr);
+        } catch (NumberFormatException e) {
+            return Float.NaN;
+        }
     }
+}
