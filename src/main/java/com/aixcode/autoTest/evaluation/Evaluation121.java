@@ -15,15 +15,17 @@ public class Evaluation121 extends AbstractBaseEvaluation {
     public int[] evaluation() {
         int pass_count = 0;
         Map<String,Integer> map = new HashMap<>(){{
-            put("",-1);
-            put("/users",0);
-            put("users/com",5);
-            put("pass/",4);
-            put("emails/to", 6);
+            put("      ",-1);// not found
+            put("/users",0);//first one
+            put("users/",5);//last one
+            put("users/com",5); //in the middle
+            put("/////",0); //many slashes
+            put("emails\n\0/", 8); //after particular char
         }};
         for (Map.Entry<String,Integer> entry : map.entrySet()){
             try {
-                if (solution.getNextSlash(entry.getKey(), 0) == entry.getValue()){
+                int result = solution.getNextSlash(entry.getKey(), 0);
+                if (result == entry.getValue()){
                     pass_count++;
                 }
             }catch (Exception e) {
