@@ -2,6 +2,15 @@ package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+/**
+ * Returns a hash code value for this bit array.
+ * public int hashCode(byte[] byteArr)
+ */
 public class Evaluation51 extends AbstractBaseEvaluation {
 
 
@@ -9,67 +18,26 @@ public class Evaluation51 extends AbstractBaseEvaluation {
         super(basePackage, prefix);
     }
 
+    List<byte[]> byteArrList=new ArrayList<>(){{
+        add(new byte[]{1,23,5,29,10});
+        add(new byte[]{13,22,93,78});
+        add(new byte[]{31,25,92});
+        add(new byte[]{10});
+    }};
+
     @Override
     public int[] evaluation() {
-//        byte[] k0 = new byte[2];
-//        byte[] k1 = {1,5,6,9};
-//        byte[] k2 = {'a','b','c','d'};
-//        byte[] k3 = {'a'};
-//        byte[] k4 = {1} ;
-//        byte[] k5 = null;
-//        byte[] k6 = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-//        int pass_count = 0;
-//        int total_count = 7;
-//        try {
-//            if(solution.hashCode(k0) == 0){
-//                pass_count++;
-//            }
-//        } catch (Exception e) {
-//
-//        }
-//        try {
-//            if(solution.hashCode(k1) == 34791){
-//                pass_count++;
-//            }
-//        } catch (Exception e) {
-//
-//        }
-//        try {
-//            if(solution.hashCode(k2) == 2987074){
-//                pass_count++;
-//            }
-//        } catch (Exception e) {
-//
-//        }
-//        try {
-//            if(solution.hashCode(k3) == 'a'){
-//                pass_count++;
-//            }
-//        } catch (Exception e) {
-//
-//        }
-//        try {
-//            if(solution.hashCode(k4) == 1){
-//                pass_count++;
-//            }
-//        } catch (Exception e) {
-//
-//        }
-//        try {
-//            solution.hashCode(k5);
-//            pass_count++;
-//        } catch (Exception e) {
-//
-//        }
-//
-//        try {
-//            if(solution.hashCode(k6) > 0){
-//                pass_count++;
-//            }
-//        } catch (Exception e) {
-//
-//        }
+        try {
+            Set<Integer> resSet = new HashSet<>();
+            for(int i=0;i<byteArrList.size();i++){
+                resSet.add(solution.hashCode(byteArrList.get(i)));
+            }
+            if (resSet.size()>1){//can not return constant value
+                return new int[]{1,1};
+            }
+        }catch (Exception e){
 
-        return new int[]{1,1};
+        }
+        return new int[]{0,1};
     }
 }

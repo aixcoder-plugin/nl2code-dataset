@@ -2,91 +2,58 @@ package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+/**
+ *计算 C2 = M xor t
+ * public byte[] calculateC2(byte[] m, byte[] t)
+ */
 public class Evaluation153 extends AbstractBaseEvaluation {
     public Evaluation153(String basePackage, String prefix) {
         super(basePackage, prefix);
     }
 
+    List<byte[]> bytes1=new ArrayList<>(){{
+        add(new byte[]{12});
+        add(new byte[]{12});
+        add(new byte[]{21,62,42,12});
+        add(new byte[]{-12,52,81});
+        add(new byte[]{0,0,-32});
+    }};
+
+    List<byte[]> bytes2=new ArrayList<>(){{
+        add(new byte[]{31});
+        add(new byte[]{12});
+        add(new byte[]{42,19,52,18});
+        add(new byte[]{-42,-19,-52});
+        add(new byte[]{-42,0,32});
+    }};
+
     @Override
     public int[] evaluation() {
-        byte[] targetArray = new byte[]{1,2,3,4,5,6,7,8,9,0};
-        Map<byte[], byte[]> mTest = new HashMap<>();
-        mTest.put(new byte[]{1,2,3,4,5,6,7,8,9,0}, new byte[]{0,0,0,0,0,0,0,0,0,0});
-        mTest.put(new byte[]{2,1,4,3,6}, new byte[]{3,3,7,7,3});
-        mTest.put(new byte[]{127,127,127,127,127,127,127,127,127,127}, new byte[]{126,125,124,123,122,121,120,119,118,127});
-        mTest.put(new byte[10], new byte[]{1,2,3,4,5,6,7,8,9,0});
-
-        int pass_count = 0;
-        int total_count = 0;
-
-        for (Map.Entry<byte[], byte[]> arrBB : mTest.entrySet()) {
-            byte[] source = arrBB.getKey();
-            byte[] result = arrBB.getValue();
-            byte[] actualReturn;
+        int passCount = 0;
+        for (int i = 0; i < bytes1.size(); i++) {
             try {
-                total_count++;
-                actualReturn = solution.calculateC2(source, targetArray);
-                if (actualReturn.length == result.length){
-                    boolean isPass = true;
-                    for(int i=0;i<actualReturn.length;i++){
-                        if (actualReturn[i] != result[i]){
-                            isPass = false;
-                            break;
-                        }
+                byte[] arr1 = bytes1.get(i);
+                byte[] arr2 = bytes2.get(i);
+                byte[] res = solution.calculateC2(arr1, arr2);
+                boolean equals = true;
+                for (int j = 0; j < arr1.length; j++) {
+                    if ((arr1[j] ^ arr2[j]) != res[j]) {
+                        equals = false;
                     }
-                    if(isPass){
-                        pass_count++;
-                    }
+                }
+                if (equals) {
+                    passCount++;
                 }
             } catch (Exception e) {
+
             }
         }
-        try{
-            total_count++;
-            byte[] actualReturn = solution.calculateC2(null, targetArray);
-            if(actualReturn != null){
-                if (actualReturn.length == 0){
-                    pass_count++;
-                }
-            }else {
-                pass_count++;
-            }
 
-        }catch (Exception e){
-
-        }
-
-        try{
-            total_count++;
-            byte[] actualReturn = solution.calculateC2(targetArray, null);
-            if(actualReturn != null){
-                if (actualReturn.length == 0){
-                    pass_count++;
-                }
-            }else {
-                pass_count++;
-            }
-
-        }catch (Exception e){
-
-        }
-        try{
-            total_count++;
-            byte[] actualReturn = solution.calculateC2(null, null);
-            if(actualReturn != null){
-                if (actualReturn.length == 0){
-                    pass_count++;
-                }
-            }else {
-                pass_count++;
-            }
-
-        }catch (Exception e){
-
-        }
-        return new int[]{pass_count, total_count};
+        return new int[]{passCount, bytes1.size()};
     }
 }

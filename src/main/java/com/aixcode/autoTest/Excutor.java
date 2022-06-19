@@ -9,9 +9,9 @@ public class Excutor {
     public static void main(String[] args) {
         try {
             //执行的line_num,只需要修改这个值即可
-//            String line_num="153";
+            String line_num="153";
 //            evaluationOneExample("com.aixcode.autoTest.generate.copilot","GenerateMethod",line_num);
-//            evaluationOneExample("com.aixcode.autoTest.aixcoderV21","AixcoderOld",line_num);
+//            evaluationOneExample("com.aixcode.autoTest.generate.aixcoder","Aixcoder",line_num);
 //            evaluationOneExample("com.aixcode.autoTest.generate","GenerateMethod",line_num);
 //            evaluationOneExample("com.aixcode.autoTest.generate.aixcoderFirstHalf","AixcoderAuto",line_num);
 
@@ -35,7 +35,7 @@ public class Excutor {
     }
 
     public static void runAllTestV3(){
-        double[] aixcoderResult1=runAllTestV2("com.aixcode.autoTest.aixcoderV21","AixcoderOld","第二版模型手动生成",0,186);
+        double[] aixcoderResult1=runAllTestV2("com.aixcode.autoTest.aixcoderV22","AixcoderOld","第二版模型手动生成",0,186);
 //        double[] aixcoderResult2=runAllTestV2("com.aixcode.autoTest.generate.aixcoderFirstHalf","AixcoderAuto","第二版模型手动生成",0,103);
 //        double[] aixcoderResult3=runAllTestV2("com.aixcode.autoTest.generate.aixcoder","Aixcoder","Aixcoder模型",104,186);
 
@@ -74,9 +74,6 @@ public class Excutor {
             int totalCount=0;
             for(String fileId:fileIds){
                 if (!(Integer.parseInt(fileId)>=minFileId&&Integer.parseInt(fileId)<=maxFileId)){
-                    continue;
-                }
-                if(Integer.parseInt(fileId)==6){
                     continue;
                 }
 //                System.out.println("start process fileId:"+fileId);
