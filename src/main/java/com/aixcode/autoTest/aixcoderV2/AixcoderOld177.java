@@ -1,10 +1,8 @@
 package com.aixcode.autoTest.aixcoderV2;
 
-import java.util.*;
-import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld177 extends GenerateMethodBase {
-        public String getProcessId ( ) { 
+    public String getProcessId() {
 //if ( ! TextUtils . isEmpty ( mProcessId ) ) {
 //return mProcessId ;
 //}
@@ -15,6 +13,6 @@ public class AixcoderOld177 extends GenerateMethodBase {
 //}
 //}
 //return getProcessIdPreQ ( ) ;
-return null;
-} 
+        return null;
     }
+}

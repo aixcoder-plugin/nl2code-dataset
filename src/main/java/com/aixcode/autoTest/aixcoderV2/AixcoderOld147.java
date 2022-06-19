@@ -5,7 +5,7 @@ import com.aixcode.autoTest.GenerateMethodBase;
 import java.util.concurrent.FutureTask;
 
 public class AixcoderOld147 extends GenerateMethodBase {
-        public String getPid ( FutureTask t ) {
+    public String getPid(FutureTask t) {
 //            if (t != null && t.getTask() != null) {
 //                if (t.getTask().isMapTask()) {
 //                    JVMId id = mapJvmManager.runningTaskToJvm.get(t);
@@ -21,6 +21,6 @@ public class AixcoderOld147 extends GenerateMethodBase {
 //                    }
 //                }
 //            }
-            return null;
-} 
+        return null;
     }
+}

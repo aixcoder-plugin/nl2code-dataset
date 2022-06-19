@@ -1,13 +1,12 @@
 package com.aixcode.autoTest.aixcoderV2;
 
-import java.math.BigDecimal;
-import java.util.*;
-import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
+
+import java.math.BigDecimal;
 public class AixcoderOld183 extends GenerateMethodBase {
-        public BigDecimal add (BigDecimal aVal , BigDecimal bVal ) {
-aVal = aVal == null ? BigDecimal . ZERO : aVal ; 
-bVal = bVal == null ? BigDecimal . ZERO : bVal ; 
-return aVal . add ( bVal ) ; 
-} 
+    public BigDecimal add(BigDecimal aVal, BigDecimal bVal) {
+        aVal = aVal == null ? BigDecimal.ZERO : aVal;
+        bVal = bVal == null ? BigDecimal.ZERO : bVal;
+        return aVal.add(bVal);
     }
+}

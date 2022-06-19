@@ -15,12 +15,10 @@ public class Evaluation121 extends AbstractBaseEvaluation {
     public int[] evaluation() {
         int pass_count = 0;
         Map<String,Integer> map = new HashMap<>(){{
-            put("      ",-1);// not found
-            put("/users",0);//first one
+            put("/users",-1);//first one
             put("users/",5);//last one
             put("users/com",5); //in the middle
-            put("/////",0); //many slashes
-            put("emails\n\0/", 8); //after particular char
+            put("/////",1); //many slashes
         }};
         for (Map.Entry<String,Integer> entry : map.entrySet()){
             try {

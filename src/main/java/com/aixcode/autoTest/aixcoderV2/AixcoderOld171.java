@@ -1,18 +1,16 @@
 package com.aixcode.autoTest.aixcoderV2;
 
-import java.util.*;
-import java.io.*;
 import com.aixcode.autoTest.GenerateMethodBase;
 public class AixcoderOld171 extends GenerateMethodBase {
-        public String rvZeroAndDot ( String s ) { 
-if ( s . isEmpty ( ) ) { 
-return "0" ; 
-} 
-if ( s . indexOf ( "." ) > 0 ) { 
-s = s . replaceAll ( "0+?$" , "" ) ; 
+    public String rvZeroAndDot(String s) {
+        if (s.isEmpty()) {
+            return "0";
+        }
+        if (s.indexOf(".") > 0) {
+            s = s.replaceAll("0+?$", "");
 // 如最后一位是.则去掉
-s = s . replaceAll ( "[.]$" , "" ) ; 
-} 
-return s ; 
-} 
+            s = s.replaceAll("[.]$", "");
+        }
+        return s;
     }
+}
