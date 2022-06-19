@@ -23,7 +23,7 @@
 {"task_id": 22, "raw_nl": "Read the base64 encoded image data from a JPEG image.", "signature": "public String readImageData(String filename)"}
 {"task_id": 23, "raw_nl": "Returns the distance for the two given point", "signature": "public float distance(float x0, float y0, float x1, float y1)"}
 {"task_id": 24, "raw_nl": "Writes a collection of Strings to a File, overwriting any previous file contents. Each String is converted into a line in the File.", "signature": "public void writeFile(Collection<String> lines, File file)"}
-{"task_id": 25, "raw_nl": "Generate a hex string for the specified bytes.", "signature": "public final String toHex(byte[] byteArr)"}
+{"task_id": 25, "raw_nl": "Generate a hex string for the specified bytes.", "signature": "public String toHex(byte[] byteArr)"}
 {"task_id": 26, "raw_nl": "获取相应文件filepath的input stream", "signature": "public java.io.InputStream getInputStream(String filepath)"}
 {"task_id": 27, "raw_nl": "获取类上具有指定注解的接口的名称，如果有多个，则以第一个为准 找不到符合条件的接口则返回 clazz 类的名称", "signature": "public String getInterfaceName(Class<?> clazz, Class<? extends Annotation> annotation)"}
 {"task_id": 28, "raw_nl": "Split the given sequence with the given delimiter and return list of values.", "signature": "public java.util.List<String> split(String sequence, String delimiter)"}
@@ -104,12 +104,12 @@
 {"task_id": 108, "raw_nl": "Removes all white spaces from a string A whitespace is identified using the Java method Character.isWhiteSpace", "signature": "public String removeAllWhiteSpaces(String str)"}
 {"task_id": 109, "raw_nl": "subtract b from a", "signature": "public String[] sub(String[] a, String[] b)"}
 {"task_id": 110, "raw_nl": "Converts the string argument into a float value.", "signature": "public float parseFloat(String floatStr)"}
-{"task_id": 111, "raw_nl": "Return true if the local path is a Windows absolute path.", "signature": "private boolean isWindowsAbsolutePath(String path)"}
+{"task_id": 111, "raw_nl": "Return true if the local path is a Windows absolute path.", "signature": "public boolean isWindowsAbsolutePath(String path)"}
 {"task_id": 112, "raw_nl": "Calculates the distance between two points in high-dimensional space.", "signature": "public double length(double[] p0, double[] p1)"}
 {"task_id": 113, "raw_nl": "This function takes an array of words, and returns a string with all the words in the separated by a space.", "signature": "public String getStringfromStringArray(String[] array)"}
 {"task_id": 114, "raw_nl": "Check whether a file is actually a valid zip", "signature": "public boolean isValidZip(File zip)"}
 {"task_id": 115, "raw_nl": "Parse a list of longs into strings.", "signature": "public String[] toTimestampStrs(long[] timestamps)"}
-{"task_id": 116, "raw_nl": "Change the size of this array. Content between indexes 0 and min(size(), newSize) will be preserved.", "signature": "public void resize(int[] arr,long newSize)"}
+{"task_id": 116, "raw_nl": "Change the size of this array. Content between indexes 0 and min(size(), newSize) will be preserved.", "signature": "public int[] resize(int[] arr,long newSize)"}
 {"task_id": 117, "raw_nl": "概述：截取指定长度的数组", "signature": "public byte[] subBytes(byte[] src, int pos, int count)"}
 {"task_id": 118, "raw_nl": "返回不小于输入值value的最小整数", "signature": "public int floor(double val)"}
 {"task_id": 119, "raw_nl": "保留两位小数", "signature": "public String formatDouble(double val)"}
@@ -140,7 +140,7 @@
 {"task_id": 144, "raw_nl": "Extracts all the files in the given zip file to the input destination path. If zip file does not exist or destination path is invalid then an exception is thrown.", "signature": "public void extractAll(String destPath, String zipName)"}
 {"task_id": 145, "raw_nl": "判断两个数组的内容是否相等 用于equals的比较", "signature": "public boolean equals(Object[] array, Object[] other)"}
 {"task_id": 146, "raw_nl": "Returns a set with all unique methodNames of methods.", "signature": "public Set<String> getMethods(ClassLoader classLoader, String className)"}
-{"task_id": 147, "raw_nl": "Returns the pid of the task", "signature": "String getPid(FutureTask t)"}
+{"task_id": 147, "raw_nl": "Returns the pid of the task", "signature": "public String getPid(FutureTask t)"}
 {"task_id": 148, "raw_nl": "Swaps the elements at the specified positions in the specified list. (If the specified positions are equal, invoking this method leaves the list unchanged.)", "signature": "public <E> void swap(List<E> list, int i, int j)"}
 {"task_id": 149, "raw_nl": "Get the radian between current line(determined by point A and B) and horizontal line.", "signature": "public float getRadian(Point A, Point B)"}
 {"task_id": 151, "raw_nl": "Converts from an int array to an Integer array.", "signature": "public Integer[] asObjectArray(int[] array)"}
@@ -159,12 +159,12 @@
 {"task_id": 167, "raw_nl": "将数组转为 List", "signature": "public <T> List<T> array2List(T[] array)"}
 {"task_id": 168, "raw_nl": "获取过去7天的时期(包括今天)，格式为yymmdd", "signature": "public List<String> getWeekDate()"}
 {"task_id": 169, "raw_nl": "Returns the total number of bytes remaining in the buffer array.", "signature": "public long remaining(ByteBuffer[] buffers)"}
-{"task_id": 170, "raw_nl": "返回y年m月d日对应的农历.返回格式为某年某月某日 ?", "signature": "public String getLunarDate(int year_log, int month_log, int day_log)"}
+{"task_id": 170, "raw_nl": "返回y年m月d日对应的农历.返回格式为某年某月某日 ?", "signature": "public String getLunarDate(int year, int month, int day)"}
 {"task_id": 171, "raw_nl": "去掉浮点数多余的0", "signature": "public String rvZeroAndDot(String s)"}
 {"task_id": 172, "raw_nl": "十进制整型数值减法，字符串表示每一个数", "signature": "public String bigDecimalSubtract(String str, String str1)"}
 {"task_id": 173, "raw_nl": "Get the extension of a file. Return a null string if there is no extension.", "signature": "public String getFileExtension(File file)"}
 {"task_id": 174, "raw_nl": "判定一个字符串是不是整数", "signature": "public boolean isInteger(String numberString)"}
-{"task_id": 176, "raw_nl": "Returns true if the bit at the given position is 1 and false otherwise.", "signature": "public boolean getBinaryState(int position)"}
+{"task_id": 176, "raw_nl": "Returns true if the bit at the given position is 1 and false otherwise.", "signature": "public boolean getBinaryState(int targetInteger, int position)"}
 {"task_id": 177, "raw_nl": "获取当前进程的ID", "signature": "public String getProcessId()"}
 {"task_id": 178, "raw_nl": "Handles comparison between version numbers (the right way(TM))，bigger return 1 ，smaller return -1 and equals return 0. Examples of version strings: 1.6.7, 1.2_b10", "signature": "public int versionCompare(String v1, String v2)"}
 {"task_id": 179, "raw_nl": "在map中，如果key存在,则value相加；如果key 不存在，增加新的key，value", "signature": "public Long incrBy(Map<String,Long> valMap,String key, Long integer)"}
