@@ -37,12 +37,8 @@ public class Evaluation140 extends AbstractBaseEvaluation {
                 actualReturn = solution.toString(bb, 0, bb.limit(), Charset.defaultCharset());
                 if (actualReturn.equals(str)){
                     pass_count++;
-                }else
-                {
-                    System.out.println("Expected: " + str + ", Actual: " + actualReturn);
                 }
             } catch (Exception e) {
-//                e.printStackTrace();
             }
 
         }
@@ -60,12 +56,8 @@ public class Evaluation140 extends AbstractBaseEvaluation {
                         pass_count++;
                     }else if(bb.capacity() <= startIndex && actualReturn.equals("")) {
                         pass_count++;
-                    }else
-                    {
-                        System.out.println("Expected: " + str + ", Actual: " + actualReturn);
                     }
                 } catch (Exception e) {
-//                    e.printStackTrace();
                 }
             }
 

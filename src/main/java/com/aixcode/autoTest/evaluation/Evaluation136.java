@@ -39,9 +39,6 @@ public class Evaluation136 extends AbstractBaseEvaluation {
             Field f = solution.findField(Double.class, "NOT_EXIST_VALUE", Double.class);
             if(f == null) {
                 pass_count++;
-            }else
-            {
-                System.out.println(f.getName());
             }
         } catch (Exception e) {
 

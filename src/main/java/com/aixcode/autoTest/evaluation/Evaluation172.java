@@ -2,7 +2,6 @@ package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,13 +56,5 @@ public class Evaluation172 extends AbstractBaseEvaluation {
 
         }
         return new int[]{passCount, list1.size()};
-    }
-
-    public static void main(String[] args) {
-        BigInteger bigInteger=new BigInteger("-4123749187982731474982");
-        BigInteger bigInteger1=new BigInteger("-423472394729374219742932739");
-        BigInteger res=bigInteger.subtract(bigInteger1);
-
-        System.out.println(res.toString());
     }
 }

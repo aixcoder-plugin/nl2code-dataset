@@ -36,7 +36,6 @@ public class Evaluation13 extends AbstractBaseEvaluation {
                     pass_count++;
                 }
             }catch(Exception e){
-                e.printStackTrace();
             }
         }
         return new int[]{pass_count,map.entrySet().size()};

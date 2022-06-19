@@ -4,7 +4,6 @@ import com.aixcode.autoTest.AbstractBaseEvaluation;
 
 import java.io.File;
 import java.nio.file.Files;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,14 +16,14 @@ public class Evaluation144 extends AbstractBaseEvaluation {
     public int[] evaluation() {
         int passCount = 0;
         try{
-            String zipFileName = "src/main/com/aixcode/resource/tempFile/test144/data144.zip";
-            String zipBackupFileName = "src/main/com/aixcode/resource/tempFile/test144/data144.zip.bak";
+            String zipFileName = "src/main/resources/tempFile/test144/data144.zip";
+            String zipBackupFileName = "src/main/resources/tempFile/test144/data144.zip.bak";
             File zipFile = new File(zipFileName);
             if (!zipFile.exists()){
                 File zipBackupFile=new File(zipBackupFileName);
                 Files.copy(zipBackupFile.toPath(),zipFile.toPath());
             }
-            String destPath = "src/main/com/aixcode/resource/tempFile/test144/desDir";
+            String destPath = "src/main/resources/tempFile/test144/desDir";
             File destFile=new File(destPath);
             deleteFile(destFile);
             solution.extractAll(destPath,zipFileName);
@@ -59,16 +58,6 @@ public class Evaluation144 extends AbstractBaseEvaluation {
                 f.delete();
             }
         }
-    }
-
-    public static void main(String[] args) {
-        String fileName="src/main/com/aixcode/resource/tempFile/test144";
-        File[] files=new File(fileName).listFiles();
-        List<String> fileNames=new ArrayList<>();
-        for (File f:files) {
-            fileNames.add(f.getName());
-        }
-        System.out.println(fileNames);
     }
 
 }

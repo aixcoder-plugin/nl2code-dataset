@@ -46,8 +46,6 @@ public class Evaluation148 extends AbstractBaseEvaluation {
                 solution.swap(targetList, testIndex[0], testIndex[1]);
                 if (targetList.get(testIndex[0]).equals(ExpectValue)) {
                     pass_count++;
-                }else {
-                    System.out.println("Fail: " + targetList.get(testIndex[0]) + " != " + ExpectValue);
                 }
             }
             catch (Exception e) {

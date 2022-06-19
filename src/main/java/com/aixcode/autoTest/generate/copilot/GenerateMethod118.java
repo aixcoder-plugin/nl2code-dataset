@@ -11,7 +11,7 @@ public class GenerateMethod118 extends GenerateMethodBase {
         return (int) Math.floor(val);
     }
 
-    public static void main(String[] args) {
-        System.out.println(new GenerateMethod118().floor(23.2));
-    }
+//    public static void main(String[] args) {
+//        System.out.println(new GenerateMethod118().floor(23.2));
+//    }
 }

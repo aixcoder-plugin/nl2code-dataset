@@ -74,22 +74,21 @@ public class Evaluation82 extends AbstractBaseEvaluation {
     }
 
     public static void main(String[] args) {
-        Map<String,String> map1=new HashMap<>(){{
-            put("a","1");
-            put("b","2");
-            put("c","3");
-        }
-    };
-        Map<String,String> map2=new HashMap<>(){{
-            put("d","1");
-            put("e","2");
-            put("c","3");
-        }
-    };
-        System.out.println(canonicalSolution(map1,map2));
+        Map<String, String> map1 = new HashMap<>() {
+            {
+                put("a", "1");
+                put("b", "2");
+                put("c", "3");
+            }
+        };
+        Map<String, String> map2 = new HashMap<>() {
+            {
+                put("d", "1");
+                put("e", "2");
+                put("c", "3");
+            }
+        };
     }
-
-
 
     @Override
     public int[] evaluation() {

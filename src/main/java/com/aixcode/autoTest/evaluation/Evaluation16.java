@@ -36,11 +36,8 @@ public class Evaluation16 extends AbstractBaseEvaluation {
                 int size = solution.hashCode(vector);
                 if ((size == solution.hashCode(entry.getKey())) == entry.getValue()) {
                     pass_count++;
-                }else {
-                    System.out.println(size + " " + solution.hashCode(entry.getKey()));
                 }
             } catch (Exception e) {
-
             }
         }
 
