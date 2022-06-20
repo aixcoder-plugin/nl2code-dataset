@@ -13,7 +13,7 @@ public class Excutor {
             //执行的line_num,只需要修改这个值即可
             String line_num="119";
 //            evaluationOneExample("com.aixcode.autoTest.generate.copilot","GenerateMethod",line_num);
-            evaluationOneExample("com.aixcode.autoTest.aixcoderV22","AixcoderOld",line_num);
+//            evaluationOneExample("com.aixcode.autoTest.aixcoderV22","AixcoderOld",line_num);
 //            evaluationOneExample("com.aixcode.autoTest.generate","GenerateMethod",line_num);
 //            evaluationOneExample("com.aixcode.autoTest.generate.aixcoderFirstHalf","AixcoderAuto",line_num);
 
@@ -28,12 +28,29 @@ public class Excutor {
 
 
 //
-//            runAllTestV3();
+            runAllTestV3();
 //            runAllTestV3WriteExcel();
+//            getResultDiff();
         }catch (Exception e){
             e.printStackTrace();
         }
     }
+
+    public static void getResultDiff(){
+        Map<String,int[]> aixcoderResult1=runAllTestV2ReturnMap("com.aixcode.autoTest.aixcoderV21","AixcoderOld","第二版模型手动生成",0,186);
+        Map<String,int[]> aixcoderResult2=runAllTestV2ReturnMap("com.aixcode.autoTest.aixcoderV22","AixcoderOld","第二版模型手动生成",0,186);
+        for (int i=0;i<200;i++) {
+            String taskId=String.valueOf(i);
+            if (aixcoderResult1.containsKey(taskId)&&aixcoderResult2.containsKey(taskId)){
+                int[] result1=aixcoderResult1.get(taskId);
+                int[] result2=aixcoderResult2.get(taskId);
+                if (result1[0]>result2[0]){
+                    System.out.println(taskId+"\t"+result1[0]+"\t"+result2[0]);
+                }
+            }
+        }
+    }
+
 
     public static void runAllTestV3(){
         double[] aixcoderResult1=runAllTestV2("com.aixcode.autoTest.aixcoderV22","AixcoderOld","第二版模型手动生成",0,186);
