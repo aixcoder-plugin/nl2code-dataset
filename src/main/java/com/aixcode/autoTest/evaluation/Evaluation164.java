@@ -105,20 +105,26 @@ public class Evaluation164 extends AbstractBaseEvaluation {
                         passCount++;
                     }
                 } else {
+                    boolean isEqual = true;
                     for (Map.Entry<String, Set<Integer>> entry : reverseMap.entrySet()) {
                         Set<Integer> targetKeys = entry.getValue();
                         Set<Integer> predictKeys = result.get(entry.getKey());
                         if (targetKeys == null || targetKeys.size() == 0) {
-                            if (predictKeys == null || predictKeys.size() == 0) {
-                                passCount++;
+                            if (!(predictKeys == null || predictKeys.size() == 0)) {
+                                isEqual = false;
+                                break;
                             }
                         } else {
                             if (targetKeys.size() == predictKeys.size()) {
-                                if (targetKeys.containsAll(predictKeys) && predictKeys.containsAll(targetKeys)) {
-                                    passCount++;
+                                if (!(targetKeys.containsAll(predictKeys) && predictKeys.containsAll(targetKeys))) {
+                                    isEqual=false;
+                                    break;
                                 }
                             }
                         }
+                    }
+                    if (isEqual) {
+                        passCount++;
                     }
                 }
             } catch (Exception e) {

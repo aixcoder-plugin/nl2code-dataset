@@ -1,6 +1,8 @@
 package com.aixcode.autoTest;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import static com.aixcode.autoTest.Util.listFiles;
@@ -26,9 +28,8 @@ public class Excutor {
 
 
 //
-            runAllTestV3();
-//            double[] aixcoderResult1=runAllTestV2("com.aixcode.autoTest.aixcoderV21","AixcoderOld","第二版模型手动生成",0,186);
-//            System.out.println(aixcoderResult1);
+//            runAllTestV3();
+            runAllTestV3WriteExcel();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -42,11 +43,21 @@ public class Excutor {
         double[] copilotResult1=runAllTestV2("com.aixcode.autoTest.generate","GenerateMethod","Copilot模型",0,103);
         double[] copilotResult2=runAllTestV2("com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",104,186);
 
-
         System.out.println("Copilot部分通过归一化求和:"+(copilotResult1[0]+copilotResult2[0])+"      Copilot完全通过的测试用例数:"+(copilotResult1[1]+copilotResult2[1]));
         //System.out.println("Aixcoder部分通过归一化求和:"+(aixcoderResult1[0]+aixcoderResult2[0])+"    Aixcoder完全通过的测试用例数:"+(aixcoderResult1[1]+aixcoderResult2[1]));
         System.out.println("Aixcoder部分通过归一化求和:"+(aixcoderResult1[0])+"    Aixcoder完全通过的测试用例数:"+(aixcoderResult1[1]));
         System.out.println("Copilot totalCount:"+(copilotResult1[2]+copilotResult2[2])+"      Aixcoder totalCount:"+(aixcoderResult1[2]));
+    }
+
+
+    public static void runAllTestV3WriteExcel(){
+        Map<String,int[]> aixcoderResult1=runAllTestV2ReturnMap("com.aixcode.autoTest.aixcoderV22","AixcoderOld","第二版模型手动生成",0,186);
+
+        Map<String,int[]> copilotResult1=runAllTestV2ReturnMap("com.aixcode.autoTest.generate","GenerateMethod","Copilot模型",0,103);
+        Map<String,int[]> copilotResult2=runAllTestV2ReturnMap("com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",104,186);
+        Map<String,int[]> copilotResult=copilotResult1;
+        copilotResult.putAll(copilotResult2);
+        Util.exportExcel(aixcoderResult1,copilotResult,"aixcoderXL","src/main/resources/localFile/aixcoderXL自动化测试结果.xlsx");
 
     }
 
@@ -93,6 +104,33 @@ public class Excutor {
             e.printStackTrace();
         }
         return new double[]{0,0,0};
+    }
+
+
+    public static Map<String,int[]> runAllTestV2ReturnMap(String basePackage, String prefix, String message, int minFileId, int maxFileId){
+        try {
+            List<String> fileNames=listFiles("src/main/java/com/aixcode/autoTest/evaluation");
+            List<String> fileIds=fileNames.stream().map(fileName->fileName.substring("Evaluation".length(),fileName.lastIndexOf("."))).collect(Collectors.toList());
+
+            double copilot_score=0;
+            int CopilotExacttCount=0;
+            int totalCount=0;
+            Map<String,int[]> resultMap=new HashMap<>();
+            for(String fileId:fileIds){
+                if (!(Integer.parseInt(fileId)>=minFileId&&Integer.parseInt(fileId)<=maxFileId)){
+                    continue;
+                }
+//                System.out.println("start process fileId:"+fileId);
+                totalCount++;
+                int[] result= evaluationGenerateMethod(fileId,basePackage,prefix);
+                resultMap.put(fileId,result);
+
+            }
+            return resultMap;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static int[] evaluationGenerateMethod(String lineNum, String basePackage, String prefix) {
