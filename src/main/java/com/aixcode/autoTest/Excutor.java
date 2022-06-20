@@ -11,9 +11,9 @@ public class Excutor {
     public static void main(String[] args) {
         try {
             //执行的line_num,只需要修改这个值即可
-            String line_num="153";
+            String line_num="119";
 //            evaluationOneExample("com.aixcode.autoTest.generate.copilot","GenerateMethod",line_num);
-//            evaluationOneExample("com.aixcode.autoTest.generate.aixcoder","Aixcoder",line_num);
+            evaluationOneExample("com.aixcode.autoTest.aixcoderV22","AixcoderOld",line_num);
 //            evaluationOneExample("com.aixcode.autoTest.generate","GenerateMethod",line_num);
 //            evaluationOneExample("com.aixcode.autoTest.generate.aixcoderFirstHalf","AixcoderAuto",line_num);
 
@@ -29,7 +29,7 @@ public class Excutor {
 
 //
 //            runAllTestV3();
-            runAllTestV3WriteExcel();
+//            runAllTestV3WriteExcel();
         }catch (Exception e){
             e.printStackTrace();
         }

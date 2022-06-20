@@ -44,6 +44,9 @@ public class predictionHelper {
             Gson gson=new Gson();
             Map<String,Object> gsonLine=gson.fromJson(preditionLine,Map.class);
             Integer fileId=((Double)gsonLine.get("task_id")).intValue();
+            if (fileId!=7){
+                return;
+            }
             String newFileName="src/main/java/com/aixcode/autoTest/aixcoderV22/AixcoderOld"+fileId+".java";
             BufferedWriter bw = new BufferedWriter(new java.io.FileWriter(newFileName));
 
