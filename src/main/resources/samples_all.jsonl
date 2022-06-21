@@ -109,7 +109,7 @@
 {"task_id": 113,"raw_nl": "This function takes an array of words, and returns a string with all the words in the separated by a space.","signature": "public String getStringfromStringArray(String[] array)"}
 {"task_id": 114,"raw_nl": "Check whether a file is actually a valid zip","signature": "public boolean isValidZip(File zip)"}
 {"task_id": 115,"raw_nl": "Parse a list of longs into strings.","signature": "public String[] toTimestampStrs(long[] timestamps)"}
-{"task_id": 116,"raw_nl": "Change the size of this array. Content between indexes 0 and min(size(), newSize) will be preserved.","signature": "public void resize(int[] arr,long newSize)"}
+{"task_id": 116,"raw_nl": "Change the size of this array. Content between indexes 0 and min(size(), newSize) will be preserved.","signature": "public int[] resize(int[] arr,long newSize)"}
 {"task_id": 117,"raw_nl": "概述：截取指定长度的数组","signature": "public byte[] subBytes(byte[] src, int pos, int count)"}
 {"task_id": 118,"raw_nl": "返回不小于输入值value的最小整数","signature": "public int floor(double val)"}
 {"task_id": 119,"raw_nl": "保留两位小数","signature": "public String formatDouble(double val)"}
@@ -164,7 +164,7 @@
 {"task_id": 172, "raw_nl": "十进制整型数值减法，字符串表示每一个数", "signature": "public String bigDecimalSubtract(String str, String str1)"}
 {"task_id": 173, "raw_nl": "Get the extension of a file. Return a null string if there is no extension.", "signature": "public String getFileExtension(File file)"}
 {"task_id": 174, "raw_nl": "判定一个字符串是不是整数", "signature": "public boolean isInteger(String numberString)"}
-{"task_id": 176, "raw_nl": "Returns true if the bit at the given position is 1 and false otherwise.", "signature": "public boolean getBinaryState(int position)"}
+{"task_id": 176, "raw_nl": "Returns true if the bit at the given position is 1 and false otherwise.", "signature": "public boolean getBinaryState(int targetInteger, int position)"}
 {"task_id": 177, "raw_nl": "获取当前进程的ID", "signature": "public String getProcessId()"}
 {"task_id": 178, "raw_nl": "Handles comparison between version numbers (the right way(TM))，bigger return 1 ，smaller return -1 and equals return 0. Examples of version strings: 1.6.7, 1.2_b10", "signature": "public int versionCompare(String v1, String v2)"}
 {"task_id": 179, "raw_nl": "在map中，如果key存在,则value相加；如果key 不存在，增加新的key，value", "signature": "public Long incrBy(Map<String,Long> valMap,String key, Long integer)"}
