@@ -12,8 +12,8 @@ public class Excutor {
             String line_num="153";
             evaluationOneExample("com.aixcode.autoTest.generate","GenerateMethod",line_num);
 
-//            runAllTestV2("main.com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",104,186);
-//            runAllTestV2("main.com.aixcode.autoTest.generate.aixcoder","Aixcoder","Aixcoder模型",104,186);
+//            runAllTest("main.com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",104,186);
+//            runAllTest("main.com.aixcode.autoTest.generate.aixcoder","Aixcoder","Aixcoder模型",104,186);
 
 
         }catch (Exception e){
@@ -36,7 +36,7 @@ public class Excutor {
 
 
 
-    public static double[] runAllTestV2(String basePackage,String prefix,String message,int minFileId,int maxFileId){
+    public static double[] runAllTest(String basePackage,String prefix,String message,int minFileId,int maxFileId){
         try {
             List<String> fileNames=listFiles("src/main/java/com/aixcode/autoTest/evaluation");
             List<String> fileIds=fileNames.stream().map(fileName->fileName.substring("Evaluation".length(),fileName.lastIndexOf("."))).collect(Collectors.toList());
@@ -69,7 +69,6 @@ public class Excutor {
 
     public static int[] evaluationGenerateMethod(String lineNum, String basePackage, String prefix) {
         try {
-            //执行的line_num,只需要修改这个值即可
             String className="com.aixcode.autoTest.evaluation.Evaluation"+lineNum;
             Class cls=Class.forName(className);
             AbstractBaseEvaluation test= (AbstractBaseEvaluation) cls.getDeclaredConstructor(String.class,String.class).newInstance(basePackage,prefix);

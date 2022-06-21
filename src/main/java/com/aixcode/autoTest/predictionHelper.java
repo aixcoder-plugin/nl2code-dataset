@@ -30,7 +30,6 @@ public class predictionHelper {
             br.close();
             for(String codeLine:lines){
                 assembleOneFile(codeLine);
-//                break;
             }
 
         }catch (Exception e){
