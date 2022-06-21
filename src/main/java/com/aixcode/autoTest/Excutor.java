@@ -12,8 +12,8 @@ public class Excutor {
             String line_num="153";
             evaluationOneExample("com.aixcode.autoTest.generate.copilot","GenerateMethod",line_num);
 
-            runAllTest("com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",104,186);
-            runAllTest("com.aixcode.autoTest.generate.aixcoder","Aixcoder","Aixcoder模型",104,186);
+            runAllTest("com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",0,186);
+            runAllTest("com.aixcode.autoTest.generate.aixcoder","AixcoderOld","Aixcoder模型",0,186);
 
 
         }catch (Exception e){
