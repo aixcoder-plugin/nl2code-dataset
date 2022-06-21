@@ -1,4 +1,4 @@
-# AiXcoder NL2Code Evaluation Benchmark
+# AiXcoder NL2Code Evaluation Benchmark (aix-bench)
 
 ## 介绍
 
@@ -114,6 +114,10 @@ src/main/java/com/aixcode/autoTest/predictionHelper.java
 ### 使用说明
 
 #### 1、下载数据集
+
+```bash
+git clone https://github.com/aixcoder-plugin/nl2code-dataset.git
+```
 
 #### 2、获取模型预测
 
