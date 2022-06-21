@@ -13,8 +13,8 @@
     模型生成的代码需要进行人工评估。评估的标准请参考后面的详细介绍。
 
 | 数据集   | With UnitTest 自动化测试数据集 | Pure NL Description 纯自然语言描述数据集 |
-|-----------|---------------|---------------------|
-| 测试集大小 | 187           | 160                 |
+|-----------|------------------------|--------------------------------|
+| 测试集大小 | 175                    | 161                            |
 
 目前这两个数据集仅包含Java代码，自然语言描述部分包含英文和中文两种语言。
 
@@ -32,7 +32,7 @@
 
 ## 自动化测试数据集
 
-数据文件路径：`src/main/resources/samples_all.jsonl`
+数据文件路径：`src/main/resources/dataset_autotest.jsonl`
 
 这些数据是从开源的“方法注释-Java方法实现”中人工挑选出的一批“方法注释”的集合。我们挑选的标准是：
 
@@ -86,7 +86,7 @@
 
 ## 数据集
 
-该数据集包括186个手工收集的JAVA编程中高频出现的代码例子，每个例子包括如下字段：
+该数据集包括175个手工收集的JAVA编程中高频出现的代码例子，每个例子包括如下字段：
 
 ```json
 {
@@ -129,9 +129,9 @@ public class Aixcoder166 extends GenerateMethodBase {
 * 通过反射为对象的对应字段注入值
 */
 public<T> T initByReflect(String name, Object value, T t) {
-if (null == t) {
-throw new NullPointerException("t can not be null");
-}
+        if (null == t) {
+            throw new NullPointerException("t can not be null");
+        }
 
         if (null == value) {
             return null;
@@ -158,7 +158,7 @@ throw new NullPointerException("t can not be null");
 }
 ```
 
-上面的过程可以通过批量的方式实现，使用predictionHelper类中的assembleFile方法，即可根据模型的预测输出批量的生成所有的类，每个类需要手动的引入所有要的依赖包。执行如下代码：
+上面的过程可以通过批量的方式实现，使用predictionHelper类中的assembleFile方法，即可根据模型的预测输出批量的生成所有的类，每个类需要手动的引入所有的依赖包。执行如下代码即可：
 
 ```java
 public class predictionHelper {
@@ -186,14 +186,14 @@ class Excutor{
 }
 ```
 
-执行上面的例子，可以如下执行调用
+要获得上面例子的自动化测试结果，可以如下执行：
 ```java
 class Excutor{
     public static void main(String[] args) {
         try {
             String taskId = "166";
             String basePackage = "com.aixcode.autoTest.generate.aixcoder";
-            String prefix = "Aixcoder";
+            String prefix = "AixcoderOld";
             evaluationOneExample(taskId, basePackage, prefix);
         } catch (Exception e) {
             e.printStackTrace();
@@ -202,7 +202,7 @@ class Excutor{
 }
 ```
 
-##### 3.2 单次执行所有的测试sample
+##### 3.2 单次执行所有的自动化测试例子
 
 ```java
 class Excutor{
@@ -244,8 +244,7 @@ class Excutor{
 class Excutor {
     public static void main(String[] args) {
         try {
-            double[] res=runAllTest("com.aixcode.autoTest.generate.aixcoderFirstHalf", "AixcoderAuto", 0, 103);
-            System.out.println("result:"+res[0]+"/"+res[1]+"/"+res[2]);
+            double[] res=runAllTest("com.aixcode.autoTest.generate.aixcoder","AixcoderOld","Aixcoder模型",0,186);;
         } catch (Exception e) {
             e.printStackTrace();
         }
