@@ -79,13 +79,11 @@ public abstract class GenerateMethodBase {
     public int hashCode(byte[] byteArr) throws Exception {throw new RuntimeException("Not implemented");}
     public void remove(Map<Integer, String> mapObj, Integer key) throws Exception {throw new RuntimeException("Not implemented");}
     public Integer[] toObjectArray(int[] array) throws Exception {throw new RuntimeException("Not implemented");}
-    public String toJson(Object object) throws Exception {throw new RuntimeException("Not implemented");}
     public boolean isLetterOrDigit(String str) throws Exception {throw new RuntimeException("Not implemented");}
     public boolean isLetter(char c) throws Exception {throw new RuntimeException("Not implemented");}
     public String joinPath(String path1, String path2) throws Exception {throw new RuntimeException("Not implemented");}
     public byte[] intToByteArray(int value) throws Exception {throw new RuntimeException("Not implemented");}
     public String bytesToHex(byte[] bytes) throws Exception {throw new RuntimeException("Not implemented");}
-    public void print(float x,OutputStream out) throws Exception {throw new RuntimeException("Not implemented");}
     public int combinatorial(int n, int m) throws Exception {throw new RuntimeException("Not implemented");}
     public boolean checkUsername(String username) throws Exception {throw new RuntimeException("Not implemented");}
     public String getStringToday(String format) throws Exception {throw new RuntimeException("Not implemented");}
@@ -98,10 +96,8 @@ public abstract class GenerateMethodBase {
     public long crc32(byte[] bytes) throws Exception {throw new RuntimeException("Not implemented");}
     public <T> T newInstance(Class<T> clazz) throws Exception {throw new RuntimeException("Not implemented");}
     public <T> void delete(List<T> list, int start, int end)  throws Exception {throw new RuntimeException("Not implemented");}
-    public Point getIntersection(Line line1, Line line2) throws Exception {throw new RuntimeException("Not implemented");}
     public int getDaysInMonth(int year, int month) throws Exception {throw new RuntimeException("Not implemented");}
     public List<String> getClassFileNames(String filepath) throws Exception {throw new RuntimeException("Not implemented");}
-    public FileInputStream openFile(String filename) throws Exception {throw new RuntimeException("Not implemented");}
     public String replaceFirst(String str, String str1, String str2)  throws Exception {throw new RuntimeException("Not implemented");}
     public void write(byte[] b, int off, int len, OutputStream outputStream) throws Exception {throw new RuntimeException("Not implemented");}
     public int randomInt(int origin, int bound) throws Exception {throw new RuntimeException("Not implemented");}
@@ -174,16 +170,12 @@ public abstract class GenerateMethodBase {
     public String getPid(FutureTask t) throws Exception {throw new RuntimeException("Not implemented");}
     public <E> void swap(List<E> list, int i, int j) throws Exception {throw new RuntimeException("Not implemented");}
     public float getRadian(Point A, Point B) throws Exception {throw new RuntimeException("Not implemented");}
-    public long skip(long n) throws Exception {throw new RuntimeException("Not implemented");}
     public Integer[] asObjectArray(int[] array) throws Exception {throw new RuntimeException("Not implemented");}
     public String toMd5Code(String str) throws Exception {throw new RuntimeException("Not implemented");}
     public byte[] calculateC2(byte[] m, byte[] t) throws Exception {throw new RuntimeException("Not implemented");}
     public URL getUrlFile(String fileName) throws Exception {throw new RuntimeException("Not implemented");}
-    public boolean isDateTimeType(int type) throws Exception {throw new RuntimeException("Not implemented");}
     public void addTo(float[] arrayA, float[] arrayB) throws Exception {throw new RuntimeException("Not implemented");}
     public int lastIndexOf(float value, float[] array) throws Exception {throw new RuntimeException("Not implemented");}
-    public ThreadPoolExecutor getNormalPool() throws Exception {throw new RuntimeException("Not implemented");}
-    public <T> Map<String, Object> beanToMap(T bean) throws Exception {throw new RuntimeException("Not implemented");}
     public List<String> doDrawRandom(List<String> users, int count) throws Exception {throw new RuntimeException("Not implemented");}
     public Point getCenter(List<Point> points) throws Exception {throw new RuntimeException("Not implemented");}
     public boolean checkbracket(String str) throws Exception {throw new RuntimeException("Not implemented");}
@@ -199,7 +191,6 @@ public abstract class GenerateMethodBase {
     public String bigDecimalSubtract(String str, String str1) throws Exception {throw new RuntimeException("Not implemented");}
     public String getFileExtension(File file) throws Exception {throw new RuntimeException("Not implemented");}
     public boolean isInteger(String numberString) throws Exception {throw new RuntimeException("Not implemented");}
-    public ThreadFactory createThreadFactory(String nameFormat) throws Exception {throw new RuntimeException("Not implemented");}
     public boolean getBinaryState(int targetInteger, int position) throws Exception {throw new RuntimeException("Not implemented");}
     public String getProcessId() throws Exception {throw new RuntimeException("Not implemented");}
     public int versionCompare(String v1, String v2) throws Exception {throw new RuntimeException("Not implemented");}
@@ -208,8 +199,6 @@ public abstract class GenerateMethodBase {
     public List<Class> getClassGenricType(Class clazz) throws Exception {throw new RuntimeException("Not implemented");}
     public String[] filter(String[] word_list) throws Exception {throw new RuntimeException("Not implemented");}
     public BigDecimal add(BigDecimal aVal, BigDecimal bVal) throws Exception {throw new RuntimeException("Not implemented");}
-    public String removeEndLinesAndAddQuotes(String s, int maxLen) throws Exception {throw new RuntimeException("Not implemented");}
-    public List<String> printOutDefinedIPs(List<String> definedIPs) throws Exception {throw new RuntimeException("Not implemented");}
     public boolean isJdk7u40Above() throws Exception {throw new RuntimeException("Not implemented");}
 
 }
