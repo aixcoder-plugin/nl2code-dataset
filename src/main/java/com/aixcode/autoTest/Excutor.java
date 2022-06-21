@@ -10,10 +10,10 @@ public class Excutor {
         try {
             //执行的line_num,只需要修改这个值即可
             String line_num="153";
-            evaluationOneExample("com.aixcode.autoTest.generate","GenerateMethod",line_num);
+            evaluationOneExample("com.aixcode.autoTest.generate.copilot","GenerateMethod",line_num);
 
-//            runAllTest("main.com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",104,186);
-//            runAllTest("main.com.aixcode.autoTest.generate.aixcoder","Aixcoder","Aixcoder模型",104,186);
+            runAllTest("com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",104,186);
+            runAllTest("com.aixcode.autoTest.generate.aixcoder","Aixcoder","Aixcoder模型",104,186);
 
 
         }catch (Exception e){
@@ -58,8 +58,8 @@ public class Excutor {
                     }
                 }
             }
-//            System.out.println(message+"模型测试结果：部分通过归一化求和:"+copilot_score+"  完全通过的测试用例数:"+CopilotExacttCount);
-//            System.out.println("totalCount:"+totalCount);
+            System.out.println(message+"模型测试结果：部分通过归一化求和:"+copilot_score+"  完全通过的测试用例数:"+CopilotExacttCount);
+            System.out.println("totalCount:"+totalCount);
             return new double[]{copilot_score,CopilotExacttCount,totalCount};
         }catch (Exception e){
             e.printStackTrace();
