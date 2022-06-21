@@ -1,4 +1,4 @@
-# AiXcoder NL2Code Evaluation Benchmark
+# AiXcoder NL2Code Evaluation Benchmark (aix-bench)
 
 ## 介绍
 
@@ -28,7 +28,7 @@
 
 如果您使用了这个项目内的代码或数据，建议您这样引用它：
 
-`Hao Yiyang, Li Ge, Liu Yongqiang, Miao Xiaowei, Zong He, Jiang Siyuan., Liu Yang, & Wei He. (2022, June 17). AiXcoder NL2Code Evaluation DataSet: A Dataset for Evaluating Text-to-Code Generation Model. GitHub. Retrieved June 17, 2022, from https://github.com/aixcoder-plugin/nl2code-dataset`
+`Yiyang Hao, Ge Li, Yongqiang Liu, Xiaowei Miao, He Zong, Siyuan Jiang, Yang Liu, & He Wei. (2022, June 17). AiXcoder NL2Code Evaluation DataSet: A Dataset for Evaluating Text-to-Code Generation Model. GitHub. Retrieved June 17, 2022, from https://github.com/aixcoder-plugin/nl2code-dataset`
 
 ## 自动化测试数据集
 
@@ -114,6 +114,10 @@ src/main/java/com/aixcode/autoTest/predictionHelper.java
 ### 使用说明
 
 #### 1、下载数据集
+
+```bash
+git clone https://github.com/aixcoder-plugin/nl2code-dataset.git
+```
 
 #### 2、获取模型预测
 
