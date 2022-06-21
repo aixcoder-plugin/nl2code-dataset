@@ -10,42 +10,17 @@ public class Excutor {
         try {
             //执行的line_num,只需要修改这个值即可
             String line_num="153";
-            evaluationOneExample("com.aixcode.autoTest.generate.copilot","GenerateMethod",line_num);
-            evaluationOneExample("com.aixcode.autoTest.generate.aixcoder","Aixcoder",line_num);
-//            evaluationOneExample("com.aixcode.autoTest.generate","GenerateMethod",line_num);
-//            evaluationOneExample("com.aixcode.autoTest.generate.aixcoderFirstHalf","AixcoderAuto",line_num);
+            evaluationOneExample("com.aixcode.autoTest.generate","GenerateMethod",line_num);
 
 //            runAllTestV2("main.com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",104,186);
 //            runAllTestV2("main.com.aixcode.autoTest.generate.aixcoder","Aixcoder","Aixcoder模型",104,186);
 
-//            runAllTestV2("com.aixcode.autoTest.generate","GenerateMethod","copilot前102个例子",0,103);
-//            runAllTestV2("com.aixcode.autoTest.generate.aixcoderFirstHalf","AixcoderAuto","aixcoder前102个例子",0,103);
-
-//            runAllTestV2("com.aixcode.autoTest.aixcoderV3","AixcoderNew","第三版模型",0,103);
-//            runAllTestV2("com.aixcode.autoTest.aixcoderV2","AixcoderOld","第二版模型",0,103);
-
-
-//
-//            runAllTestV3();
 
         }catch (Exception e){
             e.printStackTrace();
         }
     }
 
-    public static void runAllTestV3(){
-        double[] aixcoderResult1=runAllTestV2("com.aixcode.autoTest.generate.aixcoderFirstHalf","AixcoderAuto","第二版模型手动生成",0,103);
-        double[] aixcoderResult2=runAllTestV2("com.aixcode.autoTest.generate.aixcoder","Aixcoder","Aixcoder模型",104,186);
-
-        double[] copilotResult1=runAllTestV2("com.aixcode.autoTest.generate","GenerateMethod","Copilot模型",0,103);
-        double[] copilotResult2=runAllTestV2("com.aixcode.autoTest.generate.copilot","GenerateMethod","Copilot模型",104,186);
-
-
-        System.out.println("Copilot部分通过归一化求和:"+(copilotResult1[0]+copilotResult2[0])+"      Copilot完全通过的测试用例数:"+(copilotResult1[1]+copilotResult2[1]));
-        System.out.println("Aixcoder部分通过归一化求和:"+(aixcoderResult1[0]+aixcoderResult2[0])+"    Aixcoder完全通过的测试用例数:"+(aixcoderResult1[1]+aixcoderResult2[1]));
-        System.out.println("Copilot totalCount:"+(copilotResult1[2]+copilotResult2[2])+"      Aixcoder totalCount:"+(aixcoderResult1[2]+aixcoderResult2[2]));
-
-    }
 
     public static void evaluationOneExample(String basePackage,String prefix,String fileId){
         try {
