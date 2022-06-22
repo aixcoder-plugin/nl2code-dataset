@@ -30,7 +30,6 @@ public class predictionHelper {
             br.close();
             for(String codeLine:lines){
                 assembleOneFile(codeLine);
-//                break;
             }
 
         }catch (Exception e){
@@ -49,8 +48,6 @@ public class predictionHelper {
 
             String line1="package com.aixcode.autoTest.aixcoderV2;\n";
             bw.write(line1+"\n");
-            bw.write("import java.util.*;\n");
-            bw.write("import java.io.*;\n");
             bw.write("import com.aixcode.autoTest.GenerateMethodBase;\n");
 
             bw.write("public class AixcoderOld"+fileId+" extends GenerateMethodBase {\n");

@@ -207,7 +207,7 @@ class Excutor{
 ```java
 class Excutor{
     //执行所有的例子，会遍历src/main/java/com/aixcode/autoTest/evaluation下的所有evaluate类
-    public static double[] runAllTestV2(String basePackage, String prefix, int minFileId, int maxFileId) {
+    public static double[] runAllTest(String basePackage, String prefix, int minFileId, int maxFileId) {
         try {
             List<String> fileNames = listFiles("src/main/java/com/aixcode/autoTest/evaluation");
             List<String> fileIds = fileNames.stream().map(fileName -> fileName.substring("Evaluation".length(), fileName.lastIndexOf("."))).collect(Collectors.toList());
@@ -244,7 +244,7 @@ class Excutor{
 class Excutor {
     public static void main(String[] args) {
         try {
-            double[] res=runAllTestV2("com.aixcode.autoTest.generate.aixcoderFirstHalf", "AixcoderAuto", 0, 103);
+            double[] res=runAllTest("com.aixcode.autoTest.generate.aixcoderFirstHalf", "AixcoderAuto", 0, 103);
             System.out.println("result:"+res[0]+"/"+res[1]+"/"+res[2]);
         } catch (Exception e) {
             e.printStackTrace();
