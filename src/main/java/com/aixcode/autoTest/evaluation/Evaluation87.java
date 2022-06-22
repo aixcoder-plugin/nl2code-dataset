@@ -1,7 +1,7 @@
 package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
-import com.aixcode.autoTest.Excutor;
+import com.aixcode.autoTest.Executor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class Evaluation87 extends AbstractBaseEvaluation {
             add((Object) new ArrayList<>());
             add((Object) new String(""));
             add((Object) Integer.valueOf(10));
-            add((Object) new Excutor());
+            add((Object) new Executor());
         }
     };
     List<Class> list2=new ArrayList<>(){

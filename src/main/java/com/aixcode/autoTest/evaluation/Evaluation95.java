@@ -1,7 +1,7 @@
 package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
-import com.aixcode.autoTest.Excutor;
+import com.aixcode.autoTest.Executor;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,14 +13,14 @@ public class Evaluation95 extends AbstractBaseEvaluation {
             "new Object[]{0}",
             12,
             false,
-            new Excutor()
+            new Executor()
     ));
     List<Object> values2 = new ArrayList<>(Arrays.asList(
             new Object[]{21, 5, 2, -1, 1},
             "new Object[]",
             15,
             false,
-            new Excutor()
+            new Executor()
     ));
     List<Boolean> values3 = new ArrayList<>(Arrays.asList(
             true,

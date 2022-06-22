@@ -16,7 +16,7 @@ public class Evaluation26 extends AbstractBaseEvaluation {
     @Override
     public int[] evaluation() {
         File dir = new File("");
-        String filePath1 = new File("src/main/java/com/aixcode/autoTest/Excutor.java").getAbsolutePath().replaceAll("\\\\","//");
+        String filePath1 = new File("src/main/java/com/aixcode/autoTest/Executor.java").getAbsolutePath().replaceAll("\\\\","//");
         Map<String,Boolean> map = new HashMap<String,Boolean>(){{
             put(filePath1,true);
         }};
