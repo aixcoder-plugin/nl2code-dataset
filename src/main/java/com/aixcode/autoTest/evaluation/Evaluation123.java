@@ -14,23 +14,32 @@ public class Evaluation123 extends AbstractBaseEvaluation {
     @Override
     public int[] evaluation() {
         int pass_count = 0;
-        Map<Integer,Integer> map = new HashMap<>(){{
+        Map<Integer,Integer> InputMap = new HashMap<>(){{
             put(10,2);
             put(11,3);
-            put(12,4);
-            put(13,5);
-            put(14,6);
+            put(0,4);
+            put(-6,5);
+            put(1,14);
         }};
-        for (Map.Entry<Integer,Integer> entry : map.entrySet()){
+
+        Map<Integer,Integer> OutputMap = new HashMap<>(){{
+            put(10,10);//能被整除
+            put(11,9); //不能被整除
+            put(0,0); // 0
+            put(-6,-5); // negative value
+            put(1,0);
+        }};
+
+        for (Map.Entry<Integer,Integer> entry : InputMap.entrySet()){
             try {
                 int result = solution.floor(entry.getKey(), entry.getValue());
-                if (result >= entry.getValue() && result % entry.getValue() ==0){
+                if (result == OutputMap.get(entry.getKey())){
                     pass_count++;
                 }
             }catch (Exception e) {
 
             }
         }
-        return new int[]{pass_count,map.size()};
+        return new int[]{pass_count,InputMap.size()};
     }
 }
