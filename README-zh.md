@@ -1,5 +1,7 @@
 # AiXcoder NL2Code Evaluation Benchmark (aix-bench)
 
+[English](./README.md)
+
 ## 介绍
 
 这是用于从自然语言到代码（text-code，自然语言输入，代码输出）生成模型的方法级测试数据，主要用于评估代码生成模型的能力。AiXcoder NL2Code Evaluation Benchmark分为两个数据集：
