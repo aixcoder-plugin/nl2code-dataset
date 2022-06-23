@@ -16,7 +16,7 @@ This is a method-level benchmark for evaluating code generating (synthesis) mode
 
 | Datasets | Automated Test Dataset | NL Task Description Dataset |
 |----------|---------------|--------------------- |
-| Test Set Size | 187 | 160 |
+| Test Set Size | 175 | 161 |
 
 Currently, these two datasets only contain Java codes, and the natural language description part contains English and Chinese languages. If you only care about code correctness, you can just use the automated test dataset.
 
