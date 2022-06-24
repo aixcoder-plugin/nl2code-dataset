@@ -88,7 +88,7 @@ Maintainability:
 
 ## Dataset
 
-The dataset includes 186 hand-picked code examples that occur frequently in JAVA programming, and each example includes the following fields:
+The dataset includes 175 hand-picked code examples that occur frequently in JAVA programming, and each example includes the following fields:
 
 ```json
 {
