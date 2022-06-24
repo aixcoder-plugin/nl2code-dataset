@@ -3,7 +3,7 @@
 {"task_id": 2, "raw_nl": "Create and returns a HttpURLConnection connection to a webpage", "signature": "public static HttpURLConnection createHttpConnection(URL url, int connectTimeout, Map<String, String> requestProperties)"}
 {"task_id": 3, "raw_nl": "Write content to the file. If file does not exist, it will create one.", "signature": "public static void writeToFile(String content, String fileName)"}
 {"task_id": 4, "raw_nl": "Close Reader. If object is null it is ignored", "signature": "public static void close(Reader reader)"}
-{"task_id": 5, "raw_nl": "max() that works on three integers. Like many of the other max() functions in this class", "signature": "public static float max(float a, float b, float c) "}
+{"task_id": 5, "raw_nl": "max() that works on three integers", "signature": "public static float max(float a, float b, float c) "}
 {"task_id": 6, "raw_nl": "put a short value into a byte array with specific offset", "signature": "public static void putShort(byte[] data, short value, int offset)"}
 {"task_id": 7, "raw_nl": "从 http 服务拉取配置文件并解析为Properties 对象", "signature": "public Properties getProperties(String url)"}
 {"task_id": 8, "raw_nl": "给一个数组，找出最大值并且返回。", "signature": "public static int findMaxNumber(int[] nums)"}
