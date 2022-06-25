@@ -9,18 +9,18 @@ import java.nio.file.Path;
 
 public class AixcoderOld163 extends GenerateMethodBase {
     public void move(Path src, Path dest)
-        throws IOException {
-if ( Files. isDirectory ( src ) ) {
-if ( Files . isDirectory ( dest ) ) { 
-dest = dest . resolve ( src . getFileName ( ) ) ; 
-} 
-try ( DirectoryStream< Path > stream = Files . newDirectoryStream ( src ) ) {
-for ( Path entry : stream ) { 
-move ( entry , dest . resolve ( src . relativize ( entry ) ) ) ; 
-} 
-} 
-} else { 
-Files . move ( src , dest ) ; 
-} 
-} 
+            throws IOException {
+        if (Files.isDirectory(src)) {
+            if (Files.isDirectory(dest)) {
+                dest = dest.resolve(src.getFileName());
+            }
+            try (DirectoryStream<Path> stream = Files.newDirectoryStream(src)) {
+                for (Path entry : stream) {
+                    move(entry, dest.resolve(src.relativize(entry)));
+                }
+            }
+        } else {
+            Files.move(src, dest);
+        }
     }
+}

@@ -18,7 +18,7 @@ public class GenerateMethod131 extends GenerateMethodBase {
         }
         int newSize = endIndexExclusive - startIndexInclusive;
         if (newSize <= 0) {
-            return new double[0];
+            return null;
         }
         double[] subarray = new double[newSize];
         System.arraycopy(array, startIndexInclusive, subarray, 0, newSize);

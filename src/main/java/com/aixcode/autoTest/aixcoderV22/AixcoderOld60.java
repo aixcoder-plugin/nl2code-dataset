@@ -1,15 +1,16 @@
 package com.aixcode.autoTest.aixcoderV22;
 
 import com.aixcode.autoTest.GenerateMethodBase;
+
 public class AixcoderOld60 extends GenerateMethodBase {
-    public String bytesToHex(byte[] bytes)
-        { 
-char [ ] hexChars = new char [ bytes . length * 2 ] ; 
-for ( int j = 0 ; j < bytes . length ; j ++ ) { 
-int v = bytes [ j ] & 0xFF ; 
-//hexChars [ j * 2 ] = hexArray [ v >>> 4 ] ;
-//hexChars [ j * 2 + 1 ] = hexArray [ v & 0x0F ] ;
-} 
-return new String ( hexChars ) ; 
-} 
+    public String bytesToHex(byte[] bytes) {
+        StringBuilder sbuf = new StringBuilder();
+        for (int idx = 0; idx < bytes.length; idx++) {
+            int intVal = bytes[idx] & 0xff;
+            if (intVal < 0x10)
+                sbuf.append("0");
+            sbuf.append(Integer.toHexString(intVal).toUpperCase());
+        }
+        return sbuf.toString();
     }
+}

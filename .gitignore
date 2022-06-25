@@ -3,7 +3,7 @@
 /HumanTest.iml
 /.DS_Store
 /src/com/.DS_Store
-/src/main/com/aixcode/resource/tempFile/*.tmp
+/src/main/resource/tempFile/*.tmp
 /**/.DS_Store
 /*.zip
 /*.iml
@@ -11,3 +11,4 @@
 /src/main/java/com/aixcode/autoTest/version1/**
 /src/main/java/com/aixcode/autoTest/aixcoderV3/**
 /src/main/java/com/aixcode/autoTest/aixcoderV2/**
+/src/main/resources/localFile/
