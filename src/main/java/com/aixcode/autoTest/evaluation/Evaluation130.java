@@ -14,11 +14,11 @@ public class Evaluation130 extends AbstractBaseEvaluation {
     @Override
     public int[] evaluation() {
         Map<BigDecimal,Boolean> arrTestInput = new HashMap<>();
-        arrTestInput.put(new BigDecimal("-12738"), true);
-        arrTestInput.put(new BigDecimal("0.565656"),true);
-        arrTestInput.put(new BigDecimal("23948"),true);
-        arrTestInput.put(new BigDecimal("-2147483649"),false);
-        arrTestInput.put(new BigDecimal("2147483649"),false);
+        arrTestInput.put(new BigDecimal("-12738"), true); // negative values of int
+        arrTestInput.put(new BigDecimal("0.565656"),true); // decimal values in Integer range
+        arrTestInput.put(new BigDecimal("23948"),true); // positive value of int
+        arrTestInput.put(new BigDecimal("-2147483649"),false);// less than  minimum of Integer
+        arrTestInput.put(new BigDecimal("2147483649"),false);// bigger than maximum of Integer
 
         int pass_count = 0;
         int total_count = arrTestInput.size();

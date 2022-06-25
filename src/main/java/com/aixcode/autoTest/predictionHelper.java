@@ -30,7 +30,6 @@ public class predictionHelper {
             br.close();
             for(String codeLine:lines){
                 assembleOneFile(codeLine);
-//                break;
             }
 
         }catch (Exception e){
@@ -44,18 +43,16 @@ public class predictionHelper {
             Gson gson=new Gson();
             Map<String,Object> gsonLine=gson.fromJson(preditionLine,Map.class);
             Integer fileId=((Double)gsonLine.get("task_id")).intValue();
-            String newFileName="src/main/java/com/aixcode/autoTest/aixcoderV22/AixcoderOld"+fileId+".java";
+            String newFileName="src/main/java/com/aixcode/autoTest/aixcoderV2/AixcoderOld"+fileId+".java";
             BufferedWriter bw = new BufferedWriter(new java.io.FileWriter(newFileName));
 
-            String line1="package com.aixcode.autoTest.aixcoderV22;\n";
+            String line1="package com.aixcode.autoTest.aixcoderV2;\n";
             bw.write(line1+"\n");
-//            bw.write("import java.util.*;\n");
-//            bw.write("import java.io.*;\n");
             bw.write("import com.aixcode.autoTest.GenerateMethodBase;\n");
 
             bw.write("public class AixcoderOld"+fileId+" extends GenerateMethodBase {\n");
             if (gsonLine.get("code")!=null&&gsonLine.get("code")!=""){
-                bw.write("    "+gsonLine.get("signature")+"\n");
+//                bw.write("    "+gsonLine.get("signature")+"\n");
                 bw.write("        "+gsonLine.get("code")+"\n");
             }else{
                 bw.write("    "+gsonLine.get("signature")+"{\n}");

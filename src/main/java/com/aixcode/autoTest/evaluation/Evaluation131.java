@@ -17,9 +17,7 @@ public class Evaluation131 extends AbstractBaseEvaluation {
         TestParams.put("start to middle", new int[]{0, 1});
         TestParams.put("middle to end", new int[]{3, 5});
         TestParams.put("start to end", new int[]{0, 5});
-        TestParams.put("start to end with negative", new int[]{-1, 5});
         TestParams.put("end larger than array size", new int[]{1, 65});
-        TestParams.put("start greater than end", new int[]{5, 1});
         TestParams.put("start equals end", new int[]{1, 1});
         int pass_count = 0;
         int total_count = TestParams.size();

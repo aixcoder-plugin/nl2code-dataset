@@ -15,11 +15,11 @@ public class Evaluation127 extends AbstractBaseEvaluation {
     public int[] evaluation() {
         int pass_count = 0;
         Map<int[], Integer> map = new HashMap<>(){{
-            put(new int[]{1,2},1);
-            put(new int[]{1,3},2);
-            put(new int[]{1,4},3);
-            put(new int[]{1,5},4);
-            put(new int[]{1,6},6);
+            put(new int[]{1,2},1);// 左闭右开区间，仅包含左边界
+            put(new int[]{1,1},0);// 左闭右开，右=左，则无结果
+            put(new int[]{-2,2},4); // 左边界小于零
+            put(new int[]{4,2},0); //左边界大于右边界
+            put(new int[]{100,200},100); //左边界小于有边界，正常范围
         }};
         for (Map.Entry<int[],Integer> entry : map.entrySet()){
             try {
@@ -39,9 +39,12 @@ public class Evaluation127 extends AbstractBaseEvaluation {
                             pass_count++;
                         }
                     }
+                }else {
+                    if(arr.length == endValue){
+                        pass_count++;
+                    }
                 }
             }catch (Exception e) {
-
             }
         }
         return new int[]{pass_count,map.size()};
