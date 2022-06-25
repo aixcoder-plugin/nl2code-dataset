@@ -43,19 +43,21 @@ public class predictionHelper {
             Gson gson=new Gson();
             Map<String,Object> gsonLine=gson.fromJson(preditionLine,Map.class);
             Integer fileId=((Double)gsonLine.get("task_id")).intValue();
-            String newFileName="src/main/java/com/aixcode/autoTest/aixcoderV2/AixcoderOld"+fileId+".java";
+            String newFileName="src/main/java/com/aixcode/autoTest/aixcoderV23/Aixcoder"+fileId+".java";
             BufferedWriter bw = new BufferedWriter(new java.io.FileWriter(newFileName));
 
-            String line1="package com.aixcode.autoTest.aixcoderV2;\n";
+            String line1="package com.aixcode.autoTest.aixcoderV23;\n";
             bw.write(line1+"\n");
             bw.write("import com.aixcode.autoTest.GenerateMethodBase;\n");
 
-            bw.write("public class AixcoderOld"+fileId+" extends GenerateMethodBase {\n");
+            bw.write("public class Aixcoder"+fileId+" extends GenerateMethodBase {\n");
+            String signature=String.valueOf(gsonLine.get("signature")).replace("public static","public");
             if (gsonLine.get("code")!=null&&gsonLine.get("code")!=""){
-//                bw.write("    "+gsonLine.get("signature")+"\n");
-                bw.write("        "+gsonLine.get("code")+"\n");
+//                bw.write("    "+signature+"\n");
+                String code=String.valueOf(gsonLine.get("code")).replace("public static","public");
+                bw.write("        "+code+"\n");
             }else{
-                bw.write("    "+gsonLine.get("signature")+"{\n}");
+                bw.write("    "+signature+"{\n}");
             }
 
             bw.write("    }\n");
