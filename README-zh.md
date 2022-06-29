@@ -30,7 +30,14 @@
 
 如果您使用了这个项目内的代码或数据，建议您这样引用它：
 
-`Yiyang Hao, Ge Li, Yongqiang Liu, Xiaowei Miao, He Zong, Siyuan Jiang, Yang Liu, & He Wei. (2022, June 17). AiXcoder NL2Code Evaluation DataSet: A Dataset for Evaluating Text-to-Code Generation Model. GitHub. Retrieved June 17, 2022, from https://github.com/aixcoder-plugin/nl2code-dataset`
+```
+@misc{2206.13179,
+  Author = {Yiyang Hao and Ge Li and Yongqiang Liu and Xiaowei Miao and He Zong and Siyuan Jiang and Yang Liu and He Wei},
+  Title = {AixBench: A Code Generation Benchmark Dataset},
+  Year = {2022},
+  Eprint = {arXiv:2206.13179},
+}
+```
 
 ## 自动化测试数据集
 
