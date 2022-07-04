@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 import static com.aixcode.autoTest.Util.listFiles;
 
-public class Excutor {
+public class Executor {
     public static void main(String[] args) {
         try {
             //执行的line_num,只需要修改这个值即可

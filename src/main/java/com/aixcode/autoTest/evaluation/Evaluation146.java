@@ -16,7 +16,7 @@ public class Evaluation146 extends AbstractBaseEvaluation {
         int passCount = 0;
         try {
             ClassLoader classLoader = getClass().getClassLoader();
-            String className = "com.aixcode.autoTest.Excutor";
+            String className = "com.aixcode.autoTest.Executor";
             Set<String> methods = solution.getMethods(classLoader, className);
             Set<String> targetMethods = caconicalSolution(classLoader, className);
             if ((targetMethods == null || targetMethods.size() == 0) && (methods == null || methods.size() == 0)) {

@@ -15,11 +15,11 @@ public class Evaluation125 extends AbstractBaseEvaluation {
     public int[] evaluation() {
         int pass_count = 0;
         Map<String,Integer> map = new HashMap<>(){{
-            put("2022-06-01",1);
-            put("2022-06-02",2);
-            put("2022-06-03",3);
-            put("2022-06-04",4);
-            put("2022-06-05",5);
+            put("2010-01-01",1); //start day of month
+            put("2022-12-31",31); //31 days month
+            put("1982-02-28",28);//28 days month
+            put("2000-02-29",29);//29 days month
+            put("1900-06-02",2);//middle day of month
         }};
         for (Map.Entry<String,Integer> entry : map.entrySet()){
             try {

@@ -1,7 +1,7 @@
 package com.aixcode.autoTest.evaluation;
 
 import com.aixcode.autoTest.AbstractBaseEvaluation;
-import com.aixcode.autoTest.Excutor;
+import com.aixcode.autoTest.Executor;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +16,7 @@ public class Evaluation72 extends AbstractBaseEvaluation {
     private Map<Class, Class> init() {
         Map<Class, Class> map = new HashMap<>();
         map.put(String.class, String.class);
-        map.put(Excutor.class, Excutor.class);
+        map.put(Executor.class, Executor.class);
 
         return map;
     }
