@@ -2,6 +2,8 @@
 
 [简体中文](./README-zh.md)
 
+Paper available: https://arxiv.org/abs/2206.13179
+
 ## Introduction
 
 This is a method-level benchmark for evaluating code generating (synthesis) models, which take natural language as input and code as output, and is primarily used to evaluate the ability of code-generating models. AiXcoder NL2Code Evaluation Benchmark is divided into two datasets:
