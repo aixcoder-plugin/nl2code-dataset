@@ -41,7 +41,7 @@
 
 ## 自动化测试数据集
 
-数据文件路径：`src/main/resources/dataset_autotest.jsonl`
+数据文件路径：`src/main/resources/dataset_autotest_nl.jsonl`
 
 这些数据是从开源的“方法注释-Java方法实现”中人工挑选出的一批“方法注释”的集合。我们挑选的标准是：
 
