@@ -43,7 +43,7 @@ If you use code or data from this project, it is recommended that you reference 
 
 ## Automated Test Dataset
 
-Data file path: `src/main/resources/dataset_autotest.jsonl`
+Data file path: `src/main/resources/dataset_autotest_nl.jsonl`
 
 This data is a collection of hand-picked batches of "Method Comments" from open-sourced "Method Comments - Java Method Implementation" pairs. Our selection criteria are:
 
