@@ -19,12 +19,10 @@ public class Evaluation8 extends AbstractBaseEvaluation {
         int[] a2 = {-1,-2,-3,-4,-3};//负数数组
         int[] a3 = {1,2,3,3,2};//两个最大值
         int[] a4 = {3,3,3,3,3};//全都相同
-        int[] a5 = {};//空数组
         map.put(a1,5);
         map.put(a2,-1);
         map.put(a3,3);
         map.put(a4,3);
-        map.put(a5,0);
         int pass_count = 0;
 
         for(Map.Entry<int[],Integer> entry:map.entrySet()){

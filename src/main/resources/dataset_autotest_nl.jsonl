@@ -100,7 +100,7 @@
 {"task_id": 104, "raw_nl": "Puts a byte and a short into this byte vector. The byte vector is automatically enlarged if necessary.", "signature": "public static void putShort(byte[] data, byte b, short s)"}
 {"task_id": 105, "raw_nl": "Advances the iterator either forward or backward the specified number of steps. Negative values move backward, and positive values move forward. This is equivalent to repeatedly calling next() or previous().", "signature": "public static int next(Iterator<Integer> iterator, int n)"}
 {"task_id": 106, "raw_nl": "一维数组转为二维数组", "signature": "public static int[][] arrayToMatrix(int[] m, int width, int height)"}
-{"task_id": 107, "raw_nl": "Verifies that the given array is not null or empty.", "signature": "public boolean checkNotNullOrEmpty(int[] array)"}
+{"task_id": 107, "raw_nl": "Return true if the given array is not null or empty.", "signature": "public boolean checkNotNullOrEmpty(int[] array)"}
 {"task_id": 108, "raw_nl": "Removes all white spaces from a string A whitespace is identified using the Java method Character.isWhiteSpace", "signature": "public static String removeAllWhiteSpaces(String str)"}
 {"task_id": 109, "raw_nl": "subtract b from a", "signature": "public static String[] sub(String[] a, String[] b)"}
 {"task_id": 110, "raw_nl": "Converts the string argument into a float value.", "signature": "public static float parseFloat(String floatStr)"}
