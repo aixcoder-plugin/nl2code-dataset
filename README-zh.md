@@ -129,7 +129,11 @@ src/main/java/com/aixcode/autoTest/predictionHelper.java
 git clone https://github.com/aixcoder-plugin/nl2code-dataset.git
 ```
 
-#### 2、获取模型预测
+#### 2、构建项目
+
+使用IDE打开项目，将lib目录下的jar添加到classpath中（右键lib目录，选择add as library，不同的IDE操作有差异），然后可以打开Executor.java文件，执行main方法就可以运行整个测试。
+
+#### 3、获取模型预测
 
 对每个测试数据，把raw_nl和signature作为输入，获得模型的输出，该输出作为类的唯一方法，类名为prefix+task_id，prefix是用户自定义的。同时该类需要继承GenerateMethodBase类，对于如上的例子，根据模型的预测输出，手动生成如下的类，其中类名为Aixcoder166（Aixcoder+166），同时继承GenerateMethodBase类。
 
@@ -178,9 +182,9 @@ public class predictionHelper {
 }
 ```
 
-#### 3、最后执行Executor 
+#### 4、最后执行Executor 
 
-##### 3.1 执行测试用例可以单次执行一个测试sample
+##### 4.1 执行测试用例可以单次执行一个测试sample
 
 ```java
 class Executor{
@@ -212,7 +216,7 @@ class Executor{
 }
 ```
 
-##### 3.2 单次执行所有的测试sample
+##### 4.2 单次执行所有的测试sample
 
 ```java
 class Executor{

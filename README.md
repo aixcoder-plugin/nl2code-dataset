@@ -127,8 +127,10 @@ src/main/java/com/aixcode/autoTest/predictionHelper.java
 ```bash
 git clone https://github.com/aixcoder-plugin/nl2code-dataset.git
 ```
+#### 2. Build the project
+open the project with IDEA, add the library to the classpath. and run project by executor the file of Executor.java
 
-#### 2. Get model predictions
+#### 3. Get model predictions
 
 For each test data, take `raw_nl` and `signature` as input, get the output of the model, the output is the only method of the class, the class name is `prefix+task_id`, and the `prefix` is user-defined. At the same time, this class needs to inherit the `GenerateMethodBase` class. For the following example, according to the prediction output of the model, user need to manually generate the following class, where the class name is `Aixcoder166` (`Aixcoder+166`), and inherit the `GenerateMethodBase` class at the same time.
 
@@ -177,9 +179,9 @@ public class predictionHelper {
 }
 ```
 
-#### 3. Finally execute Executor
+#### 4. Finally execute Executor
 
-##### 3.1 Test sample can be executed one by one at a time
+##### 4.1 Test sample can be executed one by one at a time
 
 ```java
 class Executor{
@@ -211,7 +213,7 @@ class Executor{
 }
 ```
 
-##### 3.2 Executing all test samples at once
+##### 4.2 Executing all test samples at once
 
 ```java
 class Executor{
