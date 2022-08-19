@@ -4,6 +4,7 @@
 /.DS_Store
 /src/com/.DS_Store
 /src/main/com/aixcode/resource/tempFile/*.tmp
+/src/main/com/aixcode/resource/localFile/**
 /**/.DS_Store
 /*.zip
 /*.iml
